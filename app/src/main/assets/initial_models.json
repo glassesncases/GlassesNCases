@@ -1,0 +1,4610 @@
+[
+  {
+    "modelName": "Apple iPhone XR",
+    "boxNumber": 1,
+    "additionalCompatible": []
+  },
+  {
+    "modelName": "Apple iPhone 11",
+    "boxNumber": 1,
+    "additionalCompatible": []
+  },
+  {
+    "modelName": "Apple iPhone XS Max",
+    "boxNumber": 2,
+    "additionalCompatible": []
+  },
+  {
+    "modelName": "Apple iPhone 11 Pro Max",
+    "boxNumber": 2,
+    "additionalCompatible": []
+  },
+  {
+    "modelName": "Apple iPhone 12",
+    "boxNumber": 3,
+    "additionalCompatible": []
+  },
+  {
+    "modelName": "Apple iPhone 12 Pro",
+    "boxNumber": 3,
+    "additionalCompatible": []
+  },
+  {
+    "modelName": "Apple iPhone 12 Pro Max",
+    "boxNumber": 4,
+    "additionalCompatible": []
+  },
+  {
+    "modelName": "Apple iPhone 13",
+    "boxNumber": 5,
+    "additionalCompatible": []
+  },
+  {
+    "modelName": "Apple iPhone 13 Pro",
+    "boxNumber": 5,
+    "additionalCompatible": []
+  },
+  {
+    "modelName": "Apple iPhone 14",
+    "boxNumber": 5,
+    "additionalCompatible": []
+  },
+  {
+    "modelName": "Apple iPhone 16e",
+    "boxNumber": 5,
+    "additionalCompatible": []
+  },
+  {
+    "modelName": "Apple iPhone 13 Pro Max",
+    "boxNumber": 6,
+    "additionalCompatible": []
+  },
+  {
+    "modelName": "Apple iPhone 14 Plus",
+    "boxNumber": 6,
+    "additionalCompatible": []
+  },
+  {
+    "modelName": "Apple iPhone 15",
+    "boxNumber": 7,
+    "additionalCompatible": []
+  },
+  {
+    "modelName": "Apple iPhone 14 Pro",
+    "boxNumber": 7,
+    "additionalCompatible": []
+  },
+  {
+    "modelName": "Apple iPhone 16",
+    "boxNumber": 7,
+    "additionalCompatible": []
+  },
+  {
+    "modelName": "Apple iPhone 15 Pro",
+    "boxNumber": 8,
+    "additionalCompatible": []
+  },
+  {
+    "modelName": "Apple iPhone 15 Pro Max",
+    "boxNumber": 9,
+    "additionalCompatible": []
+  },
+  {
+    "modelName": "Apple iPhone 16 Plus",
+    "boxNumber": 10,
+    "additionalCompatible": []
+  },
+  {
+    "modelName": "Apple iPhone 16 Pro Max",
+    "boxNumber": 11,
+    "additionalCompatible": []
+  },
+  {
+    "modelName": "Apple iPhone 16 Pro",
+    "boxNumber": 12,
+    "additionalCompatible": []
+  },
+  {
+    "modelName": "Apple iPhone 17",
+    "boxNumber": 12,
+    "additionalCompatible": []
+  },
+  {
+    "modelName": "Apple iPhone 17 Air",
+    "boxNumber": 13,
+    "additionalCompatible": []
+  },
+  {
+    "modelName": "Apple iPhone 17 Pro",
+    "boxNumber": 15,
+    "additionalCompatible": []
+  },
+  {
+    "modelName": "Apple iPhone 17 Pro Max",
+    "boxNumber": 16,
+    "additionalCompatible": []
+  },
+  {
+    "modelName": "Samsung A20",
+    "boxNumber": 17,
+    "additionalCompatible": []
+  },
+  {
+    "modelName": "Samsung A30",
+    "boxNumber": 17,
+    "additionalCompatible": []
+  },
+  {
+    "modelName": "Samsung A50",
+    "boxNumber": 17,
+    "additionalCompatible": []
+  },
+  {
+    "modelName": "Samsung M30",
+    "boxNumber": 17,
+    "additionalCompatible": []
+  },
+  {
+    "modelName": "Samsung M30s",
+    "boxNumber": 17,
+    "additionalCompatible": []
+  },
+  {
+    "modelName": "Samsung M50s",
+    "boxNumber": 17,
+    "additionalCompatible": []
+  },
+  {
+    "modelName": "Samsung A50s",
+    "boxNumber": 17,
+    "additionalCompatible": []
+  },
+  {
+    "modelName": "Samsung M10s",
+    "boxNumber": 17,
+    "additionalCompatible": []
+  },
+  {
+    "modelName": "Samsung M21",
+    "boxNumber": 17,
+    "additionalCompatible": []
+  },
+  {
+    "modelName": "Samsung M21s",
+    "boxNumber": 17,
+    "additionalCompatible": []
+  },
+  {
+    "modelName": "Samsung M31",
+    "boxNumber": 17,
+    "additionalCompatible": []
+  },
+  {
+    "modelName": "Samsung M50",
+    "boxNumber": 17,
+    "additionalCompatible": []
+  },
+  {
+    "modelName": "Samsung A30s",
+    "boxNumber": 17,
+    "additionalCompatible": []
+  },
+  {
+    "modelName": "Samsung F41",
+    "boxNumber": 17,
+    "additionalCompatible": []
+  },
+  {
+    "modelName": "Samsung M31 Prime",
+    "boxNumber": 17,
+    "additionalCompatible": []
+  },
+  {
+    "modelName": "Samsung A34 5G",
+    "boxNumber": 18,
+    "additionalCompatible": []
+  },
+  {
+    "modelName": "Samsung M34 5G",
+    "boxNumber": 18,
+    "additionalCompatible": []
+  },
+  {
+    "modelName": "Samsung A37 5G",
+    "boxNumber": 19,
+    "additionalCompatible": []
+  },
+  {
+    "modelName": "Samsung A51",
+    "boxNumber": 20,
+    "additionalCompatible": []
+  },
+  {
+    "modelName": "Samsung M31s",
+    "boxNumber": 20,
+    "additionalCompatible": []
+  },
+  {
+    "modelName": "Samsung S20 FE 5G",
+    "boxNumber": 20,
+    "additionalCompatible": []
+  },
+  {
+    "modelName": "Samsung A52",
+    "boxNumber": 20,
+    "additionalCompatible": []
+  },
+  {
+    "modelName": "Samsung A52s 5G",
+    "boxNumber": 20,
+    "additionalCompatible": []
+  },
+  {
+    "modelName": "Samsung A53 5G",
+    "boxNumber": 20,
+    "additionalCompatible": []
+  },
+  {
+    "modelName": "Samsung A35 5G",
+    "boxNumber": 21,
+    "additionalCompatible": [
+      "Samsung M36 5G"
+    ]
+  },
+  {
+    "modelName": "Samsung A55 5G",
+    "boxNumber": 21,
+    "additionalCompatible": [
+      "Samsung M36 5G"
+    ]
+  },
+  {
+    "modelName": "Samsung M35 5G",
+    "boxNumber": 21,
+    "additionalCompatible": [
+      "Samsung M36 5G"
+    ]
+  },
+  {
+    "modelName": "Samsung M36 5G (Compatible)",
+    "boxNumber": 21,
+    "additionalCompatible": [
+      "Samsung M36 5G"
+    ]
+  },
+  {
+    "modelName": "Samsung A70",
+    "boxNumber": 22,
+    "additionalCompatible": [
+      "Samsung A72",
+      "Samsung F62",
+      "Samsung M62"
+    ]
+  },
+  {
+    "modelName": "Samsung A70s",
+    "boxNumber": 22,
+    "additionalCompatible": [
+      "Samsung A72",
+      "Samsung F62",
+      "Samsung M62"
+    ]
+  },
+  {
+    "modelName": "Samsung A42 5G",
+    "boxNumber": 22,
+    "additionalCompatible": [
+      "Samsung A72",
+      "Samsung F62",
+      "Samsung M62"
+    ]
+  },
+  {
+    "modelName": "Samsung M42 5G",
+    "boxNumber": 22,
+    "additionalCompatible": [
+      "Samsung A72",
+      "Samsung F62",
+      "Samsung M62"
+    ]
+  },
+  {
+    "modelName": "Samsung A72 (Compatible)",
+    "boxNumber": 22,
+    "additionalCompatible": [
+      "Samsung A72",
+      "Samsung F62",
+      "Samsung M62"
+    ]
+  },
+  {
+    "modelName": "Samsung F62 (Compatible)",
+    "boxNumber": 22,
+    "additionalCompatible": [
+      "Samsung A72",
+      "Samsung F62",
+      "Samsung M62"
+    ]
+  },
+  {
+    "modelName": "Samsung M62 (Compatible)",
+    "boxNumber": 22,
+    "additionalCompatible": [
+      "Samsung A72",
+      "Samsung F62",
+      "Samsung M62"
+    ]
+  },
+  {
+    "modelName": "Samsung A16 4G",
+    "boxNumber": 23,
+    "additionalCompatible": [
+      "Samsung A15 4G",
+      "Samsung A15 5G",
+      "Samsung M15 5G",
+      "Samsung F15 5G"
+    ]
+  },
+  {
+    "modelName": "Samsung A16 5G",
+    "boxNumber": 23,
+    "additionalCompatible": [
+      "Samsung A15 4G",
+      "Samsung A15 5G",
+      "Samsung M15 5G",
+      "Samsung F15 5G"
+    ]
+  },
+  {
+    "modelName": "Samsung A26",
+    "boxNumber": 23,
+    "additionalCompatible": [
+      "Samsung A15 4G",
+      "Samsung A15 5G",
+      "Samsung M15 5G",
+      "Samsung F15 5G"
+    ]
+  },
+  {
+    "modelName": "Samsung F16",
+    "boxNumber": 23,
+    "additionalCompatible": [
+      "Samsung A15 4G",
+      "Samsung A15 5G",
+      "Samsung M15 5G",
+      "Samsung F15 5G"
+    ]
+  },
+  {
+    "modelName": "Samsung M16",
+    "boxNumber": 23,
+    "additionalCompatible": [
+      "Samsung A15 4G",
+      "Samsung A15 5G",
+      "Samsung M15 5G",
+      "Samsung F15 5G"
+    ]
+  },
+  {
+    "modelName": "Samsung A17",
+    "boxNumber": 23,
+    "additionalCompatible": [
+      "Samsung A15 4G",
+      "Samsung A15 5G",
+      "Samsung M15 5G",
+      "Samsung F15 5G"
+    ]
+  },
+  {
+    "modelName": "Samsung F17",
+    "boxNumber": 23,
+    "additionalCompatible": [
+      "Samsung A15 4G",
+      "Samsung A15 5G",
+      "Samsung M15 5G",
+      "Samsung F15 5G"
+    ]
+  },
+  {
+    "modelName": "Samsung F36",
+    "boxNumber": 23,
+    "additionalCompatible": [
+      "Samsung A15 4G",
+      "Samsung A15 5G",
+      "Samsung M15 5G",
+      "Samsung F15 5G"
+    ]
+  },
+  {
+    "modelName": "Samsung M36",
+    "boxNumber": 23,
+    "additionalCompatible": [
+      "Samsung A15 4G",
+      "Samsung A15 5G",
+      "Samsung M15 5G",
+      "Samsung F15 5G"
+    ]
+  },
+  {
+    "modelName": "Samsung A15 4G (Compatible)",
+    "boxNumber": 23,
+    "additionalCompatible": [
+      "Samsung A15 4G",
+      "Samsung A15 5G",
+      "Samsung M15 5G",
+      "Samsung F15 5G"
+    ]
+  },
+  {
+    "modelName": "Samsung A15 5G (Compatible)",
+    "boxNumber": 23,
+    "additionalCompatible": [
+      "Samsung A15 4G",
+      "Samsung A15 5G",
+      "Samsung M15 5G",
+      "Samsung F15 5G"
+    ]
+  },
+  {
+    "modelName": "Samsung M15 5G (Compatible)",
+    "boxNumber": 23,
+    "additionalCompatible": [
+      "Samsung A15 4G",
+      "Samsung A15 5G",
+      "Samsung M15 5G",
+      "Samsung F15 5G"
+    ]
+  },
+  {
+    "modelName": "Samsung F15 5G (Compatible)",
+    "boxNumber": 23,
+    "additionalCompatible": [
+      "Samsung A15 4G",
+      "Samsung A15 5G",
+      "Samsung M15 5G",
+      "Samsung F15 5G"
+    ]
+  },
+  {
+    "modelName": "Samsung A10",
+    "boxNumber": 24,
+    "additionalCompatible": []
+  },
+  {
+    "modelName": "Samsung M10",
+    "boxNumber": 24,
+    "additionalCompatible": []
+  },
+  {
+    "modelName": "Samsung M01s",
+    "boxNumber": 24,
+    "additionalCompatible": []
+  },
+  {
+    "modelName": "Samsung A10s",
+    "boxNumber": 24,
+    "additionalCompatible": []
+  },
+  {
+    "modelName": "Vivo Y90",
+    "boxNumber": 24,
+    "additionalCompatible": []
+  },
+  {
+    "modelName": "Vivo Y91",
+    "boxNumber": 24,
+    "additionalCompatible": []
+  },
+  {
+    "modelName": "Vivo Y91 India",
+    "boxNumber": 24,
+    "additionalCompatible": []
+  },
+  {
+    "modelName": "Vivo Y91C 2020",
+    "boxNumber": 24,
+    "additionalCompatible": []
+  },
+  {
+    "modelName": "Vivo Y93",
+    "boxNumber": 24,
+    "additionalCompatible": []
+  },
+  {
+    "modelName": "Vivo Y93s",
+    "boxNumber": 24,
+    "additionalCompatible": []
+  },
+  {
+    "modelName": "Vivo Y95",
+    "boxNumber": 24,
+    "additionalCompatible": []
+  },
+  {
+    "modelName": "Vivo Y1s",
+    "boxNumber": 24,
+    "additionalCompatible": []
+  },
+  {
+    "modelName": "Vivo Y97 China",
+    "boxNumber": 24,
+    "additionalCompatible": []
+  },
+  {
+    "modelName": "Vivo U1 China",
+    "boxNumber": 24,
+    "additionalCompatible": []
+  },
+  {
+    "modelName": "Oppo A5s",
+    "boxNumber": 24,
+    "additionalCompatible": []
+  },
+  {
+    "modelName": "Oppo A7",
+    "boxNumber": 24,
+    "additionalCompatible": []
+  },
+  {
+    "modelName": "Oppo A11k",
+    "boxNumber": 24,
+    "additionalCompatible": []
+  },
+  {
+    "modelName": "Oppo A12",
+    "boxNumber": 24,
+    "additionalCompatible": []
+  },
+  {
+    "modelName": "Oppo A12s",
+    "boxNumber": 24,
+    "additionalCompatible": []
+  },
+  {
+    "modelName": "Realme 3",
+    "boxNumber": 24,
+    "additionalCompatible": []
+  },
+  {
+    "modelName": "Realme 3i",
+    "boxNumber": 24,
+    "additionalCompatible": []
+  },
+  {
+    "modelName": "Samsung A05",
+    "boxNumber": 25,
+    "additionalCompatible": []
+  },
+  {
+    "modelName": "Samsung F05",
+    "boxNumber": 25,
+    "additionalCompatible": []
+  },
+  {
+    "modelName": "Samsung M05",
+    "boxNumber": 25,
+    "additionalCompatible": []
+  },
+  {
+    "modelName": "Samsung A06",
+    "boxNumber": 25,
+    "additionalCompatible": []
+  },
+  {
+    "modelName": "Samsung M06",
+    "boxNumber": 25,
+    "additionalCompatible": []
+  },
+  {
+    "modelName": "Samsung F06",
+    "boxNumber": 25,
+    "additionalCompatible": []
+  },
+  {
+    "modelName": "Samsung A07",
+    "boxNumber": 25,
+    "additionalCompatible": []
+  },
+  {
+    "modelName": "Samsung F07",
+    "boxNumber": 25,
+    "additionalCompatible": []
+  },
+  {
+    "modelName": "Samsung M07",
+    "boxNumber": 25,
+    "additionalCompatible": []
+  },
+  {
+    "modelName": "Redmi 13C 4G",
+    "boxNumber": 25,
+    "additionalCompatible": []
+  },
+  {
+    "modelName": "Redmi 13C 5G",
+    "boxNumber": 25,
+    "additionalCompatible": []
+  },
+  {
+    "modelName": "Redmi 13R",
+    "boxNumber": 25,
+    "additionalCompatible": []
+  },
+  {
+    "modelName": "Poco C65",
+    "boxNumber": 25,
+    "additionalCompatible": []
+  },
+  {
+    "modelName": "Poco M6 5G",
+    "boxNumber": 25,
+    "additionalCompatible": []
+  },
+  {
+    "modelName": "Samsung A14 4G",
+    "boxNumber": 26,
+    "additionalCompatible": []
+  },
+  {
+    "modelName": "Samsung A14 5G",
+    "boxNumber": 26,
+    "additionalCompatible": []
+  },
+  {
+    "modelName": "Samsung M14 5G",
+    "boxNumber": 26,
+    "additionalCompatible": []
+  },
+  {
+    "modelName": "Samsung F14 5G",
+    "boxNumber": 26,
+    "additionalCompatible": []
+  },
+  {
+    "modelName": "Samsung A73 5G",
+    "boxNumber": 27,
+    "additionalCompatible": []
+  },
+  {
+    "modelName": "Samsung M52 5G",
+    "boxNumber": 27,
+    "additionalCompatible": []
+  },
+  {
+    "modelName": "Samsung M62",
+    "boxNumber": 27,
+    "additionalCompatible": []
+  },
+  {
+    "modelName": "Samsung M53 5G",
+    "boxNumber": 27,
+    "additionalCompatible": []
+  },
+  {
+    "modelName": "Samsung A71",
+    "boxNumber": 27,
+    "additionalCompatible": []
+  },
+  {
+    "modelName": "Samsung A80",
+    "boxNumber": 27,
+    "additionalCompatible": []
+  },
+  {
+    "modelName": "Samsung M51",
+    "boxNumber": 27,
+    "additionalCompatible": []
+  },
+  {
+    "modelName": "Realme GT Neo 3",
+    "boxNumber": 27,
+    "additionalCompatible": []
+  },
+  {
+    "modelName": "Realme 10 Pro",
+    "boxNumber": 27,
+    "additionalCompatible": []
+  },
+  {
+    "modelName": "Realme 10 Pro Max",
+    "boxNumber": 27,
+    "additionalCompatible": []
+  },
+  {
+    "modelName": "Redmi Note 10 Pro",
+    "boxNumber": 27,
+    "additionalCompatible": []
+  },
+  {
+    "modelName": "Redmi Note 10 Pro Max",
+    "boxNumber": 27,
+    "additionalCompatible": []
+  },
+  {
+    "modelName": "Redmi Note 11 Pro",
+    "boxNumber": 27,
+    "additionalCompatible": []
+  },
+  {
+    "modelName": "Redmi Note 11 Pro+",
+    "boxNumber": 27,
+    "additionalCompatible": []
+  },
+  {
+    "modelName": "Redmi Note 11S 5G",
+    "boxNumber": 27,
+    "additionalCompatible": []
+  },
+  {
+    "modelName": "Redmi Note 11T",
+    "boxNumber": 27,
+    "additionalCompatible": []
+  },
+  {
+    "modelName": "Redmi Note 11T 5G",
+    "boxNumber": 27,
+    "additionalCompatible": []
+  },
+  {
+    "modelName": "Redmi Note 12 Pro 4G",
+    "boxNumber": 27,
+    "additionalCompatible": []
+  },
+  {
+    "modelName": "Redmi Note 9 Pro",
+    "boxNumber": 27,
+    "additionalCompatible": []
+  },
+  {
+    "modelName": "Redmi Note 9 Pro Max",
+    "boxNumber": 27,
+    "additionalCompatible": []
+  },
+  {
+    "modelName": "Mi 10T",
+    "boxNumber": 27,
+    "additionalCompatible": []
+  },
+  {
+    "modelName": "Mi 11X",
+    "boxNumber": 27,
+    "additionalCompatible": []
+  },
+  {
+    "modelName": "Mi 11X Pro",
+    "boxNumber": 27,
+    "additionalCompatible": []
+  },
+  {
+    "modelName": "Mi 11 Lite",
+    "boxNumber": 27,
+    "additionalCompatible": []
+  },
+  {
+    "modelName": "Mi 11T",
+    "boxNumber": 27,
+    "additionalCompatible": []
+  },
+  {
+    "modelName": "Mi 11T Pro",
+    "boxNumber": 27,
+    "additionalCompatible": []
+  },
+  {
+    "modelName": "Poco X3",
+    "boxNumber": 27,
+    "additionalCompatible": []
+  },
+  {
+    "modelName": "Poco X3 Pro",
+    "boxNumber": 27,
+    "additionalCompatible": []
+  },
+  {
+    "modelName": "Poco X4 Pro",
+    "boxNumber": 27,
+    "additionalCompatible": []
+  },
+  {
+    "modelName": "Poco F3",
+    "boxNumber": 27,
+    "additionalCompatible": []
+  },
+  {
+    "modelName": "Poco M2 Pro",
+    "boxNumber": 27,
+    "additionalCompatible": []
+  },
+  {
+    "modelName": "Poco M4 Pro 5G",
+    "boxNumber": 27,
+    "additionalCompatible": []
+  },
+  {
+    "modelName": "Vivo T1",
+    "boxNumber": 27,
+    "additionalCompatible": []
+  },
+  {
+    "modelName": "Vivo T2",
+    "boxNumber": 27,
+    "additionalCompatible": []
+  },
+  {
+    "modelName": "Vivo Y36",
+    "boxNumber": 27,
+    "additionalCompatible": []
+  },
+  {
+    "modelName": "Vivo Y36 5G",
+    "boxNumber": 27,
+    "additionalCompatible": []
+  },
+  {
+    "modelName": "iQOO Z5",
+    "boxNumber": 27,
+    "additionalCompatible": []
+  },
+  {
+    "modelName": "Samsung A15 4G",
+    "boxNumber": 28,
+    "additionalCompatible": []
+  },
+  {
+    "modelName": "Samsung A15 5G",
+    "boxNumber": 28,
+    "additionalCompatible": []
+  },
+  {
+    "modelName": "Samsung F15 5G",
+    "boxNumber": 28,
+    "additionalCompatible": []
+  },
+  {
+    "modelName": "Samsung M15 5G",
+    "boxNumber": 28,
+    "additionalCompatible": []
+  },
+  {
+    "modelName": "Samsung A36 5G",
+    "boxNumber": 29,
+    "additionalCompatible": []
+  },
+  {
+    "modelName": "Samsung A56 5G",
+    "boxNumber": 29,
+    "additionalCompatible": []
+  },
+  {
+    "modelName": "Samsung S24 FE",
+    "boxNumber": 29,
+    "additionalCompatible": []
+  },
+  {
+    "modelName": "Samsung M56",
+    "boxNumber": 29,
+    "additionalCompatible": []
+  },
+  {
+    "modelName": "Samsung F56",
+    "boxNumber": 29,
+    "additionalCompatible": []
+  },
+  {
+    "modelName": "Nothing Phone 3",
+    "boxNumber": 30,
+    "additionalCompatible": []
+  },
+  {
+    "modelName": "Nothing Phone 3a",
+    "boxNumber": 31,
+    "additionalCompatible": []
+  },
+  {
+    "modelName": "Nothing Phone 3a Pro",
+    "boxNumber": 31,
+    "additionalCompatible": []
+  },
+  {
+    "modelName": "CMF Phone 2 Pro",
+    "boxNumber": 31,
+    "additionalCompatible": []
+  },
+  {
+    "modelName": "OnePlus Nord CE 3 Lite",
+    "boxNumber": 32,
+    "additionalCompatible": []
+  },
+  {
+    "modelName": "OnePlus Nord N30",
+    "boxNumber": 32,
+    "additionalCompatible": []
+  },
+  {
+    "modelName": "Oppo F23 5G",
+    "boxNumber": 32,
+    "additionalCompatible": []
+  },
+  {
+    "modelName": "Vivo Y39",
+    "boxNumber": 32,
+    "additionalCompatible": []
+  },
+  {
+    "modelName": "Vivo Y59",
+    "boxNumber": 32,
+    "additionalCompatible": []
+  },
+  {
+    "modelName": "OnePlus Nord N30 SE",
+    "boxNumber": 32,
+    "additionalCompatible": []
+  },
+  {
+    "modelName": "Realme C66",
+    "boxNumber": 32,
+    "additionalCompatible": []
+  },
+  {
+    "modelName": "iQOO Z9x",
+    "boxNumber": 32,
+    "additionalCompatible": []
+  },
+  {
+    "modelName": "iQOO Z10x",
+    "boxNumber": 32,
+    "additionalCompatible": []
+  },
+  {
+    "modelName": "Oppo A98 5G",
+    "boxNumber": 32,
+    "additionalCompatible": []
+  },
+  {
+    "modelName": "Oppo A1",
+    "boxNumber": 32,
+    "additionalCompatible": []
+  },
+  {
+    "modelName": "Oppo K11x",
+    "boxNumber": 32,
+    "additionalCompatible": []
+  },
+  {
+    "modelName": "Oppo A68 4G",
+    "boxNumber": 32,
+    "additionalCompatible": []
+  },
+  {
+    "modelName": "Oppo A78 5G",
+    "boxNumber": 32,
+    "additionalCompatible": []
+  },
+  {
+    "modelName": "Oppo A2",
+    "boxNumber": 32,
+    "additionalCompatible": []
+  },
+  {
+    "modelName": "Oppo A6",
+    "boxNumber": 32,
+    "additionalCompatible": []
+  },
+  {
+    "modelName": "Realme C87 4G",
+    "boxNumber": 32,
+    "additionalCompatible": []
+  },
+  {
+    "modelName": "Realme C87 5G",
+    "boxNumber": 32,
+    "additionalCompatible": []
+  },
+  {
+    "modelName": "Oppo A60",
+    "boxNumber": 32,
+    "additionalCompatible": []
+  },
+  {
+    "modelName": "Vivo Y200t",
+    "boxNumber": 32,
+    "additionalCompatible": []
+  },
+  {
+    "modelName": "Narzo 60x",
+    "boxNumber": 32,
+    "additionalCompatible": []
+  },
+  {
+    "modelName": "Narzo N66",
+    "boxNumber": 32,
+    "additionalCompatible": []
+  },
+  {
+    "modelName": "Realme 11x 5G",
+    "boxNumber": 32,
+    "additionalCompatible": []
+  },
+  {
+    "modelName": "Realme 11 5G",
+    "boxNumber": 32,
+    "additionalCompatible": []
+  },
+  {
+    "modelName": "Realme 12 5G",
+    "boxNumber": 32,
+    "additionalCompatible": []
+  },
+  {
+    "modelName": "Realme Y50",
+    "boxNumber": 32,
+    "additionalCompatible": []
+  },
+  {
+    "modelName": "Realme Y50s",
+    "boxNumber": 32,
+    "additionalCompatible": []
+  },
+  {
+    "modelName": "Realme 12x 5G",
+    "boxNumber": 32,
+    "additionalCompatible": []
+  },
+  {
+    "modelName": "Realme C63 5G",
+    "boxNumber": 32,
+    "additionalCompatible": []
+  },
+  {
+    "modelName": "Realme V60",
+    "boxNumber": 32,
+    "additionalCompatible": []
+  },
+  {
+    "modelName": "Realme V60s",
+    "boxNumber": 32,
+    "additionalCompatible": []
+  },
+  {
+    "modelName": "Realme 12 Lite",
+    "boxNumber": 32,
+    "additionalCompatible": []
+  },
+  {
+    "modelName": "Realme C65 4G",
+    "boxNumber": 32,
+    "additionalCompatible": []
+  },
+  {
+    "modelName": "Realme C65 5G",
+    "boxNumber": 32,
+    "additionalCompatible": []
+  },
+  {
+    "modelName": "Realme 13 5G",
+    "boxNumber": 32,
+    "additionalCompatible": []
+  },
+  {
+    "modelName": "Realme Y60 Pro",
+    "boxNumber": 32,
+    "additionalCompatible": []
+  },
+  {
+    "modelName": "Narzo 70x",
+    "boxNumber": 32,
+    "additionalCompatible": []
+  },
+  {
+    "modelName": "Narzo N86",
+    "boxNumber": 32,
+    "additionalCompatible": []
+  },
+  {
+    "modelName": "Vivo Y37 Pro",
+    "boxNumber": 32,
+    "additionalCompatible": []
+  },
+  {
+    "modelName": "Vivo Y200",
+    "boxNumber": 32,
+    "additionalCompatible": []
+  },
+  {
+    "modelName": "Vivo Y50",
+    "boxNumber": 32,
+    "additionalCompatible": []
+  },
+  {
+    "modelName": "Oppo A3 Pro",
+    "boxNumber": 32,
+    "additionalCompatible": []
+  },
+  {
+    "modelName": "Oppo A3x",
+    "boxNumber": 32,
+    "additionalCompatible": []
+  },
+  {
+    "modelName": "Oppo K12x 5G",
+    "boxNumber": 32,
+    "additionalCompatible": []
+  },
+  {
+    "modelName": "Vivo Y20 4G",
+    "boxNumber": 32,
+    "additionalCompatible": []
+  },
+  {
+    "modelName": "Oppo A80",
+    "boxNumber": 32,
+    "additionalCompatible": []
+  },
+  {
+    "modelName": "Oppo A3 4G",
+    "boxNumber": 32,
+    "additionalCompatible": []
+  },
+  {
+    "modelName": "Oppo A3 5G",
+    "boxNumber": 32,
+    "additionalCompatible": []
+  },
+  {
+    "modelName": "Vivo Y19s",
+    "boxNumber": 32,
+    "additionalCompatible": []
+  },
+  {
+    "modelName": "Realme C767",
+    "boxNumber": 32,
+    "additionalCompatible": []
+  },
+  {
+    "modelName": "Vivo Y28",
+    "boxNumber": 32,
+    "additionalCompatible": []
+  },
+  {
+    "modelName": "Vivo Y19s Pro",
+    "boxNumber": 32,
+    "additionalCompatible": []
+  },
+  {
+    "modelName": "Realme 14x",
+    "boxNumber": 32,
+    "additionalCompatible": []
+  },
+  {
+    "modelName": "Vivo Y200+",
+    "boxNumber": 32,
+    "additionalCompatible": []
+  },
+  {
+    "modelName": "Vivo Y300i",
+    "boxNumber": 32,
+    "additionalCompatible": []
+  },
+  {
+    "modelName": "Vivo T4x",
+    "boxNumber": 32,
+    "additionalCompatible": []
+  },
+  {
+    "modelName": "Vivo Y300t",
+    "boxNumber": 32,
+    "additionalCompatible": []
+  },
+  {
+    "modelName": "Realme C75x",
+    "boxNumber": 32,
+    "additionalCompatible": []
+  },
+  {
+    "modelName": "Realme P3x",
+    "boxNumber": 32,
+    "additionalCompatible": []
+  },
+  {
+    "modelName": "Narzo 80x",
+    "boxNumber": 32,
+    "additionalCompatible": []
+  },
+  {
+    "modelName": "Oppo A6x",
+    "boxNumber": 32,
+    "additionalCompatible": []
+  },
+  {
+    "modelName": "Oppo A6",
+    "boxNumber": 32,
+    "additionalCompatible": []
+  },
+  {
+    "modelName": "Oppo A6 Pro",
+    "boxNumber": 32,
+    "additionalCompatible": []
+  },
+  {
+    "modelName": "Realme C71",
+    "boxNumber": 32,
+    "additionalCompatible": []
+  },
+  {
+    "modelName": "Realme C73",
+    "boxNumber": 32,
+    "additionalCompatible": []
+  },
+  {
+    "modelName": "Oppo K13x",
+    "boxNumber": 32,
+    "additionalCompatible": []
+  },
+  {
+    "modelName": "Vivo T2x 5G",
+    "boxNumber": 32,
+    "additionalCompatible": []
+  },
+  {
+    "modelName": "Vivo Y38",
+    "boxNumber": 32,
+    "additionalCompatible": []
+  },
+  {
+    "modelName": "Vivo Y68",
+    "boxNumber": 32,
+    "additionalCompatible": []
+  },
+  {
+    "modelName": "Narzo 80 Lite 5G",
+    "boxNumber": 32,
+    "additionalCompatible": []
+  },
+  {
+    "modelName": "Realme P3 Lite",
+    "boxNumber": 32,
+    "additionalCompatible": []
+  },
+  {
+    "modelName": "Vivo Y31 5G",
+    "boxNumber": 32,
+    "additionalCompatible": []
+  },
+  {
+    "modelName": "Vivo Y31 Pro 5G",
+    "boxNumber": 32,
+    "additionalCompatible": []
+  },
+  {
+    "modelName": "Narzo 53",
+    "boxNumber": 33,
+    "additionalCompatible": []
+  },
+  {
+    "modelName": "Realme C53",
+    "boxNumber": 33,
+    "additionalCompatible": []
+  },
+  {
+    "modelName": "Narzo N53",
+    "boxNumber": 33,
+    "additionalCompatible": []
+  },
+  {
+    "modelName": "Realme C51",
+    "boxNumber": 33,
+    "additionalCompatible": []
+  },
+  {
+    "modelName": "Realme Note 50",
+    "boxNumber": 33,
+    "additionalCompatible": []
+  },
+  {
+    "modelName": "Realme C53",
+    "boxNumber": 33,
+    "additionalCompatible": []
+  },
+  {
+    "modelName": "Realme Note 50X",
+    "boxNumber": 33,
+    "additionalCompatible": []
+  },
+  {
+    "modelName": "Samsung F14 5G",
+    "boxNumber": 33,
+    "additionalCompatible": []
+  },
+  {
+    "modelName": "Vivo Y19",
+    "boxNumber": 33,
+    "additionalCompatible": []
+  },
+  {
+    "modelName": "Samsung M14 4G",
+    "boxNumber": 33,
+    "additionalCompatible": []
+  },
+  {
+    "modelName": "Oppo A05s",
+    "boxNumber": 33,
+    "additionalCompatible": []
+  },
+  {
+    "modelName": "Vivo Y04",
+    "boxNumber": 33,
+    "additionalCompatible": []
+  },
+  {
+    "modelName": "Vivo Y29s",
+    "boxNumber": 33,
+    "additionalCompatible": []
+  },
+  {
+    "modelName": "Vivo Y19e",
+    "boxNumber": 33,
+    "additionalCompatible": []
+  },
+  {
+    "modelName": "Vivo T4 Lite",
+    "boxNumber": 33,
+    "additionalCompatible": []
+  },
+  {
+    "modelName": "Vivo Y50",
+    "boxNumber": 33,
+    "additionalCompatible": []
+  },
+  {
+    "modelName": "Vivo Y50x",
+    "boxNumber": 33,
+    "additionalCompatible": []
+  },
+  {
+    "modelName": "Narzo 50 Lite 4G",
+    "boxNumber": 33,
+    "additionalCompatible": []
+  },
+  {
+    "modelName": "Vivo Y29t",
+    "boxNumber": 33,
+    "additionalCompatible": []
+  },
+  {
+    "modelName": "Vivo Y04s",
+    "boxNumber": 33,
+    "additionalCompatible": []
+  },
+  {
+    "modelName": "Realme Note 70T",
+    "boxNumber": 33,
+    "additionalCompatible": []
+  },
+  {
+    "modelName": "Oppo A53",
+    "boxNumber": 34,
+    "additionalCompatible": []
+  },
+  {
+    "modelName": "Oppo A32",
+    "boxNumber": 34,
+    "additionalCompatible": []
+  },
+  {
+    "modelName": "Oppo A33",
+    "boxNumber": 34,
+    "additionalCompatible": []
+  },
+  {
+    "modelName": "Oppo A54 4G",
+    "boxNumber": 34,
+    "additionalCompatible": []
+  },
+  {
+    "modelName": "Oppo Q39",
+    "boxNumber": 34,
+    "additionalCompatible": []
+  },
+  {
+    "modelName": "Oppo A55 4G",
+    "boxNumber": 34,
+    "additionalCompatible": []
+  },
+  {
+    "modelName": "Oppo A36",
+    "boxNumber": 34,
+    "additionalCompatible": []
+  },
+  {
+    "modelName": "Oppo A96 4G",
+    "boxNumber": 34,
+    "additionalCompatible": []
+  },
+  {
+    "modelName": "Oppo K10",
+    "boxNumber": 34,
+    "additionalCompatible": []
+  },
+  {
+    "modelName": "Realme 7i",
+    "boxNumber": 34,
+    "additionalCompatible": []
+  },
+  {
+    "modelName": "Realme 8",
+    "boxNumber": 34,
+    "additionalCompatible": []
+  },
+  {
+    "modelName": "Realme 9i",
+    "boxNumber": 34,
+    "additionalCompatible": []
+  },
+  {
+    "modelName": "Realme 9 Pro",
+    "boxNumber": 34,
+    "additionalCompatible": []
+  },
+  {
+    "modelName": "Realme Y25",
+    "boxNumber": 34,
+    "additionalCompatible": [],
+    "type": "Flat"
+  },
+  {
+    "modelName": "Realme C17",
+    "boxNumber": 34,
+    "additionalCompatible": []
+  },
+  {
+    "modelName": "Realme Q5",
+    "boxNumber": 34,
+    "additionalCompatible": []
+  },
+  {
+    "modelName": "OnePlus Nord CE 2 Lite",
+    "boxNumber": 34,
+    "additionalCompatible": []
+  },
+  {
+    "modelName": "Oppo K10x",
+    "boxNumber": 34,
+    "additionalCompatible": []
+  },
+  {
+    "modelName": "Realme 6 Pro",
+    "boxNumber": 34,
+    "additionalCompatible": []
+  },
+  {
+    "modelName": "Realme X3",
+    "boxNumber": 34,
+    "additionalCompatible": []
+  },
+  {
+    "modelName": "Realme X3 SuperZoom",
+    "boxNumber": 34,
+    "additionalCompatible": []
+  },
+  {
+    "modelName": "Realme X50 5G",
+    "boxNumber": 34,
+    "additionalCompatible": []
+  },
+  {
+    "modelName": "Oppo Reno 4Z 5G",
+    "boxNumber": 34,
+    "additionalCompatible": []
+  },
+  {
+    "modelName": "Realme 9 5G",
+    "boxNumber": 34,
+    "additionalCompatible": []
+  },
+  {
+    "modelName": "Realme 9 5G Speed",
+    "boxNumber": 34,
+    "additionalCompatible": []
+  },
+  {
+    "modelName": "OnePlus Nord N100",
+    "boxNumber": 34,
+    "additionalCompatible": []
+  },
+  {
+    "modelName": "Oppo A76",
+    "boxNumber": 34,
+    "additionalCompatible": []
+  },
+  {
+    "modelName": "Oppo F11 Pro",
+    "boxNumber": 35,
+    "additionalCompatible": []
+  },
+  {
+    "modelName": "Oppo Reno 2Z",
+    "boxNumber": 35,
+    "additionalCompatible": []
+  },
+  {
+    "modelName": "Oppo Reno 2F",
+    "boxNumber": 35,
+    "additionalCompatible": []
+  },
+  {
+    "modelName": "Realme X",
+    "boxNumber": 35,
+    "additionalCompatible": []
+  },
+  {
+    "modelName": "Realme V5",
+    "boxNumber": 35,
+    "additionalCompatible": []
+  },
+  {
+    "modelName": "Realme 21 Pro",
+    "boxNumber": 35,
+    "additionalCompatible": []
+  },
+  {
+    "modelName": "Vivo Y30",
+    "boxNumber": 35,
+    "additionalCompatible": []
+  },
+  {
+    "modelName": "Vivo Y50",
+    "boxNumber": 35,
+    "additionalCompatible": []
+  },
+  {
+    "modelName": "Vivo Y50T",
+    "boxNumber": 35,
+    "additionalCompatible": []
+  },
+  {
+    "modelName": "Vivo Y70s",
+    "boxNumber": 35,
+    "additionalCompatible": []
+  },
+  {
+    "modelName": "Vivo Y70T",
+    "boxNumber": 35,
+    "additionalCompatible": []
+  },
+  {
+    "modelName": "Vivo Y51s 5G",
+    "boxNumber": 35,
+    "additionalCompatible": []
+  },
+  {
+    "modelName": "Redmi Note 9T",
+    "boxNumber": 35,
+    "additionalCompatible": []
+  },
+  {
+    "modelName": "Redmi Note 9",
+    "boxNumber": 35,
+    "additionalCompatible": []
+  },
+  {
+    "modelName": "Redmi Note 9 5G",
+    "boxNumber": 35,
+    "additionalCompatible": []
+  },
+  {
+    "modelName": "Redmi 10X 4G",
+    "boxNumber": 35,
+    "additionalCompatible": []
+  },
+  {
+    "modelName": "Motorola G52",
+    "boxNumber": 35,
+    "additionalCompatible": []
+  },
+  {
+    "modelName": "Motorola G71s",
+    "boxNumber": 35,
+    "additionalCompatible": []
+  },
+  {
+    "modelName": "Motorola G82",
+    "boxNumber": 35,
+    "additionalCompatible": []
+  },
+  {
+    "modelName": "Motorola G72",
+    "boxNumber": 35,
+    "additionalCompatible": []
+  },
+  {
+    "modelName": "Oppo A1k",
+    "boxNumber": 36,
+    "additionalCompatible": []
+  },
+  {
+    "modelName": "Realme C2",
+    "boxNumber": 36,
+    "additionalCompatible": []
+  },
+  {
+    "modelName": "Realme C2s",
+    "boxNumber": 36,
+    "additionalCompatible": []
+  },
+  {
+    "modelName": "OnePlus 10R",
+    "boxNumber": 37,
+    "additionalCompatible": []
+  },
+  {
+    "modelName": "OnePlus Ace",
+    "boxNumber": 37,
+    "additionalCompatible": []
+  },
+  {
+    "modelName": "OnePlus 10T",
+    "boxNumber": 37,
+    "additionalCompatible": []
+  },
+  {
+    "modelName": "OnePlus Ace Pro",
+    "boxNumber": 37,
+    "additionalCompatible": []
+  },
+  {
+    "modelName": "Realme GT Neo 3",
+    "boxNumber": 37,
+    "additionalCompatible": []
+  },
+  {
+    "modelName": "Realme GT Neo 3 150W",
+    "boxNumber": 37,
+    "additionalCompatible": []
+  },
+  {
+    "modelName": "Realme GT 2 Pro",
+    "boxNumber": 37,
+    "additionalCompatible": []
+  },
+  {
+    "modelName": "iQOO 9 SE",
+    "boxNumber": 37,
+    "additionalCompatible": []
+  },
+  {
+    "modelName": "iQOO 7 5G",
+    "boxNumber": 37,
+    "additionalCompatible": []
+  },
+  {
+    "modelName": "iQOO Neo 6",
+    "boxNumber": 37,
+    "additionalCompatible": []
+  },
+  {
+    "modelName": "iQOO Neo 6 SE",
+    "boxNumber": 37,
+    "additionalCompatible": []
+  },
+  {
+    "modelName": "iQOO Neo 5",
+    "boxNumber": 37,
+    "additionalCompatible": []
+  },
+  {
+    "modelName": "iQOO Neo 5s",
+    "boxNumber": 37,
+    "additionalCompatible": []
+  },
+  {
+    "modelName": "Vivo S16e",
+    "boxNumber": 37,
+    "additionalCompatible": []
+  },
+  {
+    "modelName": "Vivo V27e",
+    "boxNumber": 37,
+    "additionalCompatible": []
+  },
+  {
+    "modelName": "Redmi K60",
+    "boxNumber": 37,
+    "additionalCompatible": []
+  },
+  {
+    "modelName": "Redmi K60 Pro",
+    "boxNumber": 37,
+    "additionalCompatible": []
+  },
+  {
+    "modelName": "Poco F5 Pro",
+    "boxNumber": 37,
+    "additionalCompatible": []
+  },
+  {
+    "modelName": "Redmi 14C",
+    "boxNumber": 38,
+    "additionalCompatible": [
+      "Redmi 13C 4G",
+      "Redmi 13C 5G",
+      "Redmi A3",
+      "Redmi A3x",
+      "Poco C65",
+      "Poco C61",
+      "Poco M6 5G"
+    ]
+  },
+  {
+    "modelName": "Redmi A4",
+    "boxNumber": 38,
+    "additionalCompatible": [
+      "Redmi 13C 4G",
+      "Redmi 13C 5G",
+      "Redmi A3",
+      "Redmi A3x",
+      "Poco C65",
+      "Poco C61",
+      "Poco M6 5G"
+    ]
+  },
+  {
+    "modelName": "Redmi A5 4G",
+    "boxNumber": 38,
+    "additionalCompatible": [
+      "Redmi 13C 4G",
+      "Redmi 13C 5G",
+      "Redmi A3",
+      "Redmi A3x",
+      "Poco C65",
+      "Poco C61",
+      "Poco M6 5G"
+    ]
+  },
+  {
+    "modelName": "Redmi Note 14R",
+    "boxNumber": 38,
+    "additionalCompatible": [
+      "Redmi 13C 4G",
+      "Redmi 13C 5G",
+      "Redmi A3",
+      "Redmi A3x",
+      "Poco C65",
+      "Poco C61",
+      "Poco M6 5G"
+    ]
+  },
+  {
+    "modelName": "Poco C71",
+    "boxNumber": 38,
+    "additionalCompatible": [
+      "Redmi 13C 4G",
+      "Redmi 13C 5G",
+      "Redmi A3",
+      "Redmi A3x",
+      "Poco C65",
+      "Poco C61",
+      "Poco M6 5G"
+    ]
+  },
+  {
+    "modelName": "Poco C75",
+    "boxNumber": 38,
+    "additionalCompatible": [
+      "Redmi 13C 4G",
+      "Redmi 13C 5G",
+      "Redmi A3",
+      "Redmi A3x",
+      "Poco C65",
+      "Poco C61",
+      "Poco M6 5G"
+    ]
+  },
+  {
+    "modelName": "Poco M7",
+    "boxNumber": 38,
+    "additionalCompatible": [
+      "Redmi 13C 4G",
+      "Redmi 13C 5G",
+      "Redmi A3",
+      "Redmi A3x",
+      "Poco C65",
+      "Poco C61",
+      "Poco M6 5G"
+    ]
+  },
+  {
+    "modelName": "Redmi 13C 4G (Compatible)",
+    "boxNumber": 38,
+    "additionalCompatible": [
+      "Redmi 13C 4G",
+      "Redmi 13C 5G",
+      "Redmi A3",
+      "Redmi A3x",
+      "Poco C65",
+      "Poco C61",
+      "Poco M6 5G"
+    ]
+  },
+  {
+    "modelName": "Redmi 13C 5G (Compatible)",
+    "boxNumber": 38,
+    "additionalCompatible": [
+      "Redmi 13C 4G",
+      "Redmi 13C 5G",
+      "Redmi A3",
+      "Redmi A3x",
+      "Poco C65",
+      "Poco C61",
+      "Poco M6 5G"
+    ]
+  },
+  {
+    "modelName": "Redmi A3 (Compatible)",
+    "boxNumber": 38,
+    "additionalCompatible": [
+      "Redmi 13C 4G",
+      "Redmi 13C 5G",
+      "Redmi A3",
+      "Redmi A3x",
+      "Poco C65",
+      "Poco C61",
+      "Poco M6 5G"
+    ]
+  },
+  {
+    "modelName": "Redmi A3x (Compatible)",
+    "boxNumber": 38,
+    "additionalCompatible": [
+      "Redmi 13C 4G",
+      "Redmi 13C 5G",
+      "Redmi A3",
+      "Redmi A3x",
+      "Poco C65",
+      "Poco C61",
+      "Poco M6 5G"
+    ]
+  },
+  {
+    "modelName": "Poco C65 (Compatible)",
+    "boxNumber": 38,
+    "additionalCompatible": [
+      "Redmi 13C 4G",
+      "Redmi 13C 5G",
+      "Redmi A3",
+      "Redmi A3x",
+      "Poco C65",
+      "Poco C61",
+      "Poco M6 5G"
+    ]
+  },
+  {
+    "modelName": "Poco C61 (Compatible)",
+    "boxNumber": 38,
+    "additionalCompatible": [
+      "Redmi 13C 4G",
+      "Redmi 13C 5G",
+      "Redmi A3",
+      "Redmi A3x",
+      "Poco C65",
+      "Poco C61",
+      "Poco M6 5G"
+    ]
+  },
+  {
+    "modelName": "Poco M6 5G (Compatible)",
+    "boxNumber": 38,
+    "additionalCompatible": [
+      "Redmi 13C 4G",
+      "Redmi 13C 5G",
+      "Redmi A3",
+      "Redmi A3x",
+      "Poco C65",
+      "Poco C61",
+      "Poco M6 5G"
+    ]
+  },
+  {
+    "modelName": "OnePlus Nord 5",
+    "boxNumber": 39,
+    "additionalCompatible": []
+  },
+  {
+    "modelName": "OnePlus Nord CE5",
+    "boxNumber": 39,
+    "additionalCompatible": []
+  },
+  {
+    "modelName": "Realme 15x",
+    "boxNumber": 39,
+    "additionalCompatible": []
+  },
+  {
+    "modelName": "Oppo A6x 5G",
+    "boxNumber": 40,
+    "additionalCompatible": []
+  },
+  {
+    "modelName": "Realme 6",
+    "boxNumber": 41,
+    "additionalCompatible": []
+  },
+  {
+    "modelName": "Realme 6i India",
+    "boxNumber": 41,
+    "additionalCompatible": []
+  },
+  {
+    "modelName": "Realme 6s",
+    "boxNumber": 41,
+    "additionalCompatible": []
+  },
+  {
+    "modelName": "Realme 7",
+    "boxNumber": 41,
+    "additionalCompatible": []
+  },
+  {
+    "modelName": "Realme 8 5G",
+    "boxNumber": 41,
+    "additionalCompatible": []
+  },
+  {
+    "modelName": "Realme 8s 5G",
+    "boxNumber": 41,
+    "additionalCompatible": []
+  },
+  {
+    "modelName": "Realme 9 5G India",
+    "boxNumber": 41,
+    "additionalCompatible": []
+  },
+  {
+    "modelName": "Narzo 20 Pro",
+    "boxNumber": 41,
+    "additionalCompatible": []
+  },
+  {
+    "modelName": "Narzo 30",
+    "boxNumber": 41,
+    "additionalCompatible": []
+  },
+  {
+    "modelName": "Narzo 30 Pro",
+    "boxNumber": 41,
+    "additionalCompatible": []
+  },
+  {
+    "modelName": "Realme V5 5G",
+    "boxNumber": 41,
+    "additionalCompatible": []
+  },
+  {
+    "modelName": "Realme V13 5G",
+    "boxNumber": 41,
+    "additionalCompatible": []
+  },
+  {
+    "modelName": "Realme Q2",
+    "boxNumber": 41,
+    "additionalCompatible": []
+  },
+  {
+    "modelName": "Realme Q3 5G",
+    "boxNumber": 41,
+    "additionalCompatible": []
+  },
+  {
+    "modelName": "Realme Q3i 5G",
+    "boxNumber": 41,
+    "additionalCompatible": []
+  },
+  {
+    "modelName": "Realme K7x 5G",
+    "boxNumber": 41,
+    "additionalCompatible": []
+  },
+  {
+    "modelName": "Realme K9x 5G",
+    "boxNumber": 41,
+    "additionalCompatible": []
+  },
+  {
+    "modelName": "Oppo A52",
+    "boxNumber": 41,
+    "additionalCompatible": []
+  },
+  {
+    "modelName": "Oppo A53 5G",
+    "boxNumber": 41,
+    "additionalCompatible": []
+  },
+  {
+    "modelName": "Oppo A54 5G",
+    "boxNumber": 41,
+    "additionalCompatible": []
+  },
+  {
+    "modelName": "Oppo A72 4G",
+    "boxNumber": 41,
+    "additionalCompatible": []
+  },
+  {
+    "modelName": "Oppo A72 5G",
+    "boxNumber": 41,
+    "additionalCompatible": []
+  },
+  {
+    "modelName": "Oppo A73 5G",
+    "boxNumber": 41,
+    "additionalCompatible": []
+  },
+  {
+    "modelName": "Oppo A74 5G",
+    "boxNumber": 41,
+    "additionalCompatible": []
+  },
+  {
+    "modelName": "Oppo A92",
+    "boxNumber": 41,
+    "additionalCompatible": []
+  },
+  {
+    "modelName": "Oppo A93 5G",
+    "boxNumber": 41,
+    "additionalCompatible": []
+  },
+  {
+    "modelName": "Oppo A93s 5G",
+    "boxNumber": 41,
+    "additionalCompatible": []
+  },
+  {
+    "modelName": "Samsung A11",
+    "boxNumber": 41,
+    "additionalCompatible": []
+  },
+  {
+    "modelName": "Samsung M11",
+    "boxNumber": 41,
+    "additionalCompatible": []
+  },
+  {
+    "modelName": "Oppo Reno 6",
+    "boxNumber": 42,
+    "additionalCompatible": []
+  },
+  {
+    "modelName": "Oppo Reno 5 4G",
+    "boxNumber": 42,
+    "additionalCompatible": []
+  },
+  {
+    "modelName": "Oppo Reno 5 5G",
+    "boxNumber": 42,
+    "additionalCompatible": []
+  },
+  {
+    "modelName": "Oppo Reno 5K",
+    "boxNumber": 42,
+    "additionalCompatible": []
+  },
+  {
+    "modelName": "Realme GT 5G",
+    "boxNumber": 42,
+    "additionalCompatible": []
+  },
+  {
+    "modelName": "Realme GT Master",
+    "boxNumber": 42,
+    "additionalCompatible": []
+  },
+  {
+    "modelName": "Realme GT Neo",
+    "boxNumber": 42,
+    "additionalCompatible": []
+  },
+  {
+    "modelName": "Realme GT Neo Flash",
+    "boxNumber": 42,
+    "additionalCompatible": []
+  },
+  {
+    "modelName": "Realme GT Neo2T",
+    "boxNumber": 42,
+    "additionalCompatible": []
+  },
+  {
+    "modelName": "Realme Q3 Pro 5G",
+    "boxNumber": 42,
+    "additionalCompatible": []
+  },
+  {
+    "modelName": "Realme X7 Max 5G",
+    "boxNumber": 42,
+    "additionalCompatible": []
+  },
+  {
+    "modelName": "OnePlus Nord CE 5G",
+    "boxNumber": 42,
+    "additionalCompatible": []
+  },
+  {
+    "modelName": "OnePlus Nord 2 5G",
+    "boxNumber": 42,
+    "additionalCompatible": []
+  },
+  {
+    "modelName": "OnePlus Nord 2T 5G",
+    "boxNumber": 42,
+    "additionalCompatible": []
+  },
+  {
+    "modelName": "OnePlus Nord",
+    "boxNumber": 42,
+    "additionalCompatible": []
+  },
+  {
+    "modelName": "Oppo K9 5G",
+    "boxNumber": 42,
+    "additionalCompatible": []
+  },
+  {
+    "modelName": "Realme Q3 Pro Carnival",
+    "boxNumber": 42,
+    "additionalCompatible": []
+  },
+  {
+    "modelName": "Oppo Find X3 Lite",
+    "boxNumber": 42,
+    "additionalCompatible": []
+  },
+  {
+    "modelName": "Oppo Reno 7 5G China",
+    "boxNumber": 42,
+    "additionalCompatible": []
+  },
+  {
+    "modelName": "Realme 5",
+    "boxNumber": 43,
+    "additionalCompatible": []
+  },
+  {
+    "modelName": "Realme 5i",
+    "boxNumber": 43,
+    "additionalCompatible": []
+  },
+  {
+    "modelName": "Realme 5s",
+    "boxNumber": 43,
+    "additionalCompatible": []
+  },
+  {
+    "modelName": "Realme 6i Global",
+    "boxNumber": 43,
+    "additionalCompatible": []
+  },
+  {
+    "modelName": "Realme 7i Global",
+    "boxNumber": 43,
+    "additionalCompatible": []
+  },
+  {
+    "modelName": "Realme 9i 5G",
+    "boxNumber": 43,
+    "additionalCompatible": []
+  },
+  {
+    "modelName": "Realme 10 5G",
+    "boxNumber": 43,
+    "additionalCompatible": []
+  },
+  {
+    "modelName": "Realme 10s",
+    "boxNumber": 43,
+    "additionalCompatible": []
+  },
+  {
+    "modelName": "Realme 10T",
+    "boxNumber": 43,
+    "additionalCompatible": []
+  },
+  {
+    "modelName": "Poco M6 4G",
+    "boxNumber": 44,
+    "additionalCompatible": [
+      "Redmi Note 13 4G",
+      "Redmi Note 13 5G",
+      "Poco X6 Neo"
+    ]
+  },
+  {
+    "modelName": "Poco M6 Pro 5G",
+    "boxNumber": 44,
+    "additionalCompatible": [
+      "Redmi Note 13 4G",
+      "Redmi Note 13 5G",
+      "Poco X6 Neo"
+    ]
+  },
+  {
+    "modelName": "Poco M6 Plus 5G",
+    "boxNumber": 44,
+    "additionalCompatible": [
+      "Redmi Note 13 4G",
+      "Redmi Note 13 5G",
+      "Poco X6 Neo"
+    ]
+  },
+  {
+    "modelName": "Redmi 12 4G",
+    "boxNumber": 44,
+    "additionalCompatible": [
+      "Redmi Note 13 4G",
+      "Redmi Note 13 5G",
+      "Poco X6 Neo"
+    ]
+  },
+  {
+    "modelName": "Redmi 12 5G",
+    "boxNumber": 44,
+    "additionalCompatible": [
+      "Redmi Note 13 4G",
+      "Redmi Note 13 5G",
+      "Poco X6 Neo"
+    ]
+  },
+  {
+    "modelName": "Redmi Note 12R",
+    "boxNumber": 44,
+    "additionalCompatible": [
+      "Redmi Note 13 4G",
+      "Redmi Note 13 5G",
+      "Poco X6 Neo"
+    ]
+  },
+  {
+    "modelName": "Redmi Note 13R",
+    "boxNumber": 44,
+    "additionalCompatible": [
+      "Redmi Note 13 4G",
+      "Redmi Note 13 5G",
+      "Poco X6 Neo"
+    ]
+  },
+  {
+    "modelName": "Redmi 13 4G",
+    "boxNumber": 44,
+    "additionalCompatible": [
+      "Redmi Note 13 4G",
+      "Redmi Note 13 5G",
+      "Poco X6 Neo"
+    ]
+  },
+  {
+    "modelName": "Redmi 13 5G",
+    "boxNumber": 44,
+    "additionalCompatible": [
+      "Redmi Note 13 4G",
+      "Redmi Note 13 5G",
+      "Poco X6 Neo"
+    ]
+  },
+  {
+    "modelName": "Redmi 13X",
+    "boxNumber": 44,
+    "additionalCompatible": [
+      "Redmi Note 13 4G",
+      "Redmi Note 13 5G",
+      "Poco X6 Neo"
+    ]
+  },
+  {
+    "modelName": "Redmi Note 13 4G (Compatible)",
+    "boxNumber": 44,
+    "additionalCompatible": [
+      "Redmi Note 13 4G",
+      "Redmi Note 13 5G",
+      "Poco X6 Neo"
+    ]
+  },
+  {
+    "modelName": "Redmi Note 13 5G (Compatible)",
+    "boxNumber": 44,
+    "additionalCompatible": [
+      "Redmi Note 13 4G",
+      "Redmi Note 13 5G",
+      "Poco X6 Neo"
+    ]
+  },
+  {
+    "modelName": "Poco X6 Neo (Compatible)",
+    "boxNumber": 44,
+    "additionalCompatible": [
+      "Redmi Note 13 4G",
+      "Redmi Note 13 5G",
+      "Poco X6 Neo"
+    ]
+  },
+  {
+    "modelName": "Oppo F25",
+    "boxNumber": 45,
+    "additionalCompatible": []
+  },
+  {
+    "modelName": "Oppo F25 Pro",
+    "boxNumber": 45,
+    "additionalCompatible": []
+  },
+  {
+    "modelName": "Oppo Reno 8 Pro 5G",
+    "boxNumber": 45,
+    "additionalCompatible": []
+  },
+  {
+    "modelName": "OnePlus 9RT",
+    "boxNumber": 45,
+    "additionalCompatible": []
+  },
+  {
+    "modelName": "Oppo Reno 8 Pro Plus 5G",
+    "boxNumber": 45,
+    "additionalCompatible": []
+  },
+  {
+    "modelName": "Oppo Reno 11F",
+    "boxNumber": 45,
+    "additionalCompatible": []
+  },
+  {
+    "modelName": "Realme P1 Speed",
+    "boxNumber": 45,
+    "additionalCompatible": []
+  },
+  {
+    "modelName": "Motorola G13",
+    "boxNumber": 45,
+    "additionalCompatible": []
+  },
+  {
+    "modelName": "Motorola G23",
+    "boxNumber": 45,
+    "additionalCompatible": []
+  },
+  {
+    "modelName": "Motorola G53",
+    "boxNumber": 45,
+    "additionalCompatible": []
+  },
+  {
+    "modelName": "Motorola G54",
+    "boxNumber": 45,
+    "additionalCompatible": []
+  },
+  {
+    "modelName": "Motorola G45",
+    "boxNumber": 45,
+    "additionalCompatible": []
+  },
+  {
+    "modelName": "Samsung A37",
+    "boxNumber": 45,
+    "additionalCompatible": []
+  },
+  {
+    "modelName": "Motorola G85",
+    "boxNumber": 45,
+    "additionalCompatible": []
+  },
+  {
+    "modelName": "Motorola G85 Power",
+    "boxNumber": 45,
+    "additionalCompatible": []
+  },
+  {
+    "modelName": "Realme 15 Lite",
+    "boxNumber": 45,
+    "additionalCompatible": []
+  },
+  {
+    "modelName": "Redmi 9A",
+    "boxNumber": 46,
+    "additionalCompatible": []
+  },
+  {
+    "modelName": "Redmi 9C",
+    "boxNumber": 46,
+    "additionalCompatible": []
+  },
+  {
+    "modelName": "Redmi 9i",
+    "boxNumber": 46,
+    "additionalCompatible": []
+  },
+  {
+    "modelName": "Redmi 9 India",
+    "boxNumber": 46,
+    "additionalCompatible": []
+  },
+  {
+    "modelName": "Poco C3",
+    "boxNumber": 46,
+    "additionalCompatible": []
+  },
+  {
+    "modelName": "Poco C31",
+    "boxNumber": 46,
+    "additionalCompatible": []
+  },
+  {
+    "modelName": "Redmi 10A",
+    "boxNumber": 46,
+    "additionalCompatible": []
+  },
+  {
+    "modelName": "Samsung F13",
+    "boxNumber": 46,
+    "additionalCompatible": []
+  },
+  {
+    "modelName": "Samsung M13",
+    "boxNumber": 46,
+    "additionalCompatible": []
+  },
+  {
+    "modelName": "Samsung A23",
+    "boxNumber": 46,
+    "additionalCompatible": []
+  },
+  {
+    "modelName": "Samsung A13",
+    "boxNumber": 46,
+    "additionalCompatible": []
+  },
+  {
+    "modelName": "Realme C3",
+    "boxNumber": 46,
+    "additionalCompatible": []
+  },
+  {
+    "modelName": "Oppo F23 5G",
+    "boxNumber": 46,
+    "additionalCompatible": []
+  },
+  {
+    "modelName": "Nokia C20",
+    "boxNumber": 46,
+    "additionalCompatible": []
+  },
+  {
+    "modelName": "Nokia C21",
+    "boxNumber": 46,
+    "additionalCompatible": []
+  },
+  {
+    "modelName": "Nokia C2",
+    "boxNumber": 46,
+    "additionalCompatible": []
+  },
+  {
+    "modelName": "Nokia C23",
+    "boxNumber": 46,
+    "additionalCompatible": []
+  },
+  {
+    "modelName": "Nokia C13",
+    "boxNumber": 46,
+    "additionalCompatible": []
+  },
+  {
+    "modelName": "Motorola E13",
+    "boxNumber": 46,
+    "additionalCompatible": []
+  },
+  {
+    "modelName": "Redmi 10C",
+    "boxNumber": 47,
+    "additionalCompatible": []
+  },
+  {
+    "modelName": "Redmi 10",
+    "boxNumber": 47,
+    "additionalCompatible": []
+  },
+  {
+    "modelName": "Redmi 12C",
+    "boxNumber": 47,
+    "additionalCompatible": []
+  },
+  {
+    "modelName": "Redmi 10 Power",
+    "boxNumber": 47,
+    "additionalCompatible": []
+  },
+  {
+    "modelName": "Poco C55",
+    "boxNumber": 47,
+    "additionalCompatible": []
+  },
+  {
+    "modelName": "Poco C40",
+    "boxNumber": 47,
+    "additionalCompatible": []
+  },
+  {
+    "modelName": "Poco C61",
+    "boxNumber": 47,
+    "additionalCompatible": []
+  },
+  {
+    "modelName": "Redmi A3 2024",
+    "boxNumber": 47,
+    "additionalCompatible": []
+  },
+  {
+    "modelName": "Redmi A3x",
+    "boxNumber": 47,
+    "additionalCompatible": []
+  },
+  {
+    "modelName": "Oppo F19",
+    "boxNumber": 48,
+    "additionalCompatible": []
+  },
+  {
+    "modelName": "Oppo F19s",
+    "boxNumber": 48,
+    "additionalCompatible": []
+  },
+  {
+    "modelName": "Oppo F19 Pro",
+    "boxNumber": 48,
+    "additionalCompatible": []
+  },
+  {
+    "modelName": "Oppo F19 Pro Plus 5G",
+    "boxNumber": 48,
+    "additionalCompatible": []
+  },
+  {
+    "modelName": "Oppo F21 Pro 4G",
+    "boxNumber": 48,
+    "additionalCompatible": []
+  },
+  {
+    "modelName": "Oppo F21 Pro 5G",
+    "boxNumber": 48,
+    "additionalCompatible": []
+  },
+  {
+    "modelName": "Oppo F21s Pro 4G",
+    "boxNumber": 48,
+    "additionalCompatible": []
+  },
+  {
+    "modelName": "Oppo F21s Pro 5G",
+    "boxNumber": 48,
+    "additionalCompatible": []
+  },
+  {
+    "modelName": "Oppo A74 4G",
+    "boxNumber": 48,
+    "additionalCompatible": []
+  },
+  {
+    "modelName": "Oppo A93",
+    "boxNumber": 48,
+    "additionalCompatible": []
+  },
+  {
+    "modelName": "Oppo A94 4G",
+    "boxNumber": 48,
+    "additionalCompatible": []
+  },
+  {
+    "modelName": "Oppo A94 5G",
+    "boxNumber": 48,
+    "additionalCompatible": []
+  },
+  {
+    "modelName": "Oppo A95 4G",
+    "boxNumber": 48,
+    "additionalCompatible": []
+  },
+  {
+    "modelName": "Oppo A95 5G",
+    "boxNumber": 48,
+    "additionalCompatible": []
+  },
+  {
+    "modelName": "Nothing Phone 2a",
+    "boxNumber": 49,
+    "additionalCompatible": []
+  },
+  {
+    "modelName": "Nothing Phone 2a Plus",
+    "boxNumber": 49,
+    "additionalCompatible": []
+  },
+  {
+    "modelName": "Redmi 15C 4G",
+    "boxNumber": 50,
+    "additionalCompatible": []
+  },
+  {
+    "modelName": "Redmi K20",
+    "boxNumber": 51,
+    "additionalCompatible": [
+      "Xiaomi Mi 9T",
+      "Xiaomi Mi 9T Pro"
+    ]
+  },
+  {
+    "modelName": "Redmi K20 Pro",
+    "boxNumber": 51,
+    "additionalCompatible": [
+      "Xiaomi Mi 9T",
+      "Xiaomi Mi 9T Pro"
+    ]
+  },
+  {
+    "modelName": "Vivo V15 Pro",
+    "boxNumber": 51,
+    "additionalCompatible": [
+      "Xiaomi Mi 9T",
+      "Xiaomi Mi 9T Pro"
+    ]
+  },
+  {
+    "modelName": "Samsung S21 FE",
+    "boxNumber": 51,
+    "additionalCompatible": [
+      "Xiaomi Mi 9T",
+      "Xiaomi Mi 9T Pro"
+    ]
+  },
+  {
+    "modelName": "Xiaomi Mi 9T (Compatible)",
+    "boxNumber": 51,
+    "additionalCompatible": [
+      "Xiaomi Mi 9T",
+      "Xiaomi Mi 9T Pro"
+    ]
+  },
+  {
+    "modelName": "Xiaomi Mi 9T Pro (Compatible)",
+    "boxNumber": 51,
+    "additionalCompatible": [
+      "Xiaomi Mi 9T",
+      "Xiaomi Mi 9T Pro"
+    ]
+  },
+  {
+    "modelName": "OnePlus 13R",
+    "boxNumber": 52,
+    "additionalCompatible": [
+      "OnePlus Ace 3",
+      "OnePlus Ace 3 Pro"
+    ]
+  },
+  {
+    "modelName": "OnePlus Ace 5",
+    "boxNumber": 52,
+    "additionalCompatible": [
+      "OnePlus Ace 3",
+      "OnePlus Ace 3 Pro"
+    ]
+  },
+  {
+    "modelName": "OnePlus Ace 5 Pro",
+    "boxNumber": 52,
+    "additionalCompatible": [
+      "OnePlus Ace 3",
+      "OnePlus Ace 3 Pro"
+    ]
+  },
+  {
+    "modelName": "Realme Neo7",
+    "boxNumber": 52,
+    "additionalCompatible": [
+      "OnePlus Ace 3",
+      "OnePlus Ace 3 Pro"
+    ]
+  },
+  {
+    "modelName": "OnePlus Ace 3 (Compatible)",
+    "boxNumber": 52,
+    "additionalCompatible": [
+      "OnePlus Ace 3",
+      "OnePlus Ace 3 Pro"
+    ]
+  },
+  {
+    "modelName": "OnePlus Ace 3 Pro (Compatible)",
+    "boxNumber": 52,
+    "additionalCompatible": [
+      "OnePlus Ace 3",
+      "OnePlus Ace 3 Pro"
+    ]
+  },
+  {
+    "modelName": "Vivo Y11",
+    "boxNumber": 53,
+    "additionalCompatible": []
+  },
+  {
+    "modelName": "Vivo Y12",
+    "boxNumber": 53,
+    "additionalCompatible": []
+  },
+  {
+    "modelName": "Vivo Y15",
+    "boxNumber": 53,
+    "additionalCompatible": []
+  },
+  {
+    "modelName": "Vivo Y17",
+    "boxNumber": 53,
+    "additionalCompatible": []
+  },
+  {
+    "modelName": "Vivo Y3",
+    "boxNumber": 53,
+    "additionalCompatible": []
+  },
+  {
+    "modelName": "Vivo U10",
+    "boxNumber": 53,
+    "additionalCompatible": []
+  },
+  {
+    "modelName": "Realme 9 Prime",
+    "boxNumber": 54,
+    "additionalCompatible": []
+  },
+  {
+    "modelName": "Poco M2",
+    "boxNumber": 54,
+    "additionalCompatible": []
+  },
+  {
+    "modelName": "Samsung A20s",
+    "boxNumber": 54,
+    "additionalCompatible": []
+  },
+  {
+    "modelName": "Realme 9 Power",
+    "boxNumber": 54,
+    "additionalCompatible": []
+  },
+  {
+    "modelName": "Poco M3",
+    "boxNumber": 54,
+    "additionalCompatible": []
+  },
+  {
+    "modelName": "Realme 9T",
+    "boxNumber": 54,
+    "additionalCompatible": []
+  },
+  {
+    "modelName": "Realme 9",
+    "boxNumber": 54,
+    "additionalCompatible": []
+  },
+  {
+    "modelName": "Infinix Hot 10",
+    "boxNumber": 55,
+    "additionalCompatible": []
+  },
+  {
+    "modelName": "Tecno Spark 6",
+    "boxNumber": 55,
+    "additionalCompatible": []
+  },
+  {
+    "modelName": "Tecno Camon 16",
+    "boxNumber": 55,
+    "additionalCompatible": []
+  },
+  {
+    "modelName": "Infinix Hot 12",
+    "boxNumber": 55,
+    "additionalCompatible": []
+  },
+  {
+    "modelName": "Tecno Pova",
+    "boxNumber": 55,
+    "additionalCompatible": []
+  },
+  {
+    "modelName": "Tecno Camon 16 Pro",
+    "boxNumber": 55,
+    "additionalCompatible": []
+  },
+  {
+    "modelName": "Infinix Hot 12 Play",
+    "boxNumber": 55,
+    "additionalCompatible": []
+  },
+  {
+    "modelName": "Infinix Hot 20",
+    "boxNumber": 55,
+    "additionalCompatible": []
+  },
+  {
+    "modelName": "Infinix Hot 20 Play",
+    "boxNumber": 55,
+    "additionalCompatible": []
+  },
+  {
+    "modelName": "Infinix Hot 30 Play",
+    "boxNumber": 55,
+    "additionalCompatible": []
+  },
+  {
+    "modelName": "Motorola G40",
+    "boxNumber": 55,
+    "additionalCompatible": []
+  },
+  {
+    "modelName": "Motorola G60",
+    "boxNumber": 55,
+    "additionalCompatible": []
+  },
+  {
+    "modelName": "Motorola G51",
+    "boxNumber": 55,
+    "additionalCompatible": []
+  },
+  {
+    "modelName": "Oppo F17",
+    "boxNumber": 56,
+    "additionalCompatible": []
+  },
+  {
+    "modelName": "Oppo F15",
+    "boxNumber": 56,
+    "additionalCompatible": []
+  },
+  {
+    "modelName": "Oppo A73 2020",
+    "boxNumber": 56,
+    "additionalCompatible": []
+  },
+  {
+    "modelName": "Oppo A91",
+    "boxNumber": 56,
+    "additionalCompatible": []
+  },
+  {
+    "modelName": "Vivo S6",
+    "boxNumber": 56,
+    "additionalCompatible": []
+  },
+  {
+    "modelName": "Vivo G1",
+    "boxNumber": 56,
+    "additionalCompatible": []
+  },
+  {
+    "modelName": "Vivo V20",
+    "boxNumber": 56,
+    "additionalCompatible": []
+  },
+  {
+    "modelName": "Vivo V20 SE",
+    "boxNumber": 56,
+    "additionalCompatible": []
+  },
+  {
+    "modelName": "Vivo V21",
+    "boxNumber": 56,
+    "additionalCompatible": []
+  },
+  {
+    "modelName": "Vivo V21 5G",
+    "boxNumber": 56,
+    "additionalCompatible": []
+  },
+  {
+    "modelName": "Vivo V21e 4G",
+    "boxNumber": 56,
+    "additionalCompatible": []
+  },
+  {
+    "modelName": "Vivo V21s",
+    "boxNumber": 56,
+    "additionalCompatible": []
+  },
+  {
+    "modelName": "Vivo V23e",
+    "boxNumber": 56,
+    "additionalCompatible": []
+  },
+  {
+    "modelName": "Vivo V25e",
+    "boxNumber": 56,
+    "additionalCompatible": []
+  },
+  {
+    "modelName": "Oppo Reno 3",
+    "boxNumber": 56,
+    "additionalCompatible": []
+  },
+  {
+    "modelName": "Infinix Hot 9 Play",
+    "boxNumber": 57,
+    "additionalCompatible": []
+  },
+  {
+    "modelName": "Infinix Hot 10 Play",
+    "boxNumber": 57,
+    "additionalCompatible": []
+  },
+  {
+    "modelName": "Infinix Hot 10T",
+    "boxNumber": 57,
+    "additionalCompatible": []
+  },
+  {
+    "modelName": "Infinix Hot 11 Play",
+    "boxNumber": 57,
+    "additionalCompatible": []
+  },
+  {
+    "modelName": "Infinix Hot 10s",
+    "boxNumber": 57,
+    "additionalCompatible": []
+  },
+  {
+    "modelName": "Infinix Smart 4 Plus",
+    "boxNumber": 57,
+    "additionalCompatible": []
+  },
+  {
+    "modelName": "Infinix Smart 5",
+    "boxNumber": 57,
+    "additionalCompatible": []
+  },
+  {
+    "modelName": "Vivo Y11",
+    "boxNumber": 58,
+    "additionalCompatible": []
+  },
+  {
+    "modelName": "Vivo Y12",
+    "boxNumber": 58,
+    "additionalCompatible": []
+  },
+  {
+    "modelName": "Vivo Y15",
+    "boxNumber": 58,
+    "additionalCompatible": []
+  },
+  {
+    "modelName": "Vivo Y17",
+    "boxNumber": 58,
+    "additionalCompatible": []
+  },
+  {
+    "modelName": "Vivo U10",
+    "boxNumber": 58,
+    "additionalCompatible": []
+  },
+  {
+    "modelName": "Vivo Y3",
+    "boxNumber": 58,
+    "additionalCompatible": []
+  },
+  {
+    "modelName": "Realme 15 4G",
+    "boxNumber": 59,
+    "additionalCompatible": []
+  },
+  {
+    "modelName": "Realme 15 5G",
+    "boxNumber": 59,
+    "additionalCompatible": []
+  },
+  {
+    "modelName": "Oppo Reno 14 Pro",
+    "boxNumber": 60,
+    "additionalCompatible": []
+  },
+  {
+    "modelName": "OnePlus Nord CE5",
+    "boxNumber": 60,
+    "additionalCompatible": []
+  },
+  {
+    "modelName": "OnePlus Nord 5",
+    "boxNumber": 60,
+    "additionalCompatible": []
+  },
+  {
+    "modelName": "Redmi Y2",
+    "boxNumber": 61,
+    "additionalCompatible": []
+  },
+  {
+    "modelName": "Redmi S2",
+    "boxNumber": 61,
+    "additionalCompatible": []
+  },
+  {
+    "modelName": "Redmi 5 Plus",
+    "boxNumber": 61,
+    "additionalCompatible": []
+  },
+  {
+    "modelName": "Redmi Note 5",
+    "boxNumber": 61,
+    "additionalCompatible": []
+  },
+  {
+    "modelName": "Redmi Note 5 Pro",
+    "boxNumber": 61,
+    "additionalCompatible": []
+  },
+  {
+    "modelName": "Xiaomi Mi A2",
+    "boxNumber": 61,
+    "additionalCompatible": []
+  },
+  {
+    "modelName": "Xiaomi Mi 6X",
+    "boxNumber": 61,
+    "additionalCompatible": []
+  },
+  {
+    "modelName": "Samsung A6 Plus",
+    "boxNumber": 61,
+    "additionalCompatible": []
+  },
+  {
+    "modelName": "Samsung A7 2018",
+    "boxNumber": 61,
+    "additionalCompatible": []
+  },
+  {
+    "modelName": "Samsung A8 Plus",
+    "boxNumber": 61,
+    "additionalCompatible": []
+  },
+  {
+    "modelName": "Redmi Note 8",
+    "boxNumber": 62,
+    "additionalCompatible": []
+  },
+  {
+    "modelName": "Redmi 8",
+    "boxNumber": 63,
+    "additionalCompatible": []
+  },
+  {
+    "modelName": "Redmi 8A",
+    "boxNumber": 63,
+    "additionalCompatible": []
+  },
+  {
+    "modelName": "Redmi 8A Dual",
+    "boxNumber": 63,
+    "additionalCompatible": []
+  },
+  {
+    "modelName": "Vivo V9",
+    "boxNumber": 64,
+    "additionalCompatible": []
+  },
+  {
+    "modelName": "Vivo Y83",
+    "boxNumber": 64,
+    "additionalCompatible": []
+  },
+  {
+    "modelName": "Vivo Y81",
+    "boxNumber": 64,
+    "additionalCompatible": []
+  },
+  {
+    "modelName": "Vivo Y85",
+    "boxNumber": 64,
+    "additionalCompatible": []
+  },
+  {
+    "modelName": "Oppo A5",
+    "boxNumber": 64,
+    "additionalCompatible": []
+  },
+  {
+    "modelName": "Oppo F7",
+    "boxNumber": 64,
+    "additionalCompatible": []
+  },
+  {
+    "modelName": "OnePlus 6",
+    "boxNumber": 64,
+    "additionalCompatible": []
+  },
+  {
+    "modelName": "Vivo Y83 Pro",
+    "boxNumber": 64,
+    "additionalCompatible": []
+  },
+  {
+    "modelName": "Oppo A3s",
+    "boxNumber": 64,
+    "additionalCompatible": []
+  },
+  {
+    "modelName": "Realme 2",
+    "boxNumber": 64,
+    "additionalCompatible": []
+  },
+  {
+    "modelName": "Realme C1",
+    "boxNumber": 64,
+    "additionalCompatible": []
+  },
+  {
+    "modelName": "OnePlus 13 Mini",
+    "boxNumber": 65,
+    "additionalCompatible": []
+  },
+  {
+    "modelName": "OnePlus 13T",
+    "boxNumber": 65,
+    "additionalCompatible": []
+  },
+  {
+    "modelName": "OnePlus 13s",
+    "boxNumber": 65,
+    "additionalCompatible": []
+  },
+  {
+    "modelName": "Realme C85",
+    "boxNumber": 66,
+    "additionalCompatible": []
+  },
+  {
+    "modelName": "Redmi Note 13 4G",
+    "boxNumber": 67,
+    "additionalCompatible": []
+  },
+  {
+    "modelName": "Redmi Note 13 5G",
+    "boxNumber": 67,
+    "additionalCompatible": []
+  },
+  {
+    "modelName": "Redmi K70",
+    "boxNumber": 67,
+    "additionalCompatible": []
+  },
+  {
+    "modelName": "Redmi K70E",
+    "boxNumber": 67,
+    "additionalCompatible": []
+  },
+  {
+    "modelName": "Redmi K70 Pro",
+    "boxNumber": 67,
+    "additionalCompatible": []
+  },
+  {
+    "modelName": "Redmi K80",
+    "boxNumber": 67,
+    "additionalCompatible": []
+  },
+  {
+    "modelName": "Redmi K80 Pro",
+    "boxNumber": 67,
+    "additionalCompatible": []
+  },
+  {
+    "modelName": "Poco X6 Pro 5G",
+    "boxNumber": 67,
+    "additionalCompatible": []
+  },
+  {
+    "modelName": "Poco F6 5G",
+    "boxNumber": 67,
+    "additionalCompatible": []
+  },
+  {
+    "modelName": "Poco F6 Pro 5G",
+    "boxNumber": 67,
+    "additionalCompatible": []
+  },
+  {
+    "modelName": "Poco X7 Pro",
+    "boxNumber": 67,
+    "additionalCompatible": []
+  },
+  {
+    "modelName": "Poco F7 Pro",
+    "boxNumber": 67,
+    "additionalCompatible": []
+  },
+  {
+    "modelName": "Poco F7 Ultra",
+    "boxNumber": 67,
+    "additionalCompatible": []
+  },
+  {
+    "modelName": "Xiaomi 14T",
+    "boxNumber": 67,
+    "additionalCompatible": []
+  },
+  {
+    "modelName": "Xiaomi 14T Pro",
+    "boxNumber": 67,
+    "additionalCompatible": []
+  },
+  {
+    "modelName": "Motorola Edge 60 Stylus",
+    "boxNumber": 67,
+    "additionalCompatible": []
+  },
+  {
+    "modelName": "Motorola G86",
+    "boxNumber": 67,
+    "additionalCompatible": []
+  },
+  {
+    "modelName": "Motorola G86 Power",
+    "boxNumber": 67,
+    "additionalCompatible": []
+  },
+  {
+    "modelName": "Oppo Find X8s",
+    "boxNumber": 68,
+    "additionalCompatible": []
+  },
+  {
+    "modelName": "Vivo X200 Pro Mini",
+    "boxNumber": 68,
+    "additionalCompatible": []
+  },
+  {
+    "modelName": "Vivo X200 FE",
+    "boxNumber": 68,
+    "additionalCompatible": []
+  },
+  {
+    "modelName": "Vivo X300",
+    "boxNumber": 68,
+    "additionalCompatible": []
+  },
+  {
+    "modelName": "Realme C65",
+    "boxNumber": 69,
+    "additionalCompatible": []
+  },
+  {
+    "modelName": "Realme C67 5G",
+    "boxNumber": 69,
+    "additionalCompatible": []
+  },
+  {
+    "modelName": "Realme C75x",
+    "boxNumber": 69,
+    "additionalCompatible": []
+  },
+  {
+    "modelName": "Realme 11 5G",
+    "boxNumber": 69,
+    "additionalCompatible": []
+  },
+  {
+    "modelName": "Realme 11x 5G",
+    "boxNumber": 69,
+    "additionalCompatible": []
+  },
+  {
+    "modelName": "Realme 12 5G",
+    "boxNumber": 69,
+    "additionalCompatible": []
+  },
+  {
+    "modelName": "Realme 12x 5G",
+    "boxNumber": 69,
+    "additionalCompatible": []
+  },
+  {
+    "modelName": "Realme P3x 5G",
+    "boxNumber": 69,
+    "additionalCompatible": []
+  },
+  {
+    "modelName": "Redmi 15",
+    "boxNumber": 70,
+    "additionalCompatible": []
+  },
+  {
+    "modelName": "Redmi Note 15R",
+    "boxNumber": 70,
+    "additionalCompatible": []
+  },
+  {
+    "modelName": "Oppo Reno 13 5G",
+    "boxNumber": 71,
+    "additionalCompatible": []
+  },
+  {
+    "modelName": "Oppo Reno 14",
+    "boxNumber": 71,
+    "additionalCompatible": []
+  },
+  {
+    "modelName": "Oppo Reno 14F",
+    "boxNumber": 71,
+    "additionalCompatible": []
+  },
+  {
+    "modelName": "Oppo A6 Pro",
+    "boxNumber": 71,
+    "additionalCompatible": []
+  },
+  {
+    "modelName": "Oppo F31",
+    "boxNumber": 71,
+    "additionalCompatible": []
+  },
+  {
+    "modelName": "Oppo F31 Pro",
+    "boxNumber": 71,
+    "additionalCompatible": []
+  },
+  {
+    "modelName": "Realme 15T",
+    "boxNumber": 71,
+    "additionalCompatible": []
+  },
+  {
+    "modelName": "Redmi Note 7",
+    "boxNumber": 72,
+    "additionalCompatible": []
+  },
+  {
+    "modelName": "Redmi Note 7s",
+    "boxNumber": 72,
+    "additionalCompatible": []
+  },
+  {
+    "modelName": "Redmi Note 7 Pro",
+    "boxNumber": 72,
+    "additionalCompatible": []
+  },
+  {
+    "modelName": "Vivo S1",
+    "boxNumber": 72,
+    "additionalCompatible": []
+  },
+  {
+    "modelName": "Vivo S1 Pro",
+    "boxNumber": 72,
+    "additionalCompatible": []
+  },
+  {
+    "modelName": "Vivo V11",
+    "boxNumber": 72,
+    "additionalCompatible": []
+  },
+  {
+    "modelName": "Vivo V11 Pro",
+    "boxNumber": 72,
+    "additionalCompatible": []
+  },
+  {
+    "modelName": "Vivo X23",
+    "boxNumber": 72,
+    "additionalCompatible": []
+  },
+  {
+    "modelName": "Vivo Y7s",
+    "boxNumber": 72,
+    "additionalCompatible": []
+  },
+  {
+    "modelName": "Vivo Y9s",
+    "boxNumber": 72,
+    "additionalCompatible": []
+  },
+  {
+    "modelName": "Vivo Z1x",
+    "boxNumber": 72,
+    "additionalCompatible": []
+  },
+  {
+    "modelName": "Oppo R17",
+    "boxNumber": 73,
+    "additionalCompatible": [
+      "Vivo Y1s",
+      "Vivo Y97",
+      "Oppo A5 2020",
+      "Realme 2",
+      "Realme C1",
+      "Samsung M01 Core"
+    ]
+  },
+  {
+    "modelName": "Oppo R17 Pro",
+    "boxNumber": 73,
+    "additionalCompatible": [
+      "Vivo Y1s",
+      "Vivo Y97",
+      "Oppo A5 2020",
+      "Realme 2",
+      "Realme C1",
+      "Samsung M01 Core"
+    ]
+  },
+  {
+    "modelName": "Vivo V11i",
+    "boxNumber": 73,
+    "additionalCompatible": [
+      "Vivo Y1s",
+      "Vivo Y97",
+      "Oppo A5 2020",
+      "Realme 2",
+      "Realme C1",
+      "Samsung M01 Core"
+    ]
+  },
+  {
+    "modelName": "Vivo Y91i",
+    "boxNumber": 73,
+    "additionalCompatible": [
+      "Vivo Y1s",
+      "Vivo Y97",
+      "Oppo A5 2020",
+      "Realme 2",
+      "Realme C1",
+      "Samsung M01 Core"
+    ]
+  },
+  {
+    "modelName": "Vivo Y91C",
+    "boxNumber": 73,
+    "additionalCompatible": [
+      "Vivo Y1s",
+      "Vivo Y97",
+      "Oppo A5 2020",
+      "Realme 2",
+      "Realme C1",
+      "Samsung M01 Core"
+    ]
+  },
+  {
+    "modelName": "Infinix Vision 1",
+    "boxNumber": 73,
+    "additionalCompatible": [
+      "Vivo Y1s",
+      "Vivo Y97",
+      "Oppo A5 2020",
+      "Realme 2",
+      "Realme C1",
+      "Samsung M01 Core"
+    ]
+  },
+  {
+    "modelName": "Infinix S4",
+    "boxNumber": 73,
+    "additionalCompatible": [
+      "Vivo Y1s",
+      "Vivo Y97",
+      "Oppo A5 2020",
+      "Realme 2",
+      "Realme C1",
+      "Samsung M01 Core"
+    ]
+  },
+  {
+    "modelName": "Infinix X626",
+    "boxNumber": 73,
+    "additionalCompatible": [
+      "Vivo Y1s",
+      "Vivo Y97",
+      "Oppo A5 2020",
+      "Realme 2",
+      "Realme C1",
+      "Samsung M01 Core"
+    ]
+  },
+  {
+    "modelName": "Vivo Y97",
+    "boxNumber": 73,
+    "additionalCompatible": [
+      "Vivo Y1s",
+      "Vivo Y97",
+      "Oppo A5 2020",
+      "Realme 2",
+      "Realme C1",
+      "Samsung M01 Core"
+    ]
+  },
+  {
+    "modelName": "Oppo A5 2020",
+    "boxNumber": 73,
+    "additionalCompatible": [
+      "Vivo Y1s",
+      "Vivo Y97",
+      "Oppo A5 2020",
+      "Realme 2",
+      "Realme C1",
+      "Samsung M01 Core"
+    ]
+  },
+  {
+    "modelName": "Samsung M01 Core",
+    "boxNumber": 73,
+    "additionalCompatible": [
+      "Vivo Y1s",
+      "Vivo Y97",
+      "Oppo A5 2020",
+      "Realme 2",
+      "Realme C1",
+      "Samsung M01 Core"
+    ]
+  },
+  {
+    "modelName": "Nothing Phone 1",
+    "boxNumber": 74,
+    "additionalCompatible": [
+      "Nothing Phone 2",
+      "CMF Phone 1"
+    ]
+  },
+  {
+    "modelName": "Nothing Phone 2",
+    "boxNumber": 74,
+    "additionalCompatible": [
+      "Nothing Phone 2",
+      "CMF Phone 1"
+    ]
+  },
+  {
+    "modelName": "CMF Phone 1",
+    "boxNumber": 74,
+    "additionalCompatible": [
+      "Nothing Phone 2",
+      "CMF Phone 1"
+    ]
+  },
+  {
+    "modelName": "Realme 16 Pro",
+    "boxNumber": 75,
+    "additionalCompatible": [
+      "Realme 15 Pro",
+      "Realme 14 Pro",
+      "Realme GT Neo 6",
+      "Realme P3 Pro",
+      "Narzo 80 Pro"
+    ]
+  },
+  {
+    "modelName": "Realme 15 Pro",
+    "boxNumber": 75,
+    "additionalCompatible": [
+      "Realme 15 Pro",
+      "Realme 14 Pro",
+      "Realme GT Neo 6",
+      "Realme P3 Pro",
+      "Narzo 80 Pro"
+    ]
+  },
+  {
+    "modelName": "Realme 14 Pro",
+    "boxNumber": 75,
+    "additionalCompatible": [
+      "Realme 15 Pro",
+      "Realme 14 Pro",
+      "Realme GT Neo 6",
+      "Realme P3 Pro",
+      "Narzo 80 Pro"
+    ]
+  },
+  {
+    "modelName": "Realme GT Neo 6",
+    "boxNumber": 75,
+    "additionalCompatible": [
+      "Realme 15 Pro",
+      "Realme 14 Pro",
+      "Realme GT Neo 6",
+      "Realme P3 Pro",
+      "Narzo 80 Pro"
+    ]
+  },
+  {
+    "modelName": "Realme P3 Pro",
+    "boxNumber": 75,
+    "additionalCompatible": [
+      "Realme 15 Pro",
+      "Realme 14 Pro",
+      "Realme GT Neo 6",
+      "Realme P3 Pro",
+      "Narzo 80 Pro"
+    ]
+  },
+  {
+    "modelName": "Narzo 80 Pro",
+    "boxNumber": 75,
+    "additionalCompatible": [
+      "Realme 15 Pro",
+      "Realme 14 Pro",
+      "Realme GT Neo 6",
+      "Realme P3 Pro",
+      "Narzo 80 Pro"
+    ]
+  },
+  {
+    "modelName": "Vivo V70",
+    "boxNumber": 76,
+    "additionalCompatible": [
+      "Vivo V50",
+      "Vivo V50 Pro",
+      "Vivo V40",
+      "Vivo V40 Pro"
+    ]
+  },
+  {
+    "modelName": "Vivo V70 Elite",
+    "boxNumber": 76,
+    "additionalCompatible": [
+      "Vivo V50",
+      "Vivo V50 Pro",
+      "Vivo V40",
+      "Vivo V40 Pro"
+    ]
+  },
+  {
+    "modelName": "Vivo V50",
+    "boxNumber": 100,
+    "additionalCompatible": [],
+    "type": "Curved"
+  },
+  {
+    "modelName": "Vivo V50 Pro",
+    "boxNumber": 76,
+    "additionalCompatible": [
+      "Vivo V50",
+      "Vivo V50 Pro",
+      "Vivo V40",
+      "Vivo V40 Pro"
+    ]
+  },
+  {
+    "modelName": "Vivo V40",
+    "boxNumber": 102,
+    "additionalCompatible": [],
+    "type": "Curved"
+  },
+  {
+    "modelName": "Vivo V40 Pro",
+    "boxNumber": 102,
+    "additionalCompatible": [],
+    "type": "Curved"
+  },
+  {
+    "modelName": "Vivo V21 4G",
+    "boxNumber": 77,
+    "additionalCompatible": [
+      "Vivo V23",
+      "Vivo V23 Pro",
+      "Vivo V27e"
+    ]
+  },
+  {
+    "modelName": "Vivo V21e 5G",
+    "boxNumber": 77,
+    "additionalCompatible": [
+      "Vivo V23",
+      "Vivo V23 Pro",
+      "Vivo V27e"
+    ]
+  },
+  {
+    "modelName": "Vivo V23e 4G",
+    "boxNumber": 77,
+    "additionalCompatible": [
+      "Vivo V23",
+      "Vivo V23 Pro",
+      "Vivo V27e"
+    ]
+  },
+  {
+    "modelName": "Vivo V23e 5G",
+    "boxNumber": 77,
+    "additionalCompatible": [
+      "Vivo V23",
+      "Vivo V23 Pro",
+      "Vivo V27e"
+    ]
+  },
+  {
+    "modelName": "Vivo V25 5G",
+    "boxNumber": 77,
+    "additionalCompatible": [
+      "Vivo V23",
+      "Vivo V23 Pro",
+      "Vivo V27e"
+    ]
+  },
+  {
+    "modelName": "Vivo V23",
+    "boxNumber": 42,
+    "additionalCompatible": [],
+    "type": "Flat"
+  },
+  {
+    "modelName": "Vivo V23 Pro",
+    "boxNumber": 77,
+    "additionalCompatible": [
+      "Vivo V23",
+      "Vivo V23 Pro",
+      "Vivo V27e"
+    ]
+  },
+  {
+    "modelName": "Oppo Reno 15",
+    "boxNumber": 78,
+    "additionalCompatible": [
+      "Oppo Reno 14",
+      "Oppo Reno 14 Pro",
+      "Oppo Reno 13"
+    ]
+  },
+  {
+    "modelName": "Oppo Reno 13",
+    "boxNumber": 78,
+    "additionalCompatible": [
+      "Oppo Reno 14",
+      "Oppo Reno 14 Pro",
+      "Oppo Reno 13"
+    ]
+  },
+  {
+    "modelName": "Samsung S24 Ultra",
+    "boxNumber": 79,
+    "additionalCompatible": [
+      "Samsung S23 Ultra",
+      "Samsung S25 Ultra"
+    ]
+  },
+  {
+    "modelName": "Samsung S23 Ultra",
+    "boxNumber": 79,
+    "additionalCompatible": [
+      "Samsung S23 Ultra",
+      "Samsung S25 Ultra"
+    ]
+  },
+  {
+    "modelName": "Samsung S25 Ultra",
+    "boxNumber": 79,
+    "additionalCompatible": [
+      "Samsung S23 Ultra",
+      "Samsung S25 Ultra"
+    ]
+  },
+  {
+    "modelName": "Motorola Edge 50 Ultra",
+    "boxNumber": 80,
+    "additionalCompatible": [
+      "Motorola Edge 50 Pro",
+      "Motorola Edge 40 Pro"
+    ]
+  },
+  {
+    "modelName": "Motorola Edge 50 Pro",
+    "boxNumber": 80,
+    "additionalCompatible": [
+      "Motorola Edge 50 Pro",
+      "Motorola Edge 40 Pro"
+    ]
+  },
+  {
+    "modelName": "Motorola Edge 40 Pro",
+    "boxNumber": 80,
+    "additionalCompatible": [
+      "Motorola Edge 50 Pro",
+      "Motorola Edge 40 Pro"
+    ]
+  },
+  {
+    "modelName": "Motorola Edge 50 Fusion",
+    "boxNumber": 81,
+    "additionalCompatible": [
+      "Motorola Edge 50",
+      "Motorola Edge 50 Neo"
+    ]
+  },
+  {
+    "modelName": "Motorola Edge 50",
+    "boxNumber": 81,
+    "additionalCompatible": [
+      "Motorola Edge 50",
+      "Motorola Edge 50 Neo"
+    ]
+  },
+  {
+    "modelName": "Motorola Edge 50 Neo",
+    "boxNumber": 81,
+    "additionalCompatible": [
+      "Motorola Edge 50",
+      "Motorola Edge 50 Neo"
+    ]
+  },
+  {
+    "modelName": "Motorola Edge 60",
+    "boxNumber": 82,
+    "additionalCompatible": [
+      "Motorola Edge 50 Ultra",
+      "Motorola Edge 50 Pro"
+    ]
+  },
+  {
+    "modelName": "Motorola Edge 60 Pro",
+    "boxNumber": 82,
+    "additionalCompatible": [
+      "Motorola Edge 50 Ultra",
+      "Motorola Edge 50 Pro"
+    ]
+  },
+  {
+    "modelName": "Tecno Camon AI Pro",
+    "boxNumber": 83,
+    "additionalCompatible": [
+      "Tecno Camon iSky 3",
+      "Infinix S4"
+    ]
+  },
+  {
+    "modelName": "Tecno Camon iSky 3",
+    "boxNumber": 83,
+    "additionalCompatible": [
+      "Tecno Camon iSky 3",
+      "Infinix S4"
+    ]
+  },
+  {
+    "modelName": "OnePlus 8",
+    "boxNumber": 84,
+    "additionalCompatible": [
+      "OnePlus 8T",
+      "OnePlus 7T Pro"
+    ]
+  },
+  {
+    "modelName": "OnePlus 8T",
+    "boxNumber": 84,
+    "additionalCompatible": [
+      "OnePlus 8T",
+      "OnePlus 7T Pro"
+    ]
+  },
+  {
+    "modelName": "OnePlus 7T Pro",
+    "boxNumber": 84,
+    "additionalCompatible": [
+      "OnePlus 8T",
+      "OnePlus 7T Pro"
+    ]
+  },
+  {
+    "modelName": "iQOO Z7 Pro",
+    "boxNumber": 85,
+    "additionalCompatible": [
+      "Vivo T2 Pro",
+      "Vivo V29e"
+    ]
+  },
+  {
+    "modelName": "Vivo T2 Pro",
+    "boxNumber": 85,
+    "additionalCompatible": [
+      "Vivo T2 Pro",
+      "Vivo V29e"
+    ]
+  },
+  {
+    "modelName": "Vivo V29e",
+    "boxNumber": 85,
+    "additionalCompatible": [
+      "Vivo T2 Pro",
+      "Vivo V29e"
+    ]
+  },
+  {
+    "modelName": "Realme 15",
+    "boxNumber": 86,
+    "additionalCompatible": [
+      "Realme 15T",
+      "Realme 16 Pro"
+    ]
+  },
+  {
+    "modelName": "Oppo Reno 9",
+    "boxNumber": 87,
+    "additionalCompatible": [
+      "Oppo Reno 9 Pro",
+      "Oppo Reno 10"
+    ]
+  },
+  {
+    "modelName": "Oppo Reno 9 Pro",
+    "boxNumber": 87,
+    "additionalCompatible": [
+      "Oppo Reno 9 Pro",
+      "Oppo Reno 10"
+    ]
+  },
+  {
+    "modelName": "Oppo Reno 10",
+    "boxNumber": 87,
+    "additionalCompatible": [
+      "Oppo Reno 9 Pro",
+      "Oppo Reno 10"
+    ]
+  },
+  {
+    "modelName": "Motorola Edge 40",
+    "boxNumber": 88,
+    "additionalCompatible": [
+      "Motorola Edge 50",
+      "Motorola Edge 40"
+    ]
+  },
+  {
+    "modelName": "OnePlus 11",
+    "boxNumber": 89,
+    "additionalCompatible": [
+      "OnePlus Ace 2",
+      "OnePlus 10T"
+    ]
+  },
+  {
+    "modelName": "OnePlus 11R",
+    "boxNumber": 89,
+    "additionalCompatible": [
+      "OnePlus Ace 2",
+      "OnePlus 10T"
+    ]
+  },
+  {
+    "modelName": "OnePlus Ace 2",
+    "boxNumber": 89,
+    "additionalCompatible": [
+      "OnePlus Ace 2",
+      "OnePlus 10T"
+    ]
+  },
+  {
+    "modelName": "Vivo Y300 Pro",
+    "boxNumber": 90,
+    "additionalCompatible": [
+      "Vivo X200",
+      "Vivo V40"
+    ]
+  },
+  {
+    "modelName": "Vivo X200 Pro",
+    "boxNumber": 90,
+    "additionalCompatible": [
+      "Vivo X200",
+      "Vivo V40"
+    ]
+  },
+  {
+    "modelName": "Vivo V50e",
+    "boxNumber": 90,
+    "additionalCompatible": [
+      "Vivo X200",
+      "Vivo V40"
+    ]
+  },
+  {
+    "modelName": "Vivo Y300 Pro+",
+    "boxNumber": 90,
+    "additionalCompatible": [
+      "Vivo X200",
+      "Vivo V40"
+    ]
+  },
+  {
+    "modelName": "Vivo T4 5G",
+    "boxNumber": 90,
+    "additionalCompatible": [
+      "Vivo X200",
+      "Vivo V40"
+    ]
+  },
+  {
+    "modelName": "iQOO Z10",
+    "boxNumber": 90,
+    "additionalCompatible": [
+      "Vivo X200",
+      "Vivo V40"
+    ]
+  },
+  {
+    "modelName": "Vivo X200",
+    "boxNumber": 90,
+    "additionalCompatible": [
+      "Vivo X200",
+      "Vivo V40"
+    ]
+  },
+  {
+    "modelName": "Vivo T4",
+    "boxNumber": 91,
+    "additionalCompatible": [
+      "Vivo T4 5G",
+      "Vivo T3 Pro"
+    ]
+  },
+  {
+    "modelName": "Vivo T4R",
+    "boxNumber": 91,
+    "additionalCompatible": [
+      "Vivo T4 5G",
+      "Vivo T3 Pro"
+    ]
+  },
+  {
+    "modelName": "Vivo T3 Pro",
+    "boxNumber": 91,
+    "additionalCompatible": [
+      "Vivo T4 5G",
+      "Vivo T3 Pro"
+    ]
+  },
+  {
+    "modelName": "Oppo Reno 10 Pro+",
+    "boxNumber": 92,
+    "additionalCompatible": [
+      "Oppo Reno 11 Pro",
+      "Oppo Reno 12 Pro"
+    ]
+  },
+  {
+    "modelName": "Oppo Reno 11 Pro",
+    "boxNumber": 92,
+    "additionalCompatible": [
+      "Oppo Reno 11 Pro",
+      "Oppo Reno 12 Pro"
+    ]
+  },
+  {
+    "modelName": "Oppo Reno 12 Pro",
+    "boxNumber": 92,
+    "additionalCompatible": [
+      "Oppo Reno 11 Pro",
+      "Oppo Reno 12 Pro"
+    ]
+  },
+  {
+    "modelName": "Realme P2 Pro",
+    "boxNumber": 93,
+    "additionalCompatible": [
+      "Realme P1 Pro",
+      "Realme P3 Pro"
+    ]
+  },
+  {
+    "modelName": "Realme P1 Pro",
+    "boxNumber": 93,
+    "additionalCompatible": [
+      "Realme P1 Pro",
+      "Realme P3 Pro"
+    ]
+  },
+  {
+    "modelName": "Vivo V27",
+    "boxNumber": 94,
+    "additionalCompatible": [
+      "Vivo V29",
+      "Vivo V30"
+    ]
+  },
+  {
+    "modelName": "Vivo V27 Pro",
+    "boxNumber": 94,
+    "additionalCompatible": [
+      "Vivo V29",
+      "Vivo V30"
+    ]
+  },
+  {
+    "modelName": "Vivo S16",
+    "boxNumber": 94,
+    "additionalCompatible": [
+      "Vivo V29",
+      "Vivo V30"
+    ]
+  },
+  {
+    "modelName": "Vivo S16 Pro",
+    "boxNumber": 94,
+    "additionalCompatible": [
+      "Vivo V29",
+      "Vivo V30"
+    ]
+  },
+  {
+    "modelName": "Vivo V29 Lite",
+    "boxNumber": 94,
+    "additionalCompatible": [],
+    "type": "Curved"
+  },
+  {
+    "modelName": "Vivo Y300+",
+    "boxNumber": 94,
+    "additionalCompatible": [
+      "Vivo V29",
+      "Vivo V30"
+    ]
+  },
+  {
+    "modelName": "OnePlus 8 Pro",
+    "boxNumber": 94,
+    "additionalCompatible": [
+      "Vivo V29",
+      "Vivo V30"
+    ]
+  },
+  {
+    "modelName": "Vivo X80",
+    "boxNumber": 94,
+    "additionalCompatible": [
+      "Vivo V29",
+      "Vivo V30"
+    ]
+  },
+  {
+    "modelName": "Vivo X80 Pro",
+    "boxNumber": 94,
+    "additionalCompatible": [
+      "Vivo V29",
+      "Vivo V30"
+    ]
+  },
+  {
+    "modelName": "Vivo Y78",
+    "boxNumber": 94,
+    "additionalCompatible": [
+      "Vivo V29",
+      "Vivo V30"
+    ]
+  },
+  {
+    "modelName": "Vivo Y400 Pro",
+    "boxNumber": 94,
+    "additionalCompatible": [
+      "Vivo V29",
+      "Vivo V30"
+    ]
+  },
+  {
+    "modelName": "Tecno Phantom X2",
+    "boxNumber": 94,
+    "additionalCompatible": [
+      "Vivo V29",
+      "Vivo V30"
+    ]
+  },
+  {
+    "modelName": "itel S23+",
+    "boxNumber": 94,
+    "additionalCompatible": [
+      "Vivo V29",
+      "Vivo V30"
+    ]
+  },
+  {
+    "modelName": "Vivo V29",
+    "boxNumber": 103,
+    "additionalCompatible": [],
+    "type": "Curved"
+  },
+  {
+    "modelName": "Vivo V30",
+    "boxNumber": 102,
+    "additionalCompatible": [],
+    "type": "Curved"
+  },
+  {
+    "modelName": "Vivo T3 Ultra",
+    "boxNumber": 95,
+    "additionalCompatible": [
+      "Vivo T2 Pro",
+      "Vivo V40"
+    ]
+  },
+  {
+    "modelName": "Oppo F29 Pro",
+    "boxNumber": 96,
+    "additionalCompatible": [
+      "Oppo Reno 13 Pro",
+      "Oppo Reno 11 Pro"
+    ]
+  },
+  {
+    "modelName": "Oppo Reno 13 Pro",
+    "boxNumber": 96,
+    "additionalCompatible": [
+      "Oppo Reno 13 Pro",
+      "Oppo Reno 11 Pro"
+    ]
+  },
+  {
+    "modelName": "Oppo Reno 5 Pro",
+    "boxNumber": 97,
+    "additionalCompatible": [
+      "Oppo Reno 6 Pro",
+      "Oppo Reno 7 Pro"
+    ]
+  },
+  {
+    "modelName": "Oppo Reno 6 Pro",
+    "boxNumber": 97,
+    "additionalCompatible": [
+      "Oppo Reno 6 Pro",
+      "Oppo Reno 7 Pro"
+    ]
+  },
+  {
+    "modelName": "Oppo Reno 7 Pro",
+    "boxNumber": 97,
+    "additionalCompatible": [
+      "Oppo Reno 6 Pro",
+      "Oppo Reno 7 Pro"
+    ]
+  },
+  {
+    "modelName": "Vivo V30 Pro",
+    "boxNumber": 102,
+    "additionalCompatible": [],
+    "type": "Curved"
+  },
+  {
+    "modelName": "Oppo Reno 8T",
+    "boxNumber": 99,
+    "additionalCompatible": [
+      "Oppo Reno 13",
+      "Oppo Reno 13 Pro",
+      "OnePlus 12R"
+    ]
+  },
+  {
+    "modelName": "Oppo Reno 11",
+    "boxNumber": 99,
+    "additionalCompatible": [
+      "Oppo Reno 13",
+      "Oppo Reno 13 Pro",
+      "OnePlus 12R"
+    ]
+  },
+  {
+    "modelName": "Oppo Reno 12",
+    "boxNumber": 99,
+    "additionalCompatible": [
+      "Oppo Reno 13",
+      "Oppo Reno 13 Pro",
+      "OnePlus 12R"
+    ]
+  },
+  {
+    "modelName": "Oppo Reno 10 Pro",
+    "boxNumber": 99,
+    "additionalCompatible": [
+      "Oppo Reno 13",
+      "Oppo Reno 13 Pro",
+      "OnePlus 12R"
+    ]
+  },
+  {
+    "modelName": "Oppo F27 Pro",
+    "boxNumber": 99,
+    "additionalCompatible": [
+      "Oppo Reno 13",
+      "Oppo Reno 13 Pro",
+      "OnePlus 12R"
+    ]
+  },
+  {
+    "modelName": "Oppo F27 Pro+",
+    "boxNumber": 99,
+    "additionalCompatible": [
+      "Oppo Reno 13",
+      "Oppo Reno 13 Pro",
+      "OnePlus 12R"
+    ]
+  },
+  {
+    "modelName": "Oppo A1 Pro",
+    "boxNumber": 99,
+    "additionalCompatible": [
+      "Oppo Reno 13",
+      "Oppo Reno 13 Pro",
+      "OnePlus 12R"
+    ]
+  },
+  {
+    "modelName": "Oppo A2 Pro",
+    "boxNumber": 99,
+    "additionalCompatible": [
+      "Oppo Reno 13",
+      "Oppo Reno 13 Pro",
+      "OnePlus 12R"
+    ]
+  },
+  {
+    "modelName": "OnePlus 9 Pro",
+    "boxNumber": 99,
+    "additionalCompatible": [
+      "Oppo Reno 13",
+      "Oppo Reno 13 Pro",
+      "OnePlus 12R"
+    ]
+  },
+  {
+    "modelName": "OnePlus 10 Pro",
+    "boxNumber": 99,
+    "additionalCompatible": [
+      "Oppo Reno 13",
+      "Oppo Reno 13 Pro",
+      "OnePlus 12R"
+    ]
+  },
+  {
+    "modelName": "OnePlus 12R",
+    "boxNumber": 99,
+    "additionalCompatible": [
+      "Oppo Reno 13",
+      "Oppo Reno 13 Pro",
+      "OnePlus 12R"
+    ]
+  },
+  {
+    "modelName": "OnePlus 13",
+    "boxNumber": 101,
+    "type": "Curved",
+    "additionalCompatible": []
+  },
+  {
+    "modelName": "OnePlus Nord CE4",
+    "boxNumber": 52,
+    "type": "Flat",
+    "additionalCompatible": []
+  },
+  {
+    "modelName": "Oppo 12 4G",
+    "boxNumber": 32,
+    "type": "Flat",
+    "additionalCompatible": []
+  },
+  {
+    "modelName": "Oppo A5 5G",
+    "boxNumber": 32,
+    "type": "Flat",
+    "additionalCompatible": []
+  },
+  {
+    "modelName": "Oppo A16",
+    "boxNumber": 46,
+    "type": "Flat",
+    "additionalCompatible": []
+  },
+  {
+    "modelName": "Oppo A17",
+    "boxNumber": 46,
+    "type": "Flat",
+    "additionalCompatible": []
+  },
+  {
+    "modelName": "Oppo A53S",
+    "boxNumber": 34,
+    "type": "Flat",
+    "additionalCompatible": []
+  },
+  {
+    "modelName": "Oppo A77s",
+    "boxNumber": 46,
+    "type": "Flat",
+    "additionalCompatible": []
+  },
+  {
+    "modelName": "Oppo F17 Pro",
+    "boxNumber": 48,
+    "type": "Flat",
+    "additionalCompatible": []
+  },
+  {
+    "modelName": "Itel A05S",
+    "boxNumber": 43,
+    "type": "Flat",
+    "additionalCompatible": []
+  },
+  {
+    "modelName": "Poco C51",
+    "boxNumber": 46,
+    "type": "Flat",
+    "additionalCompatible": []
+  },
+  {
+    "modelName": "Realme 3 Pro",
+    "boxNumber": 24,
+    "type": "Flat",
+    "additionalCompatible": []
+  },
+  {
+    "modelName": "Realme 8i",
+    "boxNumber": 34,
+    "type": "Flat",
+    "additionalCompatible": []
+  },
+  {
+    "modelName": "Realme 12 4G",
+    "boxNumber": 32,
+    "type": "Flat",
+    "additionalCompatible": []
+  },
+  {
+    "modelName": "Realme C12",
+    "boxNumber": 46,
+    "type": "Flat",
+    "additionalCompatible": []
+  },
+  {
+    "modelName": "Realme C31",
+    "boxNumber": 46,
+    "type": "Flat",
+    "additionalCompatible": []
+  },
+  {
+    "modelName": "Realme C35",
+    "boxNumber": 46,
+    "type": "Flat",
+    "additionalCompatible": []
+  },
+  {
+    "modelName": "Realme C55",
+    "boxNumber": 32,
+    "type": "Flat",
+    "additionalCompatible": []
+  },
+  {
+    "modelName": "Realme C61",
+    "boxNumber": 33,
+    "type": "Flat",
+    "additionalCompatible": []
+  },
+  {
+    "modelName": "Realme Narzo 50",
+    "boxNumber": 34,
+    "type": "Flat",
+    "additionalCompatible": []
+  },
+  {
+    "modelName": "Realme Neo 7",
+    "boxNumber": 52,
+    "type": "Flat",
+    "additionalCompatible": []
+  },
+  {
+    "modelName": "Redmi A1+",
+    "boxNumber": 46,
+    "type": "Flat",
+    "additionalCompatible": []
+  },
+  {
+    "modelName": "Samsung F54",
+    "boxNumber": 27,
+    "type": "Flat",
+    "additionalCompatible": []
+  },
+  {
+    "modelName": "Vivo S17",
+    "boxNumber": 103,
+    "type": "Curved",
+    "additionalCompatible": []
+  },
+  {
+    "modelName": "Vivo S17 Pro",
+    "boxNumber": 103,
+    "type": "Curved",
+    "additionalCompatible": []
+  },
+  {
+    "modelName": "Vivo T3 5G",
+    "boxNumber": 52,
+    "type": "Flat",
+    "additionalCompatible": []
+  },
+  {
+    "modelName": "Vivo V29 Pro",
+    "boxNumber": 103,
+    "type": "Curved",
+    "additionalCompatible": []
+  },
+  {
+    "modelName": "Vivo V30e",
+    "boxNumber": 102,
+    "type": "Curved",
+    "additionalCompatible": []
+  },
+  {
+    "modelName": "Vivo X90",
+    "boxNumber": 103,
+    "type": "Curved",
+    "additionalCompatible": []
+  },
+  {
+    "modelName": "Vivo X90 Pro",
+    "boxNumber": 103,
+    "type": "Curved",
+    "additionalCompatible": []
+  },
+  {
+    "modelName": "Vivo X90 Pro+",
+    "boxNumber": 103,
+    "type": "Curved",
+    "additionalCompatible": []
+  },
+  {
+    "modelName": "Vivo X90S",
+    "boxNumber": 103,
+    "type": "Curved",
+    "additionalCompatible": []
+  },
+  {
+    "modelName": "Vivo X100",
+    "boxNumber": 102,
+    "type": "Curved",
+    "additionalCompatible": []
+  },
+  {
+    "modelName": "Vivo X100 Pro",
+    "boxNumber": 102,
+    "type": "Curved",
+    "additionalCompatible": []
+  },
+  {
+    "modelName": "Vivo X100S Pro",
+    "boxNumber": 102,
+    "type": "Curved",
+    "additionalCompatible": []
+  },
+  {
+    "modelName": "Vivo Y3s",
+    "boxNumber": 53,
+    "type": "Flat",
+    "additionalCompatible": []
+  },
+  {
+    "modelName": "Vivo Y16",
+    "boxNumber": 46,
+    "type": "Flat",
+    "additionalCompatible": []
+  },
+  {
+    "modelName": "Vivo Y21",
+    "boxNumber": 46,
+    "type": "Flat",
+    "additionalCompatible": []
+  },
+  {
+    "modelName": "Vivo Y28 5G",
+    "boxNumber": 46,
+    "type": "Flat",
+    "additionalCompatible": []
+  },
+  {
+    "modelName": "Vivo Y200e 5G",
+    "boxNumber": 45,
+    "type": "Flat",
+    "additionalCompatible": []
+  }
+]

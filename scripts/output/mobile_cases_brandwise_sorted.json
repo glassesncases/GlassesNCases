@@ -1,0 +1,2333 @@
+[
+  {
+    "brand": "Itel",
+    "brandSerial": 1,
+    "modelName": "Itel A48",
+    "quantity": 2,
+    "sourcePieces": "156"
+  },
+  {
+    "brand": "Itel",
+    "brandSerial": 2,
+    "modelName": "Itel S23",
+    "quantity": 2,
+    "sourcePieces": "155,322"
+  },
+  {
+    "brand": "Itel",
+    "brandSerial": 3,
+    "modelName": "Itel Vision 1 Pro",
+    "quantity": 2,
+    "sourcePieces": "136"
+  },
+  {
+    "brand": "Motorola",
+    "brandSerial": 1,
+    "modelName": "Motorola Edge 40",
+    "quantity": 1,
+    "sourcePieces": "171"
+  },
+  {
+    "brand": "Motorola",
+    "brandSerial": 2,
+    "modelName": "Edge 60 Fusion",
+    "quantity": 1,
+    "sourcePieces": "9"
+  },
+  {
+    "brand": "Motorola",
+    "brandSerial": 3,
+    "modelName": "Edge 60 Stylus",
+    "quantity": 2,
+    "sourcePieces": "87"
+  },
+  {
+    "brand": "Motorola",
+    "brandSerial": 4,
+    "modelName": "Motorola Edge 70",
+    "quantity": 1,
+    "sourcePieces": "167"
+  },
+  {
+    "brand": "Motorola",
+    "brandSerial": 5,
+    "modelName": "Motorola G17 Power",
+    "quantity": 2,
+    "sourcePieces": "165,170"
+  },
+  {
+    "brand": "Motorola",
+    "brandSerial": 6,
+    "modelName": "Moto G34 5G / G45 5G",
+    "quantity": 1,
+    "sourcePieces": "130"
+  },
+  {
+    "brand": "Motorola",
+    "brandSerial": 7,
+    "modelName": "Moto G35 5G",
+    "quantity": 1,
+    "sourcePieces": "355"
+  },
+  {
+    "brand": "Motorola",
+    "brandSerial": 8,
+    "modelName": "Motorola G35 5G",
+    "quantity": 1,
+    "sourcePieces": "154"
+  },
+  {
+    "brand": "Motorola",
+    "brandSerial": 9,
+    "modelName": "Moto G54 5G / G54 Power / G64 5G",
+    "quantity": 1,
+    "sourcePieces": "131"
+  },
+  {
+    "brand": "Motorola",
+    "brandSerial": 10,
+    "modelName": "Motorola G84",
+    "quantity": 1,
+    "sourcePieces": "28"
+  },
+  {
+    "brand": "Motorola",
+    "brandSerial": 11,
+    "modelName": "Motorola G86 5G",
+    "quantity": 1,
+    "sourcePieces": "44"
+  },
+  {
+    "brand": "Motorola",
+    "brandSerial": 12,
+    "modelName": "Motorola G96",
+    "quantity": 1,
+    "sourcePieces": "36"
+  },
+  {
+    "brand": "Nothing",
+    "brandSerial": 1,
+    "modelName": "Nothing 2a",
+    "quantity": 2,
+    "sourcePieces": "157"
+  },
+  {
+    "brand": "OnePlus",
+    "brandSerial": 1,
+    "modelName": "OnePlus Nord 2T",
+    "quantity": 1,
+    "sourcePieces": "161"
+  },
+  {
+    "brand": "OnePlus",
+    "brandSerial": 2,
+    "modelName": "OnePlus Nord CE3 Lite / Nord N30",
+    "quantity": 2,
+    "sourcePieces": "317"
+  },
+  {
+    "brand": "Oppo",
+    "brandSerial": 1,
+    "modelName": "Oppo A3 Pro 5G / A3 / A80 5G / K12x 5G",
+    "quantity": 1,
+    "sourcePieces": "146"
+  },
+  {
+    "brand": "Oppo",
+    "brandSerial": 2,
+    "modelName": "Oppo A3 Pro 2024 Global",
+    "quantity": 2,
+    "sourcePieces": "61"
+  },
+  {
+    "brand": "Oppo",
+    "brandSerial": 3,
+    "modelName": "Oppo A3 Pro / Oppo K12x",
+    "quantity": 1,
+    "sourcePieces": "282"
+  },
+  {
+    "brand": "Oppo",
+    "brandSerial": 4,
+    "modelName": "Oppo A3S",
+    "quantity": 2,
+    "sourcePieces": "38,279"
+  },
+  {
+    "brand": "Oppo",
+    "brandSerial": 5,
+    "modelName": "Oppo A3x",
+    "quantity": 1,
+    "sourcePieces": "278"
+  },
+  {
+    "brand": "Oppo",
+    "brandSerial": 6,
+    "modelName": "Oppo A5 (2020)",
+    "quantity": 2,
+    "sourcePieces": "239"
+  },
+  {
+    "brand": "Oppo",
+    "brandSerial": 7,
+    "modelName": "Oppo A5S",
+    "quantity": 1,
+    "sourcePieces": "97"
+  },
+  {
+    "brand": "Oppo",
+    "brandSerial": 8,
+    "modelName": "Oppo A5X",
+    "quantity": 2,
+    "sourcePieces": "169,280"
+  },
+  {
+    "brand": "Oppo",
+    "brandSerial": 9,
+    "modelName": "Oppo A9 (2020)",
+    "quantity": 1,
+    "sourcePieces": "241"
+  },
+  {
+    "brand": "Oppo",
+    "brandSerial": 10,
+    "modelName": "Oppo A9 2020 / A5 2020 / A11 / A11x",
+    "quantity": 1,
+    "sourcePieces": "129"
+  },
+  {
+    "brand": "Oppo",
+    "brandSerial": 11,
+    "modelName": "Oppo A15",
+    "quantity": 3,
+    "sourcePieces": "168,204"
+  },
+  {
+    "brand": "Oppo",
+    "brandSerial": 12,
+    "modelName": "Oppo A17 / A17 Pro",
+    "quantity": 1,
+    "sourcePieces": "144"
+  },
+  {
+    "brand": "Oppo",
+    "brandSerial": 13,
+    "modelName": "Oppo A18 / A38",
+    "quantity": 1,
+    "sourcePieces": "109"
+  },
+  {
+    "brand": "Oppo",
+    "brandSerial": 14,
+    "modelName": "Oppo A38",
+    "quantity": 2,
+    "sourcePieces": "235"
+  },
+  {
+    "brand": "Oppo",
+    "brandSerial": 15,
+    "modelName": "Oppo A38 New",
+    "quantity": 1,
+    "sourcePieces": "343"
+  },
+  {
+    "brand": "Oppo",
+    "brandSerial": 16,
+    "modelName": "Oppo A53 4G",
+    "quantity": 1,
+    "sourcePieces": "356"
+  },
+  {
+    "brand": "Oppo",
+    "brandSerial": 17,
+    "modelName": "Oppo A53 4G / A32 / A53s / A33 / A11s",
+    "quantity": 2,
+    "sourcePieces": "112"
+  },
+  {
+    "brand": "Oppo",
+    "brandSerial": 18,
+    "modelName": "Oppo A53 (2020)",
+    "quantity": 1,
+    "sourcePieces": "285"
+  },
+  {
+    "brand": "Oppo",
+    "brandSerial": 19,
+    "modelName": "Oppo A54 4G",
+    "quantity": 1,
+    "sourcePieces": "100"
+  },
+  {
+    "brand": "Oppo",
+    "brandSerial": 20,
+    "modelName": "Oppo A54 5G",
+    "quantity": 1,
+    "sourcePieces": "40"
+  },
+  {
+    "brand": "Oppo",
+    "brandSerial": 21,
+    "modelName": "Oppo A55 4G",
+    "quantity": 1,
+    "sourcePieces": "29"
+  },
+  {
+    "brand": "Oppo",
+    "brandSerial": 22,
+    "modelName": "Oppo A57 4G",
+    "quantity": 1,
+    "sourcePieces": "202"
+  },
+  {
+    "brand": "Oppo",
+    "brandSerial": 23,
+    "modelName": "Oppo A57 4G / Oppo K10 5G / Oppo A77 5G (2022) / Oppo A77s",
+    "quantity": 1,
+    "sourcePieces": "201"
+  },
+  {
+    "brand": "Oppo",
+    "brandSerial": 24,
+    "modelName": "Oppo A57 2022",
+    "quantity": 1,
+    "sourcePieces": "39"
+  },
+  {
+    "brand": "Oppo",
+    "brandSerial": 25,
+    "modelName": "Oppo A59 5G",
+    "quantity": 1,
+    "sourcePieces": "284"
+  },
+  {
+    "brand": "Oppo",
+    "brandSerial": 26,
+    "modelName": "Oppo A78",
+    "quantity": 2,
+    "sourcePieces": "237"
+  },
+  {
+    "brand": "Oppo",
+    "brandSerial": 27,
+    "modelName": "Oppo A78 5G / Oppo A58 5G",
+    "quantity": 2,
+    "sourcePieces": "209"
+  },
+  {
+    "brand": "Oppo",
+    "brandSerial": 28,
+    "modelName": "Oppo A79 5G",
+    "quantity": 2,
+    "sourcePieces": "46,242"
+  },
+  {
+    "brand": "Oppo",
+    "brandSerial": 29,
+    "modelName": "Oppo F11 / F11 Pro",
+    "quantity": 2,
+    "sourcePieces": "75"
+  },
+  {
+    "brand": "Oppo",
+    "brandSerial": 30,
+    "modelName": "Oppo F15",
+    "quantity": 1,
+    "sourcePieces": "8"
+  },
+  {
+    "brand": "Oppo",
+    "brandSerial": 31,
+    "modelName": "Oppo F17 Pro",
+    "quantity": 2,
+    "sourcePieces": "45,290"
+  },
+  {
+    "brand": "Oppo",
+    "brandSerial": 32,
+    "modelName": "Oppo F19 Pro",
+    "quantity": 1,
+    "sourcePieces": "37"
+  },
+  {
+    "brand": "Oppo",
+    "brandSerial": 33,
+    "modelName": "Oppo F19 Pro+",
+    "quantity": 0,
+    "sourcePieces": "292"
+  },
+  {
+    "brand": "Oppo",
+    "brandSerial": 34,
+    "modelName": "Oppo F21 Pro 4G",
+    "quantity": 1,
+    "sourcePieces": "277"
+  },
+  {
+    "brand": "Oppo",
+    "brandSerial": 35,
+    "modelName": "Oppo F21 Pro 4G / Reno7 4G",
+    "quantity": 1,
+    "sourcePieces": "127"
+  },
+  {
+    "brand": "Oppo",
+    "brandSerial": 36,
+    "modelName": "Oppo F21 Pro 5G",
+    "quantity": 2,
+    "sourcePieces": "33"
+  },
+  {
+    "brand": "Oppo",
+    "brandSerial": 37,
+    "modelName": "Oppo F23 5G",
+    "quantity": 1,
+    "sourcePieces": "42"
+  },
+  {
+    "brand": "Oppo",
+    "brandSerial": 38,
+    "modelName": "Oppo F27",
+    "quantity": 1,
+    "sourcePieces": "346"
+  },
+  {
+    "brand": "Oppo",
+    "brandSerial": 39,
+    "modelName": "Oppo F27 Pro",
+    "quantity": 1,
+    "sourcePieces": "340"
+  },
+  {
+    "brand": "Oppo",
+    "brandSerial": 40,
+    "modelName": "Oppo F31 5G",
+    "quantity": 2,
+    "sourcePieces": "63,79"
+  },
+  {
+    "brand": "Oppo",
+    "brandSerial": 41,
+    "modelName": "Oppo F31 Pro",
+    "quantity": 1,
+    "sourcePieces": "76"
+  },
+  {
+    "brand": "Oppo",
+    "brandSerial": 42,
+    "modelName": "Oppo F31 Pro+ / K13s / A6 GT 5G",
+    "quantity": 1,
+    "sourcePieces": "147"
+  },
+  {
+    "brand": "Oppo",
+    "brandSerial": 43,
+    "modelName": "Oppo Reno2 Z / Reno2 F",
+    "quantity": 1,
+    "sourcePieces": "333"
+  },
+  {
+    "brand": "Oppo",
+    "brandSerial": 44,
+    "modelName": "Oppo Reno6 5G",
+    "quantity": 1,
+    "sourcePieces": "208"
+  },
+  {
+    "brand": "Oppo",
+    "brandSerial": 45,
+    "modelName": "Oppo Reno7 Pro 5G",
+    "quantity": 1,
+    "sourcePieces": "306"
+  },
+  {
+    "brand": "Oppo",
+    "brandSerial": 46,
+    "modelName": "Oppo Reno8 T 5G",
+    "quantity": 3,
+    "sourcePieces": "314,330"
+  },
+  {
+    "brand": "Oppo",
+    "brandSerial": 47,
+    "modelName": "Oppo Reno8 T 5G / A1 Pro 5G",
+    "quantity": 1,
+    "sourcePieces": "344"
+  },
+  {
+    "brand": "Oppo",
+    "brandSerial": 48,
+    "modelName": "Reno 10",
+    "quantity": 1,
+    "sourcePieces": "32"
+  },
+  {
+    "brand": "Oppo",
+    "brandSerial": 49,
+    "modelName": "Oppo Reno10 Pro",
+    "quantity": 3,
+    "sourcePieces": "307"
+  },
+  {
+    "brand": "Oppo",
+    "brandSerial": 50,
+    "modelName": "Reno 10 Pro",
+    "quantity": 1,
+    "sourcePieces": "1"
+  },
+  {
+    "brand": "Oppo",
+    "brandSerial": 51,
+    "modelName": "Oppo Reno 11 5G",
+    "quantity": 1,
+    "sourcePieces": "122"
+  },
+  {
+    "brand": "Oppo",
+    "brandSerial": 52,
+    "modelName": "Oppo Reno 11 Pro 5G",
+    "quantity": 1,
+    "sourcePieces": "123"
+  },
+  {
+    "brand": "Oppo",
+    "brandSerial": 53,
+    "modelName": "Oppo Reno12 F 4G / 5G",
+    "quantity": 2,
+    "sourcePieces": "339"
+  },
+  {
+    "brand": "Oppo",
+    "brandSerial": 54,
+    "modelName": "Reno 13",
+    "quantity": 1,
+    "sourcePieces": "95"
+  },
+  {
+    "brand": "Oppo",
+    "brandSerial": 55,
+    "modelName": "Oppo Reno13 Pro",
+    "quantity": 1,
+    "sourcePieces": "207"
+  },
+  {
+    "brand": "Oppo",
+    "brandSerial": 56,
+    "modelName": "Oppo Reno14 Pro",
+    "quantity": 1,
+    "sourcePieces": "206"
+  },
+  {
+    "brand": "Oppo",
+    "brandSerial": 57,
+    "modelName": "Reno 14 Pro",
+    "quantity": 1,
+    "sourcePieces": "31"
+  },
+  {
+    "brand": "Oppo",
+    "brandSerial": 58,
+    "modelName": "Oppo Reno15 5G",
+    "quantity": 1,
+    "sourcePieces": "366"
+  },
+  {
+    "brand": "Oppo",
+    "brandSerial": 59,
+    "modelName": "Reno 15 5G",
+    "quantity": 1,
+    "sourcePieces": "175"
+  },
+  {
+    "brand": "Oppo",
+    "brandSerial": 60,
+    "modelName": "Reno 15C 5G",
+    "quantity": 1,
+    "sourcePieces": "174"
+  },
+  {
+    "brand": "Oppo",
+    "brandSerial": 61,
+    "modelName": "Reno 15 Pro",
+    "quantity": 2,
+    "sourcePieces": "172"
+  },
+  {
+    "brand": "Other",
+    "brandSerial": 1,
+    "modelName": "F31 / A6 Pro 4G / A6 Pro 5G",
+    "quantity": 1,
+    "sourcePieces": "205"
+  },
+  {
+    "brand": "Other",
+    "brandSerial": 2,
+    "modelName": "M7",
+    "quantity": 1,
+    "sourcePieces": "214"
+  },
+  {
+    "brand": "Other",
+    "brandSerial": 3,
+    "modelName": "RL C65 5G",
+    "quantity": 1,
+    "sourcePieces": "212"
+  },
+  {
+    "brand": "Other",
+    "brandSerial": 4,
+    "modelName": "RL-C73",
+    "quantity": 1,
+    "sourcePieces": "210"
+  },
+  {
+    "brand": "Poco",
+    "brandSerial": 1,
+    "modelName": "Poco C31",
+    "quantity": 1,
+    "sourcePieces": "181"
+  },
+  {
+    "brand": "Poco",
+    "brandSerial": 2,
+    "modelName": "Poco C55",
+    "quantity": 1,
+    "sourcePieces": "142"
+  },
+  {
+    "brand": "Poco",
+    "brandSerial": 3,
+    "modelName": "Poco F6 Pro",
+    "quantity": 1,
+    "sourcePieces": "304"
+  },
+  {
+    "brand": "Poco",
+    "brandSerial": 4,
+    "modelName": "Poco M4 Pro",
+    "quantity": 1,
+    "sourcePieces": "303"
+  },
+  {
+    "brand": "Poco",
+    "brandSerial": 5,
+    "modelName": "Poco M8",
+    "quantity": 1,
+    "sourcePieces": "182"
+  },
+  {
+    "brand": "Poco",
+    "brandSerial": 6,
+    "modelName": "Poco X3",
+    "quantity": 1,
+    "sourcePieces": "52"
+  },
+  {
+    "brand": "Poco",
+    "brandSerial": 7,
+    "modelName": "Poco X7 Pro 5G",
+    "quantity": 1,
+    "sourcePieces": "305"
+  },
+  {
+    "brand": "Realme",
+    "brandSerial": 1,
+    "modelName": "Realme 2",
+    "quantity": 1,
+    "sourcePieces": "3"
+  },
+  {
+    "brand": "Realme",
+    "brandSerial": 2,
+    "modelName": "Realme 2 Pro",
+    "quantity": 1,
+    "sourcePieces": "4"
+  },
+  {
+    "brand": "Realme",
+    "brandSerial": 3,
+    "modelName": "Realme 3",
+    "quantity": 2,
+    "sourcePieces": "60"
+  },
+  {
+    "brand": "Realme",
+    "brandSerial": 4,
+    "modelName": "Realme 5",
+    "quantity": 1,
+    "sourcePieces": "5"
+  },
+  {
+    "brand": "Realme",
+    "brandSerial": 5,
+    "modelName": "Realme 6",
+    "quantity": 1,
+    "sourcePieces": "58"
+  },
+  {
+    "brand": "Realme",
+    "brandSerial": 6,
+    "modelName": "Realme 6 Pro",
+    "quantity": 2,
+    "sourcePieces": "96,332"
+  },
+  {
+    "brand": "Realme",
+    "brandSerial": 7,
+    "modelName": "Realme 7",
+    "quantity": 2,
+    "sourcePieces": "59"
+  },
+  {
+    "brand": "Realme",
+    "brandSerial": 8,
+    "modelName": "Realme 7 Pro",
+    "quantity": 2,
+    "sourcePieces": "12"
+  },
+  {
+    "brand": "Realme",
+    "brandSerial": 9,
+    "modelName": "Realme 8",
+    "quantity": 1,
+    "sourcePieces": "325"
+  },
+  {
+    "brand": "Realme",
+    "brandSerial": 10,
+    "modelName": "Realme 8 4G",
+    "quantity": 2,
+    "sourcePieces": "291"
+  },
+  {
+    "brand": "Realme",
+    "brandSerial": 11,
+    "modelName": "Realme 8i / Narzo 50 4G",
+    "quantity": 1,
+    "sourcePieces": "57"
+  },
+  {
+    "brand": "Realme",
+    "brandSerial": 12,
+    "modelName": "Realme 8 Pro",
+    "quantity": 1,
+    "sourcePieces": "17"
+  },
+  {
+    "brand": "Realme",
+    "brandSerial": 13,
+    "modelName": "Realme 9 4G",
+    "quantity": 1,
+    "sourcePieces": "267"
+  },
+  {
+    "brand": "Realme",
+    "brandSerial": 14,
+    "modelName": "Realme 9i",
+    "quantity": 1,
+    "sourcePieces": "264"
+  },
+  {
+    "brand": "Realme",
+    "brandSerial": 15,
+    "modelName": "Realme 9i 5G",
+    "quantity": 1,
+    "sourcePieces": "90"
+  },
+  {
+    "brand": "Realme",
+    "brandSerial": 16,
+    "modelName": "Realme 9 Pro",
+    "quantity": 1,
+    "sourcePieces": "91"
+  },
+  {
+    "brand": "Realme",
+    "brandSerial": 17,
+    "modelName": "Realme 10",
+    "quantity": 2,
+    "sourcePieces": "93"
+  },
+  {
+    "brand": "Realme",
+    "brandSerial": 18,
+    "modelName": "Realme 10 5G / Realme 10T 5G / Realme 9i 5G",
+    "quantity": 3,
+    "sourcePieces": "101"
+  },
+  {
+    "brand": "Realme",
+    "brandSerial": 19,
+    "modelName": "Realme 10C",
+    "quantity": 1,
+    "sourcePieces": "263"
+  },
+  {
+    "brand": "Realme",
+    "brandSerial": 20,
+    "modelName": "Realme 10 Pro+ 5G",
+    "quantity": 1,
+    "sourcePieces": "120"
+  },
+  {
+    "brand": "Realme",
+    "brandSerial": 21,
+    "modelName": "Realme 11 4G",
+    "quantity": 1,
+    "sourcePieces": "121"
+  },
+  {
+    "brand": "Realme",
+    "brandSerial": 22,
+    "modelName": "Realme 11 5G / C67 5G / 11X 5G / Narzo 60X 5G / V50 5G / V50s 5G",
+    "quantity": 3,
+    "sourcePieces": "107"
+  },
+  {
+    "brand": "Realme",
+    "brandSerial": 23,
+    "modelName": "Realme 11 Pro",
+    "quantity": 2,
+    "sourcePieces": "238"
+  },
+  {
+    "brand": "Realme",
+    "brandSerial": 24,
+    "modelName": "Realme 11 Pro+",
+    "quantity": 2,
+    "sourcePieces": "286"
+  },
+  {
+    "brand": "Realme",
+    "brandSerial": 25,
+    "modelName": "Realme 11 Pro / 11 Pro+",
+    "quantity": 1,
+    "sourcePieces": "104"
+  },
+  {
+    "brand": "Realme",
+    "brandSerial": 26,
+    "modelName": "Realme 12+",
+    "quantity": 1,
+    "sourcePieces": "94"
+  },
+  {
+    "brand": "Realme",
+    "brandSerial": 27,
+    "modelName": "Realme 12 5G",
+    "quantity": 1,
+    "sourcePieces": "240"
+  },
+  {
+    "brand": "Realme",
+    "brandSerial": 28,
+    "modelName": "Realme 12 5G / 12X 5G / C65 5G / 13 5G / Narzo N65 5G",
+    "quantity": 2,
+    "sourcePieces": "106"
+  },
+  {
+    "brand": "Realme",
+    "brandSerial": 29,
+    "modelName": "Realme 12+ 5G / Realme 13 4G / Realme P1 5G / Narzo 70 5G / Narzo 70 Pro 5G",
+    "quantity": 1,
+    "sourcePieces": "105"
+  },
+  {
+    "brand": "Realme",
+    "brandSerial": 30,
+    "modelName": "Realme 12C 5G",
+    "quantity": 1,
+    "sourcePieces": "341"
+  },
+  {
+    "brand": "Realme",
+    "brandSerial": 31,
+    "modelName": "Realme 13C",
+    "quantity": 1,
+    "sourcePieces": "347"
+  },
+  {
+    "brand": "Realme",
+    "brandSerial": 32,
+    "modelName": "Realme 13C 5G",
+    "quantity": 1,
+    "sourcePieces": "295"
+  },
+  {
+    "brand": "Realme",
+    "brandSerial": 33,
+    "modelName": "Realme 14 Pro 5G",
+    "quantity": 1,
+    "sourcePieces": "102"
+  },
+  {
+    "brand": "Realme",
+    "brandSerial": 34,
+    "modelName": "Realme 14X",
+    "quantity": 1,
+    "sourcePieces": "252"
+  },
+  {
+    "brand": "Realme",
+    "brandSerial": 35,
+    "modelName": "Realme 14X 5G",
+    "quantity": 1,
+    "sourcePieces": "103"
+  },
+  {
+    "brand": "Realme",
+    "brandSerial": 36,
+    "modelName": "Realme 15 Pro",
+    "quantity": 5,
+    "sourcePieces": "250"
+  },
+  {
+    "brand": "Realme",
+    "brandSerial": 37,
+    "modelName": "Realme 15T",
+    "quantity": 2,
+    "sourcePieces": "251"
+  },
+  {
+    "brand": "Realme",
+    "brandSerial": 38,
+    "modelName": "Realme 16 Pro 5G",
+    "quantity": 3,
+    "sourcePieces": "88"
+  },
+  {
+    "brand": "Realme",
+    "brandSerial": 39,
+    "modelName": "Realme A3",
+    "quantity": 1,
+    "sourcePieces": "268"
+  },
+  {
+    "brand": "Realme",
+    "brandSerial": 40,
+    "modelName": "Realme A4 / Redmi 14C",
+    "quantity": 1,
+    "sourcePieces": "271"
+  },
+  {
+    "brand": "Realme",
+    "brandSerial": 41,
+    "modelName": "Realme C1",
+    "quantity": 2,
+    "sourcePieces": "229,300"
+  },
+  {
+    "brand": "Realme",
+    "brandSerial": 42,
+    "modelName": "Realme C2",
+    "quantity": 2,
+    "sourcePieces": "55,217"
+  },
+  {
+    "brand": "Realme",
+    "brandSerial": 43,
+    "modelName": "Realme C3",
+    "quantity": 1,
+    "sourcePieces": "56"
+  },
+  {
+    "brand": "Realme",
+    "brandSerial": 44,
+    "modelName": "Realme C11",
+    "quantity": 2,
+    "sourcePieces": "215"
+  },
+  {
+    "brand": "Realme",
+    "brandSerial": 45,
+    "modelName": "Realme C12",
+    "quantity": 2,
+    "sourcePieces": "228"
+  },
+  {
+    "brand": "Realme",
+    "brandSerial": 46,
+    "modelName": "Realme C12 / C25",
+    "quantity": 1,
+    "sourcePieces": "22"
+  },
+  {
+    "brand": "Realme",
+    "brandSerial": 47,
+    "modelName": "Realme C15",
+    "quantity": 2,
+    "sourcePieces": "354,367"
+  },
+  {
+    "brand": "Realme",
+    "brandSerial": 48,
+    "modelName": "Realme C15 / C12 / C25 / Narzo 20 / C25s / Narzo 30A / 7i",
+    "quantity": 1,
+    "sourcePieces": "110"
+  },
+  {
+    "brand": "Realme",
+    "brandSerial": 49,
+    "modelName": "Realme C21Y / C25Y",
+    "quantity": 1,
+    "sourcePieces": "2"
+  },
+  {
+    "brand": "Realme",
+    "brandSerial": 50,
+    "modelName": "Realme C30s",
+    "quantity": 2,
+    "sourcePieces": "296"
+  },
+  {
+    "brand": "Realme",
+    "brandSerial": 51,
+    "modelName": "Realme C33",
+    "quantity": 2,
+    "sourcePieces": "299"
+  },
+  {
+    "brand": "Realme",
+    "brandSerial": 52,
+    "modelName": "Realme C33 (2023)",
+    "quantity": 1,
+    "sourcePieces": "297"
+  },
+  {
+    "brand": "Realme",
+    "brandSerial": 53,
+    "modelName": "Realme C35",
+    "quantity": 3,
+    "sourcePieces": "298"
+  },
+  {
+    "brand": "Realme",
+    "brandSerial": 54,
+    "modelName": "Realme C53",
+    "quantity": 1,
+    "sourcePieces": "266"
+  },
+  {
+    "brand": "Realme",
+    "brandSerial": 55,
+    "modelName": "Realme C55",
+    "quantity": 1,
+    "sourcePieces": "20"
+  },
+  {
+    "brand": "Realme",
+    "brandSerial": 56,
+    "modelName": "Realme C63 5G",
+    "quantity": 1,
+    "sourcePieces": "19"
+  },
+  {
+    "brand": "Realme",
+    "brandSerial": 57,
+    "modelName": "Realme C63 / Narzo N63",
+    "quantity": 1,
+    "sourcePieces": "13"
+  },
+  {
+    "brand": "Realme",
+    "brandSerial": 58,
+    "modelName": "Realme C65 4G",
+    "quantity": 1,
+    "sourcePieces": "14"
+  },
+  {
+    "brand": "Realme",
+    "brandSerial": 59,
+    "modelName": "Realme C67 4G",
+    "quantity": 2,
+    "sourcePieces": "18"
+  },
+  {
+    "brand": "Realme",
+    "brandSerial": 60,
+    "modelName": "Realme C67 5G",
+    "quantity": 2,
+    "sourcePieces": "92"
+  },
+  {
+    "brand": "Realme",
+    "brandSerial": 61,
+    "modelName": "Realme C71",
+    "quantity": 1,
+    "sourcePieces": "249"
+  },
+  {
+    "brand": "Realme",
+    "brandSerial": 62,
+    "modelName": "Realme C75 4G",
+    "quantity": 1,
+    "sourcePieces": "15"
+  },
+  {
+    "brand": "Realme",
+    "brandSerial": 63,
+    "modelName": "Realme Narzo 20",
+    "quantity": 1,
+    "sourcePieces": "227"
+  },
+  {
+    "brand": "Realme",
+    "brandSerial": 64,
+    "modelName": "Realme Narzo 50A",
+    "quantity": 1,
+    "sourcePieces": "152"
+  },
+  {
+    "brand": "Realme",
+    "brandSerial": 65,
+    "modelName": "Realme Narzo 50i",
+    "quantity": 3,
+    "sourcePieces": "159,364"
+  },
+  {
+    "brand": "Realme",
+    "brandSerial": 66,
+    "modelName": "Realme Narzo 60 5G",
+    "quantity": 6,
+    "sourcePieces": "151,289"
+  },
+  {
+    "brand": "Realme",
+    "brandSerial": 67,
+    "modelName": "Realme P3 5G",
+    "quantity": 1,
+    "sourcePieces": "111"
+  },
+  {
+    "brand": "Realme",
+    "brandSerial": 68,
+    "modelName": "Realme P3 Pro 5G",
+    "quantity": 4,
+    "sourcePieces": "108"
+  },
+  {
+    "brand": "Realme",
+    "brandSerial": 69,
+    "modelName": "Realme P4",
+    "quantity": 2,
+    "sourcePieces": "98"
+  },
+  {
+    "brand": "Realme",
+    "brandSerial": 70,
+    "modelName": "Realme P4 Lite 4G",
+    "quantity": 1,
+    "sourcePieces": "166"
+  },
+  {
+    "brand": "Realme",
+    "brandSerial": 71,
+    "modelName": "Realme P4 Power",
+    "quantity": 1,
+    "sourcePieces": "89"
+  },
+  {
+    "brand": "Realme",
+    "brandSerial": 72,
+    "modelName": "Realme P4 Pro 5G",
+    "quantity": 1,
+    "sourcePieces": "173"
+  },
+  {
+    "brand": "Realme",
+    "brandSerial": 73,
+    "modelName": "Realme P4X 5G",
+    "quantity": 1,
+    "sourcePieces": "77"
+  },
+  {
+    "brand": "Redmi",
+    "brandSerial": 1,
+    "modelName": "Redmi 7A",
+    "quantity": 1,
+    "sourcePieces": "310"
+  },
+  {
+    "brand": "Redmi",
+    "brandSerial": 2,
+    "modelName": "Redmi 7 / Vivo Y3",
+    "quantity": 1,
+    "sourcePieces": "363"
+  },
+  {
+    "brand": "Redmi",
+    "brandSerial": 3,
+    "modelName": "Redmi 8A Dual",
+    "quantity": 1,
+    "sourcePieces": "359"
+  },
+  {
+    "brand": "Redmi",
+    "brandSerial": 4,
+    "modelName": "Redmi 9 4G / Redmi 9 Prime / Poco M2",
+    "quantity": 1,
+    "sourcePieces": "265"
+  },
+  {
+    "brand": "Redmi",
+    "brandSerial": 5,
+    "modelName": "Redmi 9A",
+    "quantity": 1,
+    "sourcePieces": "301"
+  },
+  {
+    "brand": "Redmi",
+    "brandSerial": 6,
+    "modelName": "Redmi 9A / 9i",
+    "quantity": 4,
+    "sourcePieces": "64,80"
+  },
+  {
+    "brand": "Redmi",
+    "brandSerial": 7,
+    "modelName": "Redmi 9 Prime",
+    "quantity": 2,
+    "sourcePieces": "329"
+  },
+  {
+    "brand": "Redmi",
+    "brandSerial": 8,
+    "modelName": "Redmi 9 / Redmi 9C",
+    "quantity": 2,
+    "sourcePieces": "312"
+  },
+  {
+    "brand": "Redmi",
+    "brandSerial": 9,
+    "modelName": "Redmi 9T / Redmi 9 Power",
+    "quantity": 2,
+    "sourcePieces": "72,262"
+  },
+  {
+    "brand": "Redmi",
+    "brandSerial": 10,
+    "modelName": "Redmi 10 4G 2021 / 2022 / 10 Prime",
+    "quantity": 1,
+    "sourcePieces": "319"
+  },
+  {
+    "brand": "Redmi",
+    "brandSerial": 11,
+    "modelName": "Redmi 10 / 10C",
+    "quantity": 1,
+    "sourcePieces": "358"
+  },
+  {
+    "brand": "Redmi",
+    "brandSerial": 12,
+    "modelName": "Redmi 10 Prime",
+    "quantity": 1,
+    "sourcePieces": "361"
+  },
+  {
+    "brand": "Redmi",
+    "brandSerial": 13,
+    "modelName": "Redmi 11 Prime 4G",
+    "quantity": 1,
+    "sourcePieces": "313"
+  },
+  {
+    "brand": "Redmi",
+    "brandSerial": 14,
+    "modelName": "Redmi 12 4G / Redmi 12 5G / Poco M6 Pro 5G",
+    "quantity": 1,
+    "sourcePieces": "261"
+  },
+  {
+    "brand": "Redmi",
+    "brandSerial": 15,
+    "modelName": "Redmi 13 4G / 5G / Note 13 5G / Poco M6 4G",
+    "quantity": 1,
+    "sourcePieces": "323"
+  },
+  {
+    "brand": "Redmi",
+    "brandSerial": 16,
+    "modelName": "Redmi 13C 4G / 5G / 13R / Poco C65 / Poco M6 5G",
+    "quantity": 1,
+    "sourcePieces": "324"
+  },
+  {
+    "brand": "Redmi",
+    "brandSerial": 17,
+    "modelName": "Redmi 13C 5G",
+    "quantity": 1,
+    "sourcePieces": "143"
+  },
+  {
+    "brand": "Redmi",
+    "brandSerial": 18,
+    "modelName": "Redmi 14C 4G / Redmi A4 5G EP / Oppo A3 Pro 4G Global / Poco C75 4G Overseas",
+    "quantity": 2,
+    "sourcePieces": "71"
+  },
+  {
+    "brand": "Redmi",
+    "brandSerial": 19,
+    "modelName": "Redmi Go",
+    "quantity": 1,
+    "sourcePieces": "259"
+  },
+  {
+    "brand": "Redmi",
+    "brandSerial": 20,
+    "modelName": "Redmi Note 4",
+    "quantity": 2,
+    "sourcePieces": "345"
+  },
+  {
+    "brand": "Redmi",
+    "brandSerial": 21,
+    "modelName": "Redmi Note 5",
+    "quantity": 2,
+    "sourcePieces": "302"
+  },
+  {
+    "brand": "Redmi",
+    "brandSerial": 22,
+    "modelName": "Redmi Note 5 Pro",
+    "quantity": 1,
+    "sourcePieces": "260"
+  },
+  {
+    "brand": "Redmi",
+    "brandSerial": 23,
+    "modelName": "Redmi Note 6 Pro",
+    "quantity": 7,
+    "sourcePieces": "258,335"
+  },
+  {
+    "brand": "Redmi",
+    "brandSerial": 24,
+    "modelName": "Redmi Note 7 / 7 Pro",
+    "quantity": 1,
+    "sourcePieces": "362"
+  },
+  {
+    "brand": "Redmi",
+    "brandSerial": 25,
+    "modelName": "Redmi Note 7 / 7S / 7 Pro",
+    "quantity": 1,
+    "sourcePieces": "368"
+  },
+  {
+    "brand": "Redmi",
+    "brandSerial": 26,
+    "modelName": "Redmi Note 7 Pro / Note 7 / Note 7S",
+    "quantity": 1,
+    "sourcePieces": "73"
+  },
+  {
+    "brand": "Redmi",
+    "brandSerial": 27,
+    "modelName": "Redmi Note 9",
+    "quantity": 1,
+    "sourcePieces": "74"
+  },
+  {
+    "brand": "Redmi",
+    "brandSerial": 28,
+    "modelName": "Redmi Note 9 Pro / Note 9S / Note 9 Pro Max / Note 10 Lite 4G / Poco M2 Pro",
+    "quantity": 1,
+    "sourcePieces": "246"
+  },
+  {
+    "brand": "Redmi",
+    "brandSerial": 29,
+    "modelName": "Redmi Note 10",
+    "quantity": 1,
+    "sourcePieces": "183"
+  },
+  {
+    "brand": "Redmi",
+    "brandSerial": 30,
+    "modelName": "Redmi Note 10 4G / Note 10S 4G / Note 11 SE 4G / Poco M5s 4G",
+    "quantity": 1,
+    "sourcePieces": "270"
+  },
+  {
+    "brand": "Redmi",
+    "brandSerial": 31,
+    "modelName": "Redmi Note 10 / Note 10T / Poco M3 Pro",
+    "quantity": 2,
+    "sourcePieces": "257"
+  },
+  {
+    "brand": "Redmi",
+    "brandSerial": 32,
+    "modelName": "Redmi Note 11 4G",
+    "quantity": 1,
+    "sourcePieces": "196"
+  },
+  {
+    "brand": "Redmi",
+    "brandSerial": 33,
+    "modelName": "Redmi Note 11 4G / Note 11S 4G / Note 12S 4G",
+    "quantity": 1,
+    "sourcePieces": "273"
+  },
+  {
+    "brand": "Redmi",
+    "brandSerial": 34,
+    "modelName": "Redmi Note 11 Pro",
+    "quantity": 1,
+    "sourcePieces": "269"
+  },
+  {
+    "brand": "Redmi",
+    "brandSerial": 35,
+    "modelName": "Redmi Note 12 5G",
+    "quantity": 1,
+    "sourcePieces": "16"
+  },
+  {
+    "brand": "Redmi",
+    "brandSerial": 36,
+    "modelName": "Redmi Note 13",
+    "quantity": 1,
+    "sourcePieces": "336"
+  },
+  {
+    "brand": "Redmi",
+    "brandSerial": 37,
+    "modelName": "Redmi Note 13 4G",
+    "quantity": 1,
+    "sourcePieces": "334"
+  },
+  {
+    "brand": "Redmi",
+    "brandSerial": 38,
+    "modelName": "Redmi Note 13 5G",
+    "quantity": 1,
+    "sourcePieces": "245"
+  },
+  {
+    "brand": "Redmi",
+    "brandSerial": 39,
+    "modelName": "Redmi Note 13 Pro",
+    "quantity": 3,
+    "sourcePieces": "47,256"
+  },
+  {
+    "brand": "Redmi",
+    "brandSerial": 40,
+    "modelName": "Redmi Note 14",
+    "quantity": 1,
+    "sourcePieces": "272"
+  },
+  {
+    "brand": "Redmi",
+    "brandSerial": 41,
+    "modelName": "Redmi Note 14 5G",
+    "quantity": 1,
+    "sourcePieces": "195"
+  },
+  {
+    "brand": "Redmi",
+    "brandSerial": 42,
+    "modelName": "Redmi Note 14 Pro+",
+    "quantity": 1,
+    "sourcePieces": "70"
+  },
+  {
+    "brand": "Samsung",
+    "brandSerial": 1,
+    "modelName": "Samsung Galaxy A03",
+    "quantity": 2,
+    "sourcePieces": "145"
+  },
+  {
+    "brand": "Samsung",
+    "brandSerial": 2,
+    "modelName": "Samsung Galaxy A03 Core",
+    "quantity": 2,
+    "sourcePieces": "149,281"
+  },
+  {
+    "brand": "Samsung",
+    "brandSerial": 3,
+    "modelName": "Samsung Galaxy A03s",
+    "quantity": 1,
+    "sourcePieces": "150"
+  },
+  {
+    "brand": "Samsung",
+    "brandSerial": 4,
+    "modelName": "Samsung Galaxy A04s",
+    "quantity": 1,
+    "sourcePieces": "326"
+  },
+  {
+    "brand": "Samsung",
+    "brandSerial": 5,
+    "modelName": "Samsung A05",
+    "quantity": 1,
+    "sourcePieces": "11"
+  },
+  {
+    "brand": "Samsung",
+    "brandSerial": 6,
+    "modelName": "Samsung Galaxy A05 New Variant",
+    "quantity": 2,
+    "sourcePieces": "133"
+  },
+  {
+    "brand": "Samsung",
+    "brandSerial": 7,
+    "modelName": "Samsung Galaxy A05s",
+    "quantity": 1,
+    "sourcePieces": "124"
+  },
+  {
+    "brand": "Samsung",
+    "brandSerial": 8,
+    "modelName": "Samsung Galaxy A06 5G",
+    "quantity": 1,
+    "sourcePieces": "148"
+  },
+  {
+    "brand": "Samsung",
+    "brandSerial": 9,
+    "modelName": "Samsung A6X",
+    "quantity": 2,
+    "sourcePieces": "68,84"
+  },
+  {
+    "brand": "Samsung",
+    "brandSerial": 10,
+    "modelName": "Samsung A07",
+    "quantity": 1,
+    "sourcePieces": "86"
+  },
+  {
+    "brand": "Samsung",
+    "brandSerial": 11,
+    "modelName": "Samsung A10S",
+    "quantity": 2,
+    "sourcePieces": "66,82"
+  },
+  {
+    "brand": "Samsung",
+    "brandSerial": 12,
+    "modelName": "Samsung A12",
+    "quantity": 2,
+    "sourcePieces": "65,81"
+  },
+  {
+    "brand": "Samsung",
+    "brandSerial": 13,
+    "modelName": "Samsung Galaxy A14",
+    "quantity": 1,
+    "sourcePieces": "203"
+  },
+  {
+    "brand": "Samsung",
+    "brandSerial": 14,
+    "modelName": "Samsung A14 4G / 5G",
+    "quantity": 1,
+    "sourcePieces": "160"
+  },
+  {
+    "brand": "Samsung",
+    "brandSerial": 15,
+    "modelName": "Samsung Galaxy A14 5G",
+    "quantity": 1,
+    "sourcePieces": "283"
+  },
+  {
+    "brand": "Samsung",
+    "brandSerial": 16,
+    "modelName": "Samsung A21S",
+    "quantity": 2,
+    "sourcePieces": "67,83"
+  },
+  {
+    "brand": "Samsung",
+    "brandSerial": 17,
+    "modelName": "Samsung Galaxy A22 4G",
+    "quantity": 1,
+    "sourcePieces": "128"
+  },
+  {
+    "brand": "Samsung",
+    "brandSerial": 18,
+    "modelName": "Samsung Galaxy A24",
+    "quantity": 1,
+    "sourcePieces": "236"
+  },
+  {
+    "brand": "Samsung",
+    "brandSerial": 19,
+    "modelName": "Samsung A50",
+    "quantity": 4,
+    "sourcePieces": "62,78"
+  },
+  {
+    "brand": "Samsung",
+    "brandSerial": 20,
+    "modelName": "Samsung Galaxy A53 5G",
+    "quantity": 1,
+    "sourcePieces": "287"
+  },
+  {
+    "brand": "Samsung",
+    "brandSerial": 21,
+    "modelName": "Samsung Galaxy A71 5G",
+    "quantity": 2,
+    "sourcePieces": "132"
+  },
+  {
+    "brand": "Samsung",
+    "brandSerial": 22,
+    "modelName": "Samsung Galaxy F25 5G",
+    "quantity": 1,
+    "sourcePieces": "125"
+  },
+  {
+    "brand": "Samsung",
+    "brandSerial": 23,
+    "modelName": "Samsung J2 2018",
+    "quantity": 2,
+    "sourcePieces": "43"
+  },
+  {
+    "brand": "Samsung",
+    "brandSerial": 24,
+    "modelName": "Samsung Galaxy J4",
+    "quantity": 1,
+    "sourcePieces": "138"
+  },
+  {
+    "brand": "Samsung",
+    "brandSerial": 25,
+    "modelName": "Samsung J4",
+    "quantity": 2,
+    "sourcePieces": "69,85"
+  },
+  {
+    "brand": "Samsung",
+    "brandSerial": 26,
+    "modelName": "Samsung Galaxy J6",
+    "quantity": 1,
+    "sourcePieces": "135"
+  },
+  {
+    "brand": "Samsung",
+    "brandSerial": 27,
+    "modelName": "Samsung Galaxy J7 Max",
+    "quantity": 2,
+    "sourcePieces": "134"
+  },
+  {
+    "brand": "Samsung",
+    "brandSerial": 28,
+    "modelName": "Samsung M10C",
+    "quantity": 1,
+    "sourcePieces": "164"
+  },
+  {
+    "brand": "Samsung",
+    "brandSerial": 29,
+    "modelName": "Samsung Galaxy M13 4G",
+    "quantity": 2,
+    "sourcePieces": "308"
+  },
+  {
+    "brand": "Samsung",
+    "brandSerial": 30,
+    "modelName": "Samsung Galaxy M14 5G / F14 5G",
+    "quantity": 1,
+    "sourcePieces": "126"
+  },
+  {
+    "brand": "Samsung",
+    "brandSerial": 31,
+    "modelName": "Samsung M16 5G / F16 / M36 5G / F36",
+    "quantity": 1,
+    "sourcePieces": "41"
+  },
+  {
+    "brand": "Samsung",
+    "brandSerial": 32,
+    "modelName": "Samsung M54",
+    "quantity": 1,
+    "sourcePieces": "158"
+  },
+  {
+    "brand": "Samsung",
+    "brandSerial": 33,
+    "modelName": "Samsung Galaxy M55 5G",
+    "quantity": 1,
+    "sourcePieces": "137"
+  },
+  {
+    "brand": "Samsung",
+    "brandSerial": 34,
+    "modelName": "Samsung Galaxy S21 FE",
+    "quantity": 1,
+    "sourcePieces": "349"
+  },
+  {
+    "brand": "Samsung",
+    "brandSerial": 35,
+    "modelName": "Samsung S21 FE",
+    "quantity": 1,
+    "sourcePieces": "153"
+  },
+  {
+    "brand": "Samsung",
+    "brandSerial": 36,
+    "modelName": "Samsung Galaxy S21 Ultra",
+    "quantity": 1,
+    "sourcePieces": "342"
+  },
+  {
+    "brand": "Samsung",
+    "brandSerial": 37,
+    "modelName": "Samsung Galaxy S23",
+    "quantity": 1,
+    "sourcePieces": "309"
+  },
+  {
+    "brand": "Samsung",
+    "brandSerial": 38,
+    "modelName": "Samsung Galaxy S23 Ultra",
+    "quantity": 1,
+    "sourcePieces": "327"
+  },
+  {
+    "brand": "Samsung",
+    "brandSerial": 39,
+    "modelName": "Samsung S24",
+    "quantity": 1,
+    "sourcePieces": "6"
+  },
+  {
+    "brand": "Samsung",
+    "brandSerial": 40,
+    "modelName": "Samsung S24 FE",
+    "quantity": 1,
+    "sourcePieces": "7"
+  },
+  {
+    "brand": "Vivo",
+    "brandSerial": 1,
+    "modelName": "Vivo S1",
+    "quantity": 1,
+    "sourcePieces": "199"
+  },
+  {
+    "brand": "Vivo",
+    "brandSerial": 2,
+    "modelName": "Vivo S1 Pro",
+    "quantity": 1,
+    "sourcePieces": "197"
+  },
+  {
+    "brand": "Vivo",
+    "brandSerial": 3,
+    "modelName": "Vivo S2 / Y2",
+    "quantity": 1,
+    "sourcePieces": "35"
+  },
+  {
+    "brand": "Vivo",
+    "brandSerial": 4,
+    "modelName": "Vivo T1 5G",
+    "quantity": 1,
+    "sourcePieces": "360"
+  },
+  {
+    "brand": "Vivo",
+    "brandSerial": 5,
+    "modelName": "Vivo T1 44W 4G",
+    "quantity": 1,
+    "sourcePieces": "357"
+  },
+  {
+    "brand": "Vivo",
+    "brandSerial": 6,
+    "modelName": "Vivo T4 5G",
+    "quantity": 2,
+    "sourcePieces": "190,338"
+  },
+  {
+    "brand": "Vivo",
+    "brandSerial": 7,
+    "modelName": "Vivo T4 Lite",
+    "quantity": 1,
+    "sourcePieces": "187"
+  },
+  {
+    "brand": "Vivo",
+    "brandSerial": 8,
+    "modelName": "Vivo T4R",
+    "quantity": 2,
+    "sourcePieces": "185,351"
+  },
+  {
+    "brand": "Vivo",
+    "brandSerial": 9,
+    "modelName": "Vivo V5",
+    "quantity": 2,
+    "sourcePieces": "48"
+  },
+  {
+    "brand": "Vivo",
+    "brandSerial": 10,
+    "modelName": "Vivo V9 / Y83 Pro",
+    "quantity": 2,
+    "sourcePieces": "177,365"
+  },
+  {
+    "brand": "Vivo",
+    "brandSerial": 11,
+    "modelName": "Vivo V11 / Vivo V11 Pro",
+    "quantity": 1,
+    "sourcePieces": "218"
+  },
+  {
+    "brand": "Vivo",
+    "brandSerial": 12,
+    "modelName": "Vivo V15",
+    "quantity": 1,
+    "sourcePieces": "53"
+  },
+  {
+    "brand": "Vivo",
+    "brandSerial": 13,
+    "modelName": "Vivo V19 / V19e",
+    "quantity": 1,
+    "sourcePieces": "51"
+  },
+  {
+    "brand": "Vivo",
+    "brandSerial": 14,
+    "modelName": "Vivo V20",
+    "quantity": 2,
+    "sourcePieces": "49,328"
+  },
+  {
+    "brand": "Vivo",
+    "brandSerial": 15,
+    "modelName": "Vivo V21e 4G / Y73 / V20",
+    "quantity": 1,
+    "sourcePieces": "119"
+  },
+  {
+    "brand": "Vivo",
+    "brandSerial": 16,
+    "modelName": "Vivo V23 5G / S12",
+    "quantity": 1,
+    "sourcePieces": "116"
+  },
+  {
+    "brand": "Vivo",
+    "brandSerial": 17,
+    "modelName": "Vivo V29e",
+    "quantity": 2,
+    "sourcePieces": "192,224"
+  },
+  {
+    "brand": "Vivo",
+    "brandSerial": 18,
+    "modelName": "Vivo V29 / V29 Pro",
+    "quantity": 1,
+    "sourcePieces": "189"
+  },
+  {
+    "brand": "Vivo",
+    "brandSerial": 19,
+    "modelName": "Vivo V30",
+    "quantity": 2,
+    "sourcePieces": "293"
+  },
+  {
+    "brand": "Vivo",
+    "brandSerial": 20,
+    "modelName": "Vivo V30e / V40 Lite",
+    "quantity": 1,
+    "sourcePieces": "26"
+  },
+  {
+    "brand": "Vivo",
+    "brandSerial": 21,
+    "modelName": "Vivo V30 / V30 Pro / S18 / S17 Pro",
+    "quantity": 1,
+    "sourcePieces": "27"
+  },
+  {
+    "brand": "Vivo",
+    "brandSerial": 22,
+    "modelName": "Vivo V40",
+    "quantity": 1,
+    "sourcePieces": "141"
+  },
+  {
+    "brand": "Vivo",
+    "brandSerial": 23,
+    "modelName": "Vivo V40 Lite",
+    "quantity": 1,
+    "sourcePieces": "200"
+  },
+  {
+    "brand": "Vivo",
+    "brandSerial": 24,
+    "modelName": "Vivo V40 / V40 Pro",
+    "quantity": 1,
+    "sourcePieces": "320"
+  },
+  {
+    "brand": "Vivo",
+    "brandSerial": 25,
+    "modelName": "Vivo V50",
+    "quantity": 1,
+    "sourcePieces": "294"
+  },
+  {
+    "brand": "Vivo",
+    "brandSerial": 26,
+    "modelName": "Vivo V50 Lite",
+    "quantity": 1,
+    "sourcePieces": "162"
+  },
+  {
+    "brand": "Vivo",
+    "brandSerial": 27,
+    "modelName": "Vivo V50 / V50e",
+    "quantity": 2,
+    "sourcePieces": "25"
+  },
+  {
+    "brand": "Vivo",
+    "brandSerial": 28,
+    "modelName": "Vivo V50 / V50e / T4R",
+    "quantity": 1,
+    "sourcePieces": "318"
+  },
+  {
+    "brand": "Vivo",
+    "brandSerial": 29,
+    "modelName": "Vivo V70 5G / V70 Elite",
+    "quantity": 1,
+    "sourcePieces": "140"
+  },
+  {
+    "brand": "Vivo",
+    "brandSerial": 30,
+    "modelName": "Vivo X100 Pro",
+    "quantity": 1,
+    "sourcePieces": "223"
+  },
+  {
+    "brand": "Vivo",
+    "brandSerial": 31,
+    "modelName": "Vivo X200 5G",
+    "quantity": 2,
+    "sourcePieces": "221"
+  },
+  {
+    "brand": "Vivo",
+    "brandSerial": 32,
+    "modelName": "Vivo Y02",
+    "quantity": 1,
+    "sourcePieces": "21"
+  },
+  {
+    "brand": "Vivo",
+    "brandSerial": 33,
+    "modelName": "Vivo Y02s",
+    "quantity": 1,
+    "sourcePieces": "353"
+  },
+  {
+    "brand": "Vivo",
+    "brandSerial": 34,
+    "modelName": "Vivo Y03 4G / Y18e 4G / Y18 4G / T3 Lite 5G / Y28s 5G",
+    "quantity": 1,
+    "sourcePieces": "115"
+  },
+  {
+    "brand": "Vivo",
+    "brandSerial": 35,
+    "modelName": "Vivo Y04",
+    "quantity": 1,
+    "sourcePieces": "248"
+  },
+  {
+    "brand": "Vivo",
+    "brandSerial": 36,
+    "modelName": "Vivo Y05 5G",
+    "quantity": 1,
+    "sourcePieces": "188"
+  },
+  {
+    "brand": "Vivo",
+    "brandSerial": 37,
+    "modelName": "Vivo Y12 / Y15 / Y17",
+    "quantity": 1,
+    "sourcePieces": "34"
+  },
+  {
+    "brand": "Vivo",
+    "brandSerial": 38,
+    "modelName": "Vivo Y15S",
+    "quantity": 1,
+    "sourcePieces": "30"
+  },
+  {
+    "brand": "Vivo",
+    "brandSerial": 39,
+    "modelName": "Vivo Y16 4G / Vivo Y56 5G / Vivo T2x 5G",
+    "quantity": 1,
+    "sourcePieces": "275"
+  },
+  {
+    "brand": "Vivo",
+    "brandSerial": 40,
+    "modelName": "Vivo Y19 5G",
+    "quantity": 1,
+    "sourcePieces": "180"
+  },
+  {
+    "brand": "Vivo",
+    "brandSerial": 41,
+    "modelName": "Vivo Y19e",
+    "quantity": 1,
+    "sourcePieces": "352"
+  },
+  {
+    "brand": "Vivo",
+    "brandSerial": 42,
+    "modelName": "Vivo Y19s 4G / Y29 5G",
+    "quantity": 1,
+    "sourcePieces": "117"
+  },
+  {
+    "brand": "Vivo",
+    "brandSerial": 43,
+    "modelName": "Vivo Y20 / Y20i / Y20A / Y11s / Y12s / Y20s",
+    "quantity": 1,
+    "sourcePieces": "113"
+  },
+  {
+    "brand": "Vivo",
+    "brandSerial": 44,
+    "modelName": "Vivo Y21 2021",
+    "quantity": 1,
+    "sourcePieces": "176"
+  },
+  {
+    "brand": "Vivo",
+    "brandSerial": 45,
+    "modelName": "Vivo Y28",
+    "quantity": 1,
+    "sourcePieces": "184"
+  },
+  {
+    "brand": "Vivo",
+    "brandSerial": 46,
+    "modelName": "Vivo Y29 4G / Vivo T4x 5G / Vivo Y31 Pro",
+    "quantity": 1,
+    "sourcePieces": "276"
+  },
+  {
+    "brand": "Vivo",
+    "brandSerial": 47,
+    "modelName": "Vivo Y29s 5G / Y04 4G / Y19e 4G / Y19 5G / T4 Lite 5G / Y29T 5G / iQOO Z10 Lite 5G / Y04s 4G / Y19s GT",
+    "quantity": 2,
+    "sourcePieces": "118"
+  },
+  {
+    "brand": "Vivo",
+    "brandSerial": 48,
+    "modelName": "Vivo Y30 / Y50",
+    "quantity": 1,
+    "sourcePieces": "193"
+  },
+  {
+    "brand": "Vivo",
+    "brandSerial": 49,
+    "modelName": "Vivo Y31 5G",
+    "quantity": 1,
+    "sourcePieces": "54"
+  },
+  {
+    "brand": "Vivo",
+    "brandSerial": 50,
+    "modelName": "Vivo Y31 5G / Vivo Y21D 4G",
+    "quantity": 5,
+    "sourcePieces": "243"
+  },
+  {
+    "brand": "Vivo",
+    "brandSerial": 51,
+    "modelName": "Vivo Y33s",
+    "quantity": 1,
+    "sourcePieces": "186"
+  },
+  {
+    "brand": "Vivo",
+    "brandSerial": 52,
+    "modelName": "Vivo Y35 4G",
+    "quantity": 2,
+    "sourcePieces": "178"
+  },
+  {
+    "brand": "Vivo",
+    "brandSerial": 53,
+    "modelName": "Vivo Y36 4G",
+    "quantity": 3,
+    "sourcePieces": "179"
+  },
+  {
+    "brand": "Vivo",
+    "brandSerial": 54,
+    "modelName": "Vivo Y73",
+    "quantity": 3,
+    "sourcePieces": "198,316"
+  },
+  {
+    "brand": "Vivo",
+    "brandSerial": 55,
+    "modelName": "Vivo Y75 5G",
+    "quantity": 2,
+    "sourcePieces": "23,222"
+  },
+  {
+    "brand": "Vivo",
+    "brandSerial": 56,
+    "modelName": "Vivo Y76 5G",
+    "quantity": 1,
+    "sourcePieces": "219"
+  },
+  {
+    "brand": "Vivo",
+    "brandSerial": 57,
+    "modelName": "Vivo Y78",
+    "quantity": 1,
+    "sourcePieces": "220"
+  },
+  {
+    "brand": "Vivo",
+    "brandSerial": 58,
+    "modelName": "Vivo Y81",
+    "quantity": 1,
+    "sourcePieces": "225"
+  },
+  {
+    "brand": "Vivo",
+    "brandSerial": 59,
+    "modelName": "Vivo Y83",
+    "quantity": 1,
+    "sourcePieces": "226"
+  },
+  {
+    "brand": "Vivo",
+    "brandSerial": 60,
+    "modelName": "Vivo Y90 / Y91i",
+    "quantity": 1,
+    "sourcePieces": "24"
+  },
+  {
+    "brand": "Vivo",
+    "brandSerial": 61,
+    "modelName": "Vivo Y91 / Y15S",
+    "quantity": 1,
+    "sourcePieces": "163"
+  },
+  {
+    "brand": "Vivo",
+    "brandSerial": 62,
+    "modelName": "Vivo Y95",
+    "quantity": 1,
+    "sourcePieces": "50"
+  },
+  {
+    "brand": "Vivo",
+    "brandSerial": 63,
+    "modelName": "Vivo Y100",
+    "quantity": 1,
+    "sourcePieces": "10"
+  },
+  {
+    "brand": "Vivo",
+    "brandSerial": 64,
+    "modelName": "Vivo Y100 / Y200e 5G / V30 Lite 5G / T3 5G",
+    "quantity": 2,
+    "sourcePieces": "114"
+  },
+  {
+    "brand": "Vivo",
+    "brandSerial": 65,
+    "modelName": "Vivo Y400",
+    "quantity": 2,
+    "sourcePieces": "244"
+  },
+  {
+    "brand": "Vivo",
+    "brandSerial": 66,
+    "modelName": "Vivo Y400 Pro 5G",
+    "quantity": 1,
+    "sourcePieces": "191"
+  },
+  {
+    "brand": "Vivo",
+    "brandSerial": 67,
+    "modelName": "Vivo Y500 Pro",
+    "quantity": 1,
+    "sourcePieces": "139"
+  },
+  {
+    "brand": "Xiaomi",
+    "brandSerial": 1,
+    "modelName": "Xiaomi 12 5G",
+    "quantity": 4,
+    "sourcePieces": "253,331"
+  },
+  {
+    "brand": "Xiaomi",
+    "brandSerial": 2,
+    "modelName": "Xiaomi 15 Pro",
+    "quantity": 1,
+    "sourcePieces": "337"
+  },
+  {
+    "brand": "Xiaomi",
+    "brandSerial": 3,
+    "modelName": "Xiaomi Mi 5",
+    "quantity": 2,
+    "sourcePieces": "321"
+  },
+  {
+    "brand": "Xiaomi",
+    "brandSerial": 4,
+    "modelName": "Xiaomi Mi 6",
+    "quantity": 1,
+    "sourcePieces": "348"
+  },
+  {
+    "brand": "Xiaomi",
+    "brandSerial": 5,
+    "modelName": "Xiaomi Mi 8",
+    "quantity": 1,
+    "sourcePieces": "350"
+  },
+  {
+    "brand": "Xiaomi",
+    "brandSerial": 6,
+    "modelName": "Xiaomi Mi A5 4G",
+    "quantity": 1,
+    "sourcePieces": "194"
+  },
+  {
+    "brand": "Xiaomi",
+    "brandSerial": 7,
+    "modelName": "Xiaomi Redmi 4A",
+    "quantity": 1,
+    "sourcePieces": "230"
+  },
+  {
+    "brand": "Xiaomi",
+    "brandSerial": 8,
+    "modelName": "Xiaomi Redmi 5A",
+    "quantity": 2,
+    "sourcePieces": "211"
+  },
+  {
+    "brand": "Xiaomi",
+    "brandSerial": 9,
+    "modelName": "Xiaomi Redmi 6A",
+    "quantity": 2,
+    "sourcePieces": "315"
+  },
+  {
+    "brand": "Xiaomi",
+    "brandSerial": 10,
+    "modelName": "Xiaomi Redmi 6 Pro",
+    "quantity": 1,
+    "sourcePieces": "234"
+  },
+  {
+    "brand": "Xiaomi",
+    "brandSerial": 11,
+    "modelName": "Xiaomi Redmi 7A",
+    "quantity": 2,
+    "sourcePieces": "311"
+  },
+  {
+    "brand": "Xiaomi",
+    "brandSerial": 12,
+    "modelName": "Xiaomi Redmi 9 Power",
+    "quantity": 1,
+    "sourcePieces": "247"
+  },
+  {
+    "brand": "Xiaomi",
+    "brandSerial": 13,
+    "modelName": "Xiaomi Redmi 10C",
+    "quantity": 2,
+    "sourcePieces": "231"
+  },
+  {
+    "brand": "Xiaomi",
+    "brandSerial": 14,
+    "modelName": "Xiaomi Redmi 11 Prime 4G",
+    "quantity": 1,
+    "sourcePieces": "233"
+  },
+  {
+    "brand": "Xiaomi",
+    "brandSerial": 15,
+    "modelName": "Xiaomi Redmi A2",
+    "quantity": 1,
+    "sourcePieces": "288"
+  },
+  {
+    "brand": "Xiaomi",
+    "brandSerial": 16,
+    "modelName": "Xiaomi Redmi Note 8",
+    "quantity": 1,
+    "sourcePieces": "213"
+  },
+  {
+    "brand": "Xiaomi",
+    "brandSerial": 17,
+    "modelName": "Xiaomi Redmi Note 8 Pro",
+    "quantity": 1,
+    "sourcePieces": "216"
+  },
+  {
+    "brand": "Xiaomi",
+    "brandSerial": 18,
+    "modelName": "Xiaomi Redmi Note 9",
+    "quantity": 3,
+    "sourcePieces": "232"
+  },
+  {
+    "brand": "iQOO",
+    "brandSerial": 1,
+    "modelName": "iQOO 9S Pro",
+    "quantity": 1,
+    "sourcePieces": "254"
+  },
+  {
+    "brand": "iQOO",
+    "brandSerial": 2,
+    "modelName": "iQOO Z9s 5G",
+    "quantity": 1,
+    "sourcePieces": "255"
+  },
+  {
+    "brand": "iQOO",
+    "brandSerial": 3,
+    "modelName": "iQOO Z9s 5G / Vivo V40e 5G",
+    "quantity": 1,
+    "sourcePieces": "274"
+  }
+]

@@ -1,0 +1,334 @@
+brand,brandSerial,modelName,quantity,sourcePieces
+Itel,1,Itel A48,2,156
+Itel,2,Itel S23,2,"155,322"
+Itel,3,Itel Vision 1 Pro,2,136
+Motorola,1,Motorola Edge 40,1,171
+Motorola,2,Edge 60 Fusion,1,9
+Motorola,3,Edge 60 Stylus,2,87
+Motorola,4,Motorola Edge 70,1,167
+Motorola,5,Motorola G17 Power,2,"165,170"
+Motorola,6,Moto G34 5G / G45 5G,1,130
+Motorola,7,Moto G35 5G,1,355
+Motorola,8,Motorola G35 5G,1,154
+Motorola,9,Moto G54 5G / G54 Power / G64 5G,1,131
+Motorola,10,Motorola G84,1,28
+Motorola,11,Motorola G86 5G,1,44
+Motorola,12,Motorola G96,1,36
+Nothing,1,Nothing 2a,2,157
+OnePlus,1,OnePlus Nord 2T,1,161
+OnePlus,2,OnePlus Nord CE3 Lite / Nord N30,2,317
+Oppo,1,Oppo A3 Pro 5G / A3 / A80 5G / K12x 5G,1,146
+Oppo,2,Oppo A3 Pro 2024 Global,2,61
+Oppo,3,Oppo A3 Pro / Oppo K12x,1,282
+Oppo,4,Oppo A3S,2,"38,279"
+Oppo,5,Oppo A3x,1,278
+Oppo,6,Oppo A5 (2020),2,239
+Oppo,7,Oppo A5S,1,97
+Oppo,8,Oppo A5X,2,"169,280"
+Oppo,9,Oppo A9 (2020),1,241
+Oppo,10,Oppo A9 2020 / A5 2020 / A11 / A11x,1,129
+Oppo,11,Oppo A15,3,"168,204"
+Oppo,12,Oppo A17 / A17 Pro,1,144
+Oppo,13,Oppo A18 / A38,1,109
+Oppo,14,Oppo A38,2,235
+Oppo,15,Oppo A38 New,1,343
+Oppo,16,Oppo A53 4G,1,356
+Oppo,17,Oppo A53 4G / A32 / A53s / A33 / A11s,2,112
+Oppo,18,Oppo A53 (2020),1,285
+Oppo,19,Oppo A54 4G,1,100
+Oppo,20,Oppo A54 5G,1,40
+Oppo,21,Oppo A55 4G,1,29
+Oppo,22,Oppo A57 4G,1,202
+Oppo,23,Oppo A57 4G / Oppo K10 5G / Oppo A77 5G (2022) / Oppo A77s,1,201
+Oppo,24,Oppo A57 2022,1,39
+Oppo,25,Oppo A59 5G,1,284
+Oppo,26,Oppo A78,2,237
+Oppo,27,Oppo A78 5G / Oppo A58 5G,2,209
+Oppo,28,Oppo A79 5G,2,"46,242"
+Oppo,29,Oppo F11 / F11 Pro,2,75
+Oppo,30,Oppo F15,1,8
+Oppo,31,Oppo F17 Pro,2,"45,290"
+Oppo,32,Oppo F19 Pro,1,37
+Oppo,33,Oppo F19 Pro+,0,292
+Oppo,34,Oppo F21 Pro 4G,1,277
+Oppo,35,Oppo F21 Pro 4G / Reno7 4G,1,127
+Oppo,36,Oppo F21 Pro 5G,2,33
+Oppo,37,Oppo F23 5G,1,42
+Oppo,38,Oppo F27,1,346
+Oppo,39,Oppo F27 Pro,1,340
+Oppo,40,Oppo F31 5G,2,"63,79"
+Oppo,41,Oppo F31 Pro,1,76
+Oppo,42,Oppo F31 Pro+ / K13s / A6 GT 5G,1,147
+Oppo,43,Oppo Reno2 Z / Reno2 F,1,333
+Oppo,44,Oppo Reno6 5G,1,208
+Oppo,45,Oppo Reno7 Pro 5G,1,306
+Oppo,46,Oppo Reno8 T 5G,3,"314,330"
+Oppo,47,Oppo Reno8 T 5G / A1 Pro 5G,1,344
+Oppo,48,Reno 10,1,32
+Oppo,49,Oppo Reno10 Pro,3,307
+Oppo,50,Reno 10 Pro,1,1
+Oppo,51,Oppo Reno 11 5G,1,122
+Oppo,52,Oppo Reno 11 Pro 5G,1,123
+Oppo,53,Oppo Reno12 F 4G / 5G,2,339
+Oppo,54,Reno 13,1,95
+Oppo,55,Oppo Reno13 Pro,1,207
+Oppo,56,Oppo Reno14 Pro,1,206
+Oppo,57,Reno 14 Pro,1,31
+Oppo,58,Oppo Reno15 5G,1,366
+Oppo,59,Reno 15 5G,1,175
+Oppo,60,Reno 15C 5G,1,174
+Oppo,61,Reno 15 Pro,2,172
+Other,1,F31 / A6 Pro 4G / A6 Pro 5G,1,205
+Other,2,M7,1,214
+Other,3,RL C65 5G,1,212
+Other,4,RL-C73,1,210
+Poco,1,Poco C31,1,181
+Poco,2,Poco C55,1,142
+Poco,3,Poco F6 Pro,1,304
+Poco,4,Poco M4 Pro,1,303
+Poco,5,Poco M8,1,182
+Poco,6,Poco X3,1,52
+Poco,7,Poco X7 Pro 5G,1,305
+Realme,1,Realme 2,1,3
+Realme,2,Realme 2 Pro,1,4
+Realme,3,Realme 3,2,60
+Realme,4,Realme 5,1,5
+Realme,5,Realme 6,1,58
+Realme,6,Realme 6 Pro,2,"96,332"
+Realme,7,Realme 7,2,59
+Realme,8,Realme 7 Pro,2,12
+Realme,9,Realme 8,1,325
+Realme,10,Realme 8 4G,2,291
+Realme,11,Realme 8i / Narzo 50 4G,1,57
+Realme,12,Realme 8 Pro,1,17
+Realme,13,Realme 9 4G,1,267
+Realme,14,Realme 9i,1,264
+Realme,15,Realme 9i 5G,1,90
+Realme,16,Realme 9 Pro,1,91
+Realme,17,Realme 10,2,93
+Realme,18,Realme 10 5G / Realme 10T 5G / Realme 9i 5G,3,101
+Realme,19,Realme 10C,1,263
+Realme,20,Realme 10 Pro+ 5G,1,120
+Realme,21,Realme 11 4G,1,121
+Realme,22,Realme 11 5G / C67 5G / 11X 5G / Narzo 60X 5G / V50 5G / V50s 5G,3,107
+Realme,23,Realme 11 Pro,2,238
+Realme,24,Realme 11 Pro+,2,286
+Realme,25,Realme 11 Pro / 11 Pro+,1,104
+Realme,26,Realme 12+,1,94
+Realme,27,Realme 12 5G,1,240
+Realme,28,Realme 12 5G / 12X 5G / C65 5G / 13 5G / Narzo N65 5G,2,106
+Realme,29,Realme 12+ 5G / Realme 13 4G / Realme P1 5G / Narzo 70 5G / Narzo 70 Pro 5G,1,105
+Realme,30,Realme 12C 5G,1,341
+Realme,31,Realme 13C,1,347
+Realme,32,Realme 13C 5G,1,295
+Realme,33,Realme 14 Pro 5G,1,102
+Realme,34,Realme 14X,1,252
+Realme,35,Realme 14X 5G,1,103
+Realme,36,Realme 15 Pro,5,250
+Realme,37,Realme 15T,2,251
+Realme,38,Realme 16 Pro 5G,3,88
+Realme,39,Realme A3,1,268
+Realme,40,Realme A4 / Redmi 14C,1,271
+Realme,41,Realme C1,2,"229,300"
+Realme,42,Realme C2,2,"55,217"
+Realme,43,Realme C3,1,56
+Realme,44,Realme C11,2,215
+Realme,45,Realme C12,2,228
+Realme,46,Realme C12 / C25,1,22
+Realme,47,Realme C15,2,"354,367"
+Realme,48,Realme C15 / C12 / C25 / Narzo 20 / C25s / Narzo 30A / 7i,1,110
+Realme,49,Realme C21Y / C25Y,1,2
+Realme,50,Realme C30s,2,296
+Realme,51,Realme C33,2,299
+Realme,52,Realme C33 (2023),1,297
+Realme,53,Realme C35,3,298
+Realme,54,Realme C53,1,266
+Realme,55,Realme C55,1,20
+Realme,56,Realme C63 5G,1,19
+Realme,57,Realme C63 / Narzo N63,1,13
+Realme,58,Realme C65 4G,1,14
+Realme,59,Realme C67 4G,2,18
+Realme,60,Realme C67 5G,2,92
+Realme,61,Realme C71,1,249
+Realme,62,Realme C75 4G,1,15
+Realme,63,Realme Narzo 20,1,227
+Realme,64,Realme Narzo 50A,1,152
+Realme,65,Realme Narzo 50i,3,"159,364"
+Realme,66,Realme Narzo 60 5G,6,"151,289"
+Realme,67,Realme P3 5G,1,111
+Realme,68,Realme P3 Pro 5G,4,108
+Realme,69,Realme P4,2,98
+Realme,70,Realme P4 Lite 4G,1,166
+Realme,71,Realme P4 Power,1,89
+Realme,72,Realme P4 Pro 5G,1,173
+Realme,73,Realme P4X 5G,1,77
+Redmi,1,Redmi 7A,1,310
+Redmi,2,Redmi 7 / Vivo Y3,1,363
+Redmi,3,Redmi 8A Dual,1,359
+Redmi,4,Redmi 9 4G / Redmi 9 Prime / Poco M2,1,265
+Redmi,5,Redmi 9A,1,301
+Redmi,6,Redmi 9A / 9i,4,"64,80"
+Redmi,7,Redmi 9 Prime,2,329
+Redmi,8,Redmi 9 / Redmi 9C,2,312
+Redmi,9,Redmi 9T / Redmi 9 Power,2,"72,262"
+Redmi,10,Redmi 10 4G 2021 / 2022 / 10 Prime,1,319
+Redmi,11,Redmi 10 / 10C,1,358
+Redmi,12,Redmi 10 Prime,1,361
+Redmi,13,Redmi 11 Prime 4G,1,313
+Redmi,14,Redmi 12 4G / Redmi 12 5G / Poco M6 Pro 5G,1,261
+Redmi,15,Redmi 13 4G / 5G / Note 13 5G / Poco M6 4G,1,323
+Redmi,16,Redmi 13C 4G / 5G / 13R / Poco C65 / Poco M6 5G,1,324
+Redmi,17,Redmi 13C 5G,1,143
+Redmi,18,Redmi 14C 4G / Redmi A4 5G EP / Oppo A3 Pro 4G Global / Poco C75 4G Overseas,2,71
+Redmi,19,Redmi Go,1,259
+Redmi,20,Redmi Note 4,2,345
+Redmi,21,Redmi Note 5,2,302
+Redmi,22,Redmi Note 5 Pro,1,260
+Redmi,23,Redmi Note 6 Pro,7,"258,335"
+Redmi,24,Redmi Note 7 / 7 Pro,1,362
+Redmi,25,Redmi Note 7 / 7S / 7 Pro,1,368
+Redmi,26,Redmi Note 7 Pro / Note 7 / Note 7S,1,73
+Redmi,27,Redmi Note 9,1,74
+Redmi,28,Redmi Note 9 Pro / Note 9S / Note 9 Pro Max / Note 10 Lite 4G / Poco M2 Pro,1,246
+Redmi,29,Redmi Note 10,1,183
+Redmi,30,Redmi Note 10 4G / Note 10S 4G / Note 11 SE 4G / Poco M5s 4G,1,270
+Redmi,31,Redmi Note 10 / Note 10T / Poco M3 Pro,2,257
+Redmi,32,Redmi Note 11 4G,1,196
+Redmi,33,Redmi Note 11 4G / Note 11S 4G / Note 12S 4G,1,273
+Redmi,34,Redmi Note 11 Pro,1,269
+Redmi,35,Redmi Note 12 5G,1,16
+Redmi,36,Redmi Note 13,1,336
+Redmi,37,Redmi Note 13 4G,1,334
+Redmi,38,Redmi Note 13 5G,1,245
+Redmi,39,Redmi Note 13 Pro,3,"47,256"
+Redmi,40,Redmi Note 14,1,272
+Redmi,41,Redmi Note 14 5G,1,195
+Redmi,42,Redmi Note 14 Pro+,1,70
+Samsung,1,Samsung Galaxy A03,2,145
+Samsung,2,Samsung Galaxy A03 Core,2,"149,281"
+Samsung,3,Samsung Galaxy A03s,1,150
+Samsung,4,Samsung Galaxy A04s,1,326
+Samsung,5,Samsung A05,1,11
+Samsung,6,Samsung Galaxy A05 New Variant,2,133
+Samsung,7,Samsung Galaxy A05s,1,124
+Samsung,8,Samsung Galaxy A06 5G,1,148
+Samsung,9,Samsung A6X,2,"68,84"
+Samsung,10,Samsung A07,1,86
+Samsung,11,Samsung A10S,2,"66,82"
+Samsung,12,Samsung A12,2,"65,81"
+Samsung,13,Samsung Galaxy A14,1,203
+Samsung,14,Samsung A14 4G / 5G,1,160
+Samsung,15,Samsung Galaxy A14 5G,1,283
+Samsung,16,Samsung A21S,2,"67,83"
+Samsung,17,Samsung Galaxy A22 4G,1,128
+Samsung,18,Samsung Galaxy A24,1,236
+Samsung,19,Samsung A50,4,"62,78"
+Samsung,20,Samsung Galaxy A53 5G,1,287
+Samsung,21,Samsung Galaxy A71 5G,2,132
+Samsung,22,Samsung Galaxy F25 5G,1,125
+Samsung,23,Samsung J2 2018,2,43
+Samsung,24,Samsung Galaxy J4,1,138
+Samsung,25,Samsung J4,2,"69,85"
+Samsung,26,Samsung Galaxy J6,1,135
+Samsung,27,Samsung Galaxy J7 Max,2,134
+Samsung,28,Samsung M10C,1,164
+Samsung,29,Samsung Galaxy M13 4G,2,308
+Samsung,30,Samsung Galaxy M14 5G / F14 5G,1,126
+Samsung,31,Samsung M16 5G / F16 / M36 5G / F36,1,41
+Samsung,32,Samsung M54,1,158
+Samsung,33,Samsung Galaxy M55 5G,1,137
+Samsung,34,Samsung Galaxy S21 FE,1,349
+Samsung,35,Samsung S21 FE,1,153
+Samsung,36,Samsung Galaxy S21 Ultra,1,342
+Samsung,37,Samsung Galaxy S23,1,309
+Samsung,38,Samsung Galaxy S23 Ultra,1,327
+Samsung,39,Samsung S24,1,6
+Samsung,40,Samsung S24 FE,1,7
+Vivo,1,Vivo S1,1,199
+Vivo,2,Vivo S1 Pro,1,197
+Vivo,3,Vivo S2 / Y2,1,35
+Vivo,4,Vivo T1 5G,1,360
+Vivo,5,Vivo T1 44W 4G,1,357
+Vivo,6,Vivo T4 5G,2,"190,338"
+Vivo,7,Vivo T4 Lite,1,187
+Vivo,8,Vivo T4R,2,"185,351"
+Vivo,9,Vivo V5,2,48
+Vivo,10,Vivo V9 / Y83 Pro,2,"177,365"
+Vivo,11,Vivo V11 / Vivo V11 Pro,1,218
+Vivo,12,Vivo V15,1,53
+Vivo,13,Vivo V19 / V19e,1,51
+Vivo,14,Vivo V20,2,"49,328"
+Vivo,15,Vivo V21e 4G / Y73 / V20,1,119
+Vivo,16,Vivo V23 5G / S12,1,116
+Vivo,17,Vivo V29e,2,"192,224"
+Vivo,18,Vivo V29 / V29 Pro,1,189
+Vivo,19,Vivo V30,2,293
+Vivo,20,Vivo V30e / V40 Lite,1,26
+Vivo,21,Vivo V30 / V30 Pro / S18 / S17 Pro,1,27
+Vivo,22,Vivo V40,1,141
+Vivo,23,Vivo V40 Lite,1,200
+Vivo,24,Vivo V40 / V40 Pro,1,320
+Vivo,25,Vivo V50,1,294
+Vivo,26,Vivo V50 Lite,1,162
+Vivo,27,Vivo V50 / V50e,2,25
+Vivo,28,Vivo V50 / V50e / T4R,1,318
+Vivo,29,Vivo V70 5G / V70 Elite,1,140
+Vivo,30,Vivo X100 Pro,1,223
+Vivo,31,Vivo X200 5G,2,221
+Vivo,32,Vivo Y02,1,21
+Vivo,33,Vivo Y02s,1,353
+Vivo,34,Vivo Y03 4G / Y18e 4G / Y18 4G / T3 Lite 5G / Y28s 5G,1,115
+Vivo,35,Vivo Y04,1,248
+Vivo,36,Vivo Y05 5G,1,188
+Vivo,37,Vivo Y12 / Y15 / Y17,1,34
+Vivo,38,Vivo Y15S,1,30
+Vivo,39,Vivo Y16 4G / Vivo Y56 5G / Vivo T2x 5G,1,275
+Vivo,40,Vivo Y19 5G,1,180
+Vivo,41,Vivo Y19e,1,352
+Vivo,42,Vivo Y19s 4G / Y29 5G,1,117
+Vivo,43,Vivo Y20 / Y20i / Y20A / Y11s / Y12s / Y20s,1,113
+Vivo,44,Vivo Y21 2021,1,176
+Vivo,45,Vivo Y28,1,184
+Vivo,46,Vivo Y29 4G / Vivo T4x 5G / Vivo Y31 Pro,1,276
+Vivo,47,Vivo Y29s 5G / Y04 4G / Y19e 4G / Y19 5G / T4 Lite 5G / Y29T 5G / iQOO Z10 Lite 5G / Y04s 4G / Y19s GT,2,118
+Vivo,48,Vivo Y30 / Y50,1,193
+Vivo,49,Vivo Y31 5G,1,54
+Vivo,50,Vivo Y31 5G / Vivo Y21D 4G,5,243
+Vivo,51,Vivo Y33s,1,186
+Vivo,52,Vivo Y35 4G,2,178
+Vivo,53,Vivo Y36 4G,3,179
+Vivo,54,Vivo Y73,3,"198,316"
+Vivo,55,Vivo Y75 5G,2,"23,222"
+Vivo,56,Vivo Y76 5G,1,219
+Vivo,57,Vivo Y78,1,220
+Vivo,58,Vivo Y81,1,225
+Vivo,59,Vivo Y83,1,226
+Vivo,60,Vivo Y90 / Y91i,1,24
+Vivo,61,Vivo Y91 / Y15S,1,163
+Vivo,62,Vivo Y95,1,50
+Vivo,63,Vivo Y100,1,10
+Vivo,64,Vivo Y100 / Y200e 5G / V30 Lite 5G / T3 5G,2,114
+Vivo,65,Vivo Y400,2,244
+Vivo,66,Vivo Y400 Pro 5G,1,191
+Vivo,67,Vivo Y500 Pro,1,139
+Xiaomi,1,Xiaomi 12 5G,4,"253,331"
+Xiaomi,2,Xiaomi 15 Pro,1,337
+Xiaomi,3,Xiaomi Mi 5,2,321
+Xiaomi,4,Xiaomi Mi 6,1,348
+Xiaomi,5,Xiaomi Mi 8,1,350
+Xiaomi,6,Xiaomi Mi A5 4G,1,194
+Xiaomi,7,Xiaomi Redmi 4A,1,230
+Xiaomi,8,Xiaomi Redmi 5A,2,211
+Xiaomi,9,Xiaomi Redmi 6A,2,315
+Xiaomi,10,Xiaomi Redmi 6 Pro,1,234
+Xiaomi,11,Xiaomi Redmi 7A,2,311
+Xiaomi,12,Xiaomi Redmi 9 Power,1,247
+Xiaomi,13,Xiaomi Redmi 10C,2,231
+Xiaomi,14,Xiaomi Redmi 11 Prime 4G,1,233
+Xiaomi,15,Xiaomi Redmi A2,1,288
+Xiaomi,16,Xiaomi Redmi Note 8,1,213
+Xiaomi,17,Xiaomi Redmi Note 8 Pro,1,216
+Xiaomi,18,Xiaomi Redmi Note 9,3,232
+iQOO,1,iQOO 9S Pro,1,254
+iQOO,2,iQOO Z9s 5G,1,255
+iQOO,3,iQOO Z9s 5G / Vivo V40e 5G,1,274
