@@ -79,10 +79,10 @@ fun CasesScreen(
     onDecreaseCartQuantity: (CaseCartItemUi) -> Unit,
     onRemoveCartItem: (CaseCartItemUi) -> Unit,
     onSellCart: () -> Unit,
-    onDismissSellStatusMessage: () -> Unit
-    ,
+    onDismissSellStatusMessage: () -> Unit,
     onExportCsv: () -> Unit,
-    onExportPdf: () -> Unit
+    onExportPdf: () -> Unit,
+    onCreateBrand: (String) -> Unit = {}
 ) {
     var expandedModelIds by rememberSaveable { mutableStateOf(emptyList<Long>()) }
     var optionsMenuExpanded by rememberSaveable { mutableStateOf(false) }
@@ -349,7 +349,8 @@ fun CasesScreen(
             onModelInputChange = onAddModelInputChange,
             onQuantityInputChange = onAddQuantityInputChange,
             onSelectSerialNumber = onSelectSerialNumber,
-            onSave = onSaveAddModel
+            onSave = onSaveAddModel,
+            onCreateBrand = onCreateBrand
         )
     }
 

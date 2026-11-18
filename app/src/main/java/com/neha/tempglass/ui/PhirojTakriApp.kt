@@ -347,6 +347,14 @@ fun PhirojTakriApp(
                 )
 
                 DropdownMenuItem(
+                    text = { Text("Add New Brand") },
+                    onClick = {
+                        globalMenuExpanded = false
+                        mainViewModel.openAddBrandDialog()
+                    }
+                )
+
+                DropdownMenuItem(
                     text = {
                         Row(
                             modifier = Modifier.fillMaxWidth(),
@@ -509,7 +517,8 @@ fun PhirojTakriApp(
                         },
                         onDismissSellStatusMessage = casesViewModel::clearSellStatusMessage,
                         onExportCsv = casesViewModel::onExportCsvRequested,
-                        onExportPdf = casesViewModel::onExportPdfRequested
+                        onExportPdf = casesViewModel::onExportPdfRequested,
+                        onCreateBrand = casesViewModel::createBrand
                     )
                 }
             }
@@ -527,6 +536,7 @@ fun PhirojTakriApp(
             onBoxInputChange = addModelViewModel::onBoxNumberInputChange,
             onSelectBoxNumber = addModelViewModel::onSelectedBoxNumberChange,
             onSave = addModelViewModel::saveModel,
+            onCreateBrand = addModelViewModel::createBrand,
             isEditMode = addModelUiState.editingModelId != null
         )
     }
@@ -612,6 +622,14 @@ fun PhirojTakriApp(
             onGenerateCode = mainViewModel::generateLinkCode,
             onEnterCode = mainViewModel::enterLinkCode,
             onDismiss = mainViewModel::dismissLinkDialog
+        )
+    }
+
+    if (mainUiState.isAddBrandDialogVisible) {
+        AddBrandDialog(
+            error = mainUiState.addBrandError,
+            onDismiss = mainViewModel::dismissAddBrandDialog,
+            onConfirm = mainViewModel::createBrand
         )
     }
 }

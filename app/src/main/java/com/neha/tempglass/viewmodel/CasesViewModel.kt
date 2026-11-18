@@ -10,7 +10,9 @@ import com.neha.tempglass.export.ExportModelRow
 import com.neha.tempglass.export.ExportPayload
 import com.neha.tempglass.export.buildExportCsvBytes
 import com.neha.tempglass.export.buildExportPdfBytes
+import com.neha.tempglass.repository.AddBrandResult
 import com.neha.tempglass.repository.AddCaseModelResult
+import com.neha.tempglass.repository.BrandRepository
 import com.neha.tempglass.repository.CaseRepository
 import com.neha.tempglass.repository.SellCartResult
 import com.neha.tempglass.repository.UpdateCaseModelResult
@@ -127,10 +129,13 @@ data class CasesUiState(
 )
 
 class CasesViewModel(
-    private val repository: CaseRepository
+    private val repository: CaseRepository,
+    private val brandRepository: BrandRepository
 ) : ViewModel() {
 
     private var lastPasswordVerifiedAtMs: Long = 0L
+
+    private val allKnownBrands = brandRepository.observeAllBrands()
 
     private val searchQuery = MutableStateFlow("")
     private val selectedBrand = MutableStateFlow(ALL_CASE_BRANDS)
@@ -247,24 +252,28 @@ class CasesViewModel(
     private data class CasesBaseUiContext(
         val modelItems: List<CaseModelListItemUi>,
         val brandItems: List<String>,
+        val allKnownBrands: List<String>,
         val filterState: CasesFilterState,
         val addFormPayload: Pair<AddCaseFormState, Int?>,
         val pendingExportRequest: PendingExport?
     )
 
+    @Suppress("UNCHECKED_CAST")
     private val baseUiContext = combine(
         allModels,
         brands,
+        allKnownBrands,
         filters,
         addCaseFormState,
         pendingExport
-    ) { modelItems, brandItems, filterState, addFormPayload, pendingExportRequest ->
+    ) { data ->
         CasesBaseUiContext(
-            modelItems = modelItems,
-            brandItems = brandItems,
-            filterState = filterState,
-            addFormPayload = addFormPayload,
-            pendingExportRequest = pendingExportRequest
+            modelItems = data[0] as List<CaseModelListItemUi>,
+            brandItems = data[1] as List<String>,
+            allKnownBrands = data[2] as List<String>,
+            filterState = data[3] as CasesFilterState,
+            addFormPayload = data[4] as Pair<AddCaseFormState, Int?>,
+            pendingExportRequest = data[5] as PendingExport?
         )
     }
 
@@ -344,9 +353,14 @@ class CasesViewModel(
             .toList()
 
         val brandQuery = addFormState.brandInput.trim()
-        val addBrandSuggestions = brandItems
+        val allAvailableBrands = (base.allKnownBrands + brandItems)
             .filter { it != ALL_CASE_BRANDS }
+            .distinctBy { it.lowercase() }
+            .sortedBy { it.lowercase() }
+
+        val addBrandSuggestions = allAvailableBrands
             .filter { brandQuery.isBlank() || it.startsWith(brandQuery, ignoreCase = true) }
+            .take(15)
 
         val selectedBrandForSerial = addFormState.brandInput.trim()
         val serialsForBrand = if (selectedBrandForSerial.isBlank()) {
@@ -483,6 +497,24 @@ class CasesViewModel(
     fun onAddCaseBrandInputChange(value: String) {
         addBrandInput.value = value
         addErrorMessage.value = null
+    }
+
+    fun createBrand(name: String) {
+        viewModelScope.launch {
+            when (val result = brandRepository.addBrand(name)) {
+                is AddBrandResult.Success -> {
+                    addBrandInput.value = result.brandName
+                    addErrorMessage.value = null
+                }
+                is AddBrandResult.AlreadyExists -> {
+                    addBrandInput.value = result.brandName
+                    addErrorMessage.value = null
+                }
+                is AddBrandResult.Invalid -> {
+                    addErrorMessage.value = result.reason
+                }
+            }
+        }
     }
 
     fun onAddCaseModelInputChange(value: String) {
@@ -929,11 +961,12 @@ class CasesViewModel(
     }
 
     class Factory(
-        private val repository: CaseRepository
+        private val repository: CaseRepository,
+        private val brandRepository: BrandRepository
     ) : ViewModelProvider.Factory {
         @Suppress("UNCHECKED_CAST")
         override fun <T : ViewModel> create(modelClass: Class<T>): T {
-            return CasesViewModel(repository) as T
+            return CasesViewModel(repository, brandRepository) as T
         }
     }
 }

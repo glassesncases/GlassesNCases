@@ -13,18 +13,28 @@ import com.neha.tempglass.viewmodel.MainViewModel
 
 class MainActivity : ComponentActivity() {
     private val mainViewModel: MainViewModel by viewModels {
+        val app = application as TempGlassApplication
         MainViewModel.Factory(
-            (application as TempGlassApplication).repository,
-            (application as TempGlassApplication).caseRepository
+            app.repository,
+            app.caseRepository,
+            app.brandRepository
         )
     }
 
     private val addModelViewModel: AddModelViewModel by viewModels {
-        AddModelViewModel.Factory((application as TempGlassApplication).repository)
+        val app = application as TempGlassApplication
+        AddModelViewModel.Factory(
+            app.repository,
+            app.brandRepository
+        )
     }
 
     private val casesViewModel: CasesViewModel by viewModels {
-        CasesViewModel.Factory((application as TempGlassApplication).caseRepository)
+        val app = application as TempGlassApplication
+        CasesViewModel.Factory(
+            app.caseRepository,
+            app.brandRepository
+        )
     }
 
     override fun onCreate(savedInstanceState: Bundle?) {

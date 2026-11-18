@@ -4,7 +4,9 @@ import androidx.lifecycle.ViewModel
 import androidx.lifecycle.ViewModelProvider
 import androidx.lifecycle.viewModelScope
 import com.neha.tempglass.data.ModelType
+import com.neha.tempglass.repository.AddBrandResult
 import com.neha.tempglass.repository.AddModelResult
+import com.neha.tempglass.repository.BrandRepository
 import com.neha.tempglass.repository.ModelRepository
 import com.neha.tempglass.repository.UpdateModelResult
 import com.neha.tempglass.util.BrandDetector
@@ -37,7 +39,8 @@ data class AddModelUiState(
 )
 
 class AddModelViewModel(
-    private val repository: ModelRepository
+    private val repository: ModelRepository,
+    private val brandRepository: BrandRepository
 ) : ViewModel() {
 
     private val _uiState = MutableStateFlow(AddModelUiState())
@@ -48,6 +51,7 @@ class AddModelViewModel(
 
     init {
         refreshBoxData()
+        refreshBrandSuggestions()
     }
 
     fun prepareForOpen() {
@@ -64,6 +68,7 @@ class AddModelViewModel(
             )
         }
         refreshBoxData()
+        refreshBrandSuggestions()
     }
 
     fun prepareForEdit(model: ModelListItemUi) {
@@ -85,6 +90,7 @@ class AddModelViewModel(
             )
         }
         refreshBoxData()
+        refreshBrandSuggestions()
     }
 
     fun onBrandInputChange(value: String) {
@@ -231,17 +237,33 @@ class AddModelViewModel(
         }
     }
 
+    fun createBrand(name: String) {
+        viewModelScope.launch {
+            when (val result = brandRepository.addBrand(name)) {
+                is AddBrandResult.Success -> {
+                    _uiState.update { it.copy(brandInput = result.brandName, errorMessage = null) }
+                    refreshBrandSuggestions()
+                }
+                is AddBrandResult.AlreadyExists -> {
+                    _uiState.update { it.copy(brandInput = result.brandName, errorMessage = null) }
+                    refreshBrandSuggestions()
+                }
+                is AddBrandResult.Invalid -> {
+                    _uiState.update { it.copy(errorMessage = result.reason) }
+                }
+            }
+        }
+    }
+
     private fun refreshBrandSuggestions() {
         viewModelScope.launch {
             val query = _uiState.value.brandInput.trim()
-            val brands = repository.getAllModelsSnapshot()
-                .map { BrandDetector.detectBrand(it.modelName) }
-                .filter { it.isNotBlank() }
-                .distinct()
-                .sortedBy { it.lowercase() }
+            val allBrands = brandRepository.getAllBrands()
 
-            val filtered = if (query.isBlank()) brands.take(10) else {
-                brands.filter { it.startsWith(query, ignoreCase = true) }.take(10)
+            val filtered = if (query.isBlank()) {
+                allBrands.take(15)
+            } else {
+                allBrands.filter { it.startsWith(query, ignoreCase = true) }.take(15)
             }
 
             _uiState.update { it.copy(brandSuggestions = filtered) }
@@ -256,11 +278,12 @@ class AddModelViewModel(
     }
 
     class Factory(
-        private val repository: ModelRepository
+        private val repository: ModelRepository,
+        private val brandRepository: BrandRepository
     ) : ViewModelProvider.Factory {
         @Suppress("UNCHECKED_CAST")
         override fun <T : ViewModel> create(modelClass: Class<T>): T {
-            return AddModelViewModel(repository) as T
+            return AddModelViewModel(repository, brandRepository) as T
         }
     }
 }

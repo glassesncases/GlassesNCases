@@ -1,8 +1,10 @@
 package com.neha.tempglass.util
 
+import java.util.concurrent.CopyOnWriteArraySet
+
 object BrandDetector {
 
-    private val knownPrefixes = listOf(
+    val BUILTIN_BRANDS = listOf(
         "Apple",
         "Samsung",
         "Google",
@@ -25,10 +27,37 @@ object BrandDetector {
         "Mi"
     )
 
+    private val customBrands = CopyOnWriteArraySet<String>()
+
+    fun setCustomBrands(brands: Collection<String>) {
+        customBrands.clear()
+        customBrands.addAll(brands.filter { it.isNotBlank() })
+    }
+
+    fun addCustomBrand(brand: String) {
+        val trimmed = brand.trim()
+        if (trimmed.isNotBlank()) {
+            customBrands.add(trimmed)
+        }
+    }
+
+    fun getAllKnownBrands(): List<String> {
+        val combined = (BUILTIN_BRANDS + customBrands)
+            .filter { it.isNotBlank() }
+            .distinctBy { it.lowercase() }
+            .sortedBy { it.lowercase() }
+        return combined
+    }
+
     fun detectBrand(modelName: String): String {
         val canonical = ModelNameCanonicalizer.canonicalBrand(modelName)
         if (canonical != null) return canonical
 
-        return knownPrefixes.firstOrNull { modelName.startsWith(it, ignoreCase = true) } ?: "Other"
+        // Sort prefixes by length descending so longer matching prefixes take precedence
+        val allPrefixes = (BUILTIN_BRANDS + customBrands)
+            .distinctBy { it.lowercase() }
+            .sortedByDescending { it.length }
+
+        return allPrefixes.firstOrNull { modelName.startsWith(it, ignoreCase = true) } ?: "Other"
     }
 }

@@ -7,6 +7,7 @@ import com.google.firebase.firestore.FirebaseFirestore
 import com.neha.tempglass.data.AppDatabase
 import com.neha.tempglass.data.InitialCaseDataParser
 import com.neha.tempglass.data.InitialDataParser
+import com.neha.tempglass.repository.BrandRepository
 import com.neha.tempglass.repository.CaseRepository
 import com.neha.tempglass.repository.ModelRepository
 import com.neha.tempglass.sync.ModelSyncService
@@ -38,6 +39,9 @@ class TempGlassApplication : Application() {
     lateinit var caseRepository: CaseRepository
         private set
 
+    lateinit var brandRepository: BrandRepository
+        private set
+
     private val applicationScope = CoroutineScope(SupervisorJob() + Dispatchers.IO)
 
     override fun onCreate() {
@@ -65,11 +69,15 @@ class TempGlassApplication : Application() {
                 Settings.Secure.getString(contentResolver, Settings.Secure.ANDROID_ID) ?: "unknown_device"
             }
         )
+        brandRepository = BrandRepository(
+            dao = database.brandDao()
+        )
 
         applicationScope.launch {
             val initialModels = InitialDataParser.parse(this@TempGlassApplication)
             val initialCaseModels = InitialCaseDataParser.parse(this@TempGlassApplication)
 
+            brandRepository.getAllBrands()
             repository.syncInitialModels(initialModels)
             repository.normalizeLegacyBrandNames()
             repository.ensureUserAddedModels(CURATED_USER_ADDED_MODELS)

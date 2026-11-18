@@ -12,6 +12,8 @@ import com.neha.tempglass.export.ExportModelRow
 import com.neha.tempglass.export.ExportPayload
 import com.neha.tempglass.export.buildExportCsvBytes
 import com.neha.tempglass.export.buildExportPdfBytes
+import com.neha.tempglass.repository.AddBrandResult
+import com.neha.tempglass.repository.BrandRepository
 import com.neha.tempglass.repository.CaseRepository
 import com.neha.tempglass.repository.ModelRepository
 import com.neha.tempglass.util.BrandDetector
@@ -135,12 +137,15 @@ data class MainUiState(
     val accountEmail: String? = null,
     val isAuthDialogVisible: Boolean = false,
     val isRegisterMode: Boolean = false,
-    val authError: String? = null
+    val authError: String? = null,
+    val isAddBrandDialogVisible: Boolean = false,
+    val addBrandError: String? = null
 )
 
 class MainViewModel(
     private val repository: ModelRepository,
-    private val caseRepository: CaseRepository
+    private val caseRepository: CaseRepository,
+    private val brandRepository: BrandRepository
 ) : ViewModel() {
 
     private var lastPasswordVerifiedAtMs: Long = 0L
@@ -164,6 +169,8 @@ class MainViewModel(
     private val isAuthDialogVisible = MutableStateFlow(false)
     private val isRegisterMode = MutableStateFlow(false)
     private val authError = MutableStateFlow<String?>(null)
+    private val isAddBrandDialogVisible = MutableStateFlow(false)
+    private val addBrandError = MutableStateFlow<String?>(null)
     private val isLinkDialogVisible = MutableStateFlow(false)
     private val generatedCode = MutableStateFlow<String?>(null)
     private val isGeneratingCode = MutableStateFlow(false)
@@ -174,11 +181,16 @@ class MainViewModel(
 
     private var exportRequestCounter: Long = 0
 
+    private val allKnownBrands = brandRepository.observeAllBrands()
+
     private val allModels = repository.observeAllModels().map { entities ->
         entities.map { it.toUi() }
     }
 
-    private val brands = repository.observeActiveModels().map { entities ->
+    private val brands = combine(
+        repository.observeActiveModels(),
+        allKnownBrands
+    ) { entities, _ ->
         val dynamicBrands = entities
             .map { BrandDetector.detectBrand(it.modelName) }
             .filterNot {
@@ -226,7 +238,9 @@ class MainViewModel(
         linkError,
         isLinked,
         syncsRemaining,
-        isPairingBusy
+        isPairingBusy,
+        isAddBrandDialogVisible,
+        addBrandError
     ) { data ->
         val modelItems = data[0] as List<ModelListItemUi>
         val brandItems = data[1] as List<String>
@@ -257,6 +271,8 @@ class MainViewModel(
         val linked = data[26] as Boolean
         val remainingSyncs = data[27] as Int?
         val pairingBusy = data[28] as Boolean
+        val addBrandDialogVisible = data[29] as Boolean
+        val addBrandErr = data[30] as String?
 
         val passwordTarget = when (action) {
             is ProtectedActionRequest.Add -> null
@@ -436,7 +452,9 @@ class MainViewModel(
             accountEmail = signedInEmail,
             isAuthDialogVisible = authDialogVisible,
             isRegisterMode = registerMode,
-            authError = authErr
+            authError = authErr,
+            isAddBrandDialogVisible = addBrandDialogVisible,
+            addBrandError = addBrandErr
         )
     }.stateIn(
         viewModelScope,
@@ -667,6 +685,34 @@ class MainViewModel(
     fun dismissAuthDialog() {
         isAuthDialogVisible.value = false
         authError.value = null
+    }
+
+    fun openAddBrandDialog() {
+        addBrandError.value = null
+        isAddBrandDialogVisible.value = true
+    }
+
+    fun dismissAddBrandDialog() {
+        addBrandError.value = null
+        isAddBrandDialogVisible.value = false
+    }
+
+    fun createBrand(name: String) {
+        viewModelScope.launch {
+            when (val result = brandRepository.addBrand(name)) {
+                is AddBrandResult.Success -> {
+                    addBrandError.value = null
+                    isAddBrandDialogVisible.value = false
+                    syncStatusMessage.value = "Brand '${result.brandName}' added"
+                }
+                is AddBrandResult.AlreadyExists -> {
+                    addBrandError.value = "Brand '${result.brandName}' already exists"
+                }
+                is AddBrandResult.Invalid -> {
+                    addBrandError.value = result.reason
+                }
+            }
+        }
     }
 
     fun submitAuth(email: String, password: String, register: Boolean) {
@@ -1029,11 +1075,12 @@ class MainViewModel(
 
     class Factory(
         private val repository: ModelRepository,
-        private val caseRepository: CaseRepository
+        private val caseRepository: CaseRepository,
+        private val brandRepository: BrandRepository
     ) : ViewModelProvider.Factory {
         @Suppress("UNCHECKED_CAST")
         override fun <T : ViewModel> create(modelClass: Class<T>): T {
-            return MainViewModel(repository, caseRepository) as T
+            return MainViewModel(repository, caseRepository, brandRepository) as T
         }
     }
 }

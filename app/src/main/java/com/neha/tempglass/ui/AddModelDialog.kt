@@ -28,6 +28,7 @@ import androidx.compose.runtime.remember
 import androidx.compose.runtime.setValue
 import androidx.compose.ui.Modifier
 import androidx.compose.foundation.text.KeyboardOptions
+import androidx.compose.ui.text.font.FontWeight
 import androidx.compose.ui.text.input.KeyboardType
 import androidx.compose.ui.unit.dp
 import com.neha.tempglass.data.ModelType
@@ -45,6 +46,7 @@ fun AddModelDialog(
     onBoxInputChange: (String) -> Unit,
     onSelectBoxNumber: (Int) -> Unit,
     onSave: () -> Unit,
+    onCreateBrand: (String) -> Unit = {},
     isEditMode: Boolean = false
 ) {
     var boxMenuExpanded by remember { mutableStateOf(false) }
@@ -100,6 +102,24 @@ fun AddModelDialog(
                         onDismissRequest = { brandMenuExpanded = false },
                         modifier = Modifier.heightIn(max = 240.dp)
                     ) {
+                        val typedBrand = state.brandInput.trim()
+                        val exactMatch = state.brandSuggestions.any { it.equals(typedBrand, ignoreCase = true) }
+                        if (typedBrand.isNotBlank() && !exactMatch) {
+                            DropdownMenuItem(
+                                text = {
+                                    Text(
+                                        text = "+ Create \"$typedBrand\"",
+                                        color = MaterialTheme.colorScheme.primary,
+                                        fontWeight = FontWeight.Bold
+                                    )
+                                },
+                                onClick = {
+                                    onCreateBrand(typedBrand)
+                                    brandMenuExpanded = false
+                                }
+                            )
+                        }
+
                         state.brandSuggestions.forEach { brand ->
                             DropdownMenuItem(
                                 text = { Text(brand) },

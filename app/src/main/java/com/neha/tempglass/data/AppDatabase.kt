@@ -8,14 +8,15 @@ import androidx.room.migration.Migration
 import androidx.sqlite.db.SupportSQLiteDatabase
 
 @Database(
-    entities = [ModelEntity::class, CaseModelEntity::class],
-    version = 7,
+    entities = [ModelEntity::class, CaseModelEntity::class, BrandEntity::class],
+    version = 8,
     exportSchema = false
 )
 abstract class AppDatabase : RoomDatabase() {
 
     abstract fun modelDao(): ModelDao
     abstract fun caseModelDao(): CaseModelDao
+    abstract fun brandDao(): BrandDao
 
     companion object {
         private val MIGRATION_1_2 = object : Migration(1, 2) {
@@ -102,6 +103,20 @@ abstract class AppDatabase : RoomDatabase() {
             }
         }
 
+        private val MIGRATION_7_8 = object : Migration(7, 8) {
+            override fun migrate(db: SupportSQLiteDatabase) {
+                db.execSQL(
+                    """
+                    CREATE TABLE IF NOT EXISTS `brands` (
+                        `name` TEXT PRIMARY KEY NOT NULL,
+                        `isUserAdded` INTEGER NOT NULL DEFAULT 1,
+                        `createdAt` INTEGER NOT NULL DEFAULT 0
+                    )
+                    """.trimIndent()
+                )
+            }
+        }
+
         @Volatile
         private var INSTANCE: AppDatabase? = null
 
@@ -118,7 +133,8 @@ abstract class AppDatabase : RoomDatabase() {
                         MIGRATION_3_4,
                         MIGRATION_4_5,
                         MIGRATION_5_6,
-                        MIGRATION_6_7
+                        MIGRATION_6_7,
+                        MIGRATION_7_8
                     )
                     .build()
                     .also { INSTANCE = it }
