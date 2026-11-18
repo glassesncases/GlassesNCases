@@ -47,6 +47,7 @@ fun AddModelDialog(
     onSelectBoxNumber: (Int) -> Unit,
     onSave: () -> Unit,
     onCreateBrand: (String) -> Unit = {},
+    onManageBrands: () -> Unit = {},
     isEditMode: Boolean = false
 ) {
     var boxMenuExpanded by remember { mutableStateOf(false) }
@@ -129,6 +130,20 @@ fun AddModelDialog(
                                 }
                             )
                         }
+
+                        DropdownMenuItem(
+                            text = {
+                                Text(
+                                    text = "⚙️ Manage / Edit Brands...",
+                                    color = MaterialTheme.colorScheme.secondary,
+                                    style = MaterialTheme.typography.bodySmall
+                                )
+                            },
+                            onClick = {
+                                brandMenuExpanded = false
+                                onManageBrands()
+                            }
+                        )
                     }
                 }
 

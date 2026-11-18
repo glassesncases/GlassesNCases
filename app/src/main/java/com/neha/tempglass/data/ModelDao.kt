@@ -80,6 +80,23 @@ interface ModelDao {
         type: String
     ): Int
 
+    @Query(
+        """
+        UPDATE models
+        SET modelName = :newModelName,
+            syncState = 'PENDING_UPLOAD',
+            updatedAtLocal = :updatedAtLocal,
+            deviceId = :deviceId
+        WHERE id = :id
+        """
+    )
+    suspend fun updateModelName(
+        id: Long,
+        newModelName: String,
+        updatedAtLocal: Long,
+        deviceId: String
+    ): Int
+
     @Query("SELECT MAX(boxNumber) FROM models")
     suspend fun getMaxBoxNumber(): Int?
 

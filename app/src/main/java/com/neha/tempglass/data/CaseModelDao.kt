@@ -65,6 +65,23 @@ interface CaseModelDao {
     )
     suspend fun updateCaseModel(id: Long, modelName: String, quantity: Int, brandSerialNumber: Int)
 
+    @Query(
+        """
+        UPDATE case_models
+        SET modelName = :newModelName,
+            syncState = 'PENDING_UPLOAD',
+            updatedAtLocal = :updatedAtLocal,
+            deviceId = :deviceId
+        WHERE id = :id
+        """
+    )
+    suspend fun updateModelName(
+        id: Long,
+        newModelName: String,
+        updatedAtLocal: Long,
+        deviceId: String
+    ): Int
+
     @Query("UPDATE case_models SET brandSerialNumber = :serialNumber WHERE id = :id")
     suspend fun setBrandSerialNumber(id: Long, serialNumber: Int)
 

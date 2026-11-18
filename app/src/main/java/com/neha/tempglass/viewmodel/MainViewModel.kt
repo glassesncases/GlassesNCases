@@ -16,6 +16,7 @@ import com.neha.tempglass.repository.AddBrandResult
 import com.neha.tempglass.repository.BrandRepository
 import com.neha.tempglass.repository.CaseRepository
 import com.neha.tempglass.repository.ModelRepository
+import com.neha.tempglass.repository.UpdateBrandResult
 import com.neha.tempglass.util.BrandDetector
 import kotlinx.coroutines.FlowPreview
 import kotlinx.coroutines.Dispatchers
@@ -139,7 +140,11 @@ data class MainUiState(
     val isRegisterMode: Boolean = false,
     val authError: String? = null,
     val isAddBrandDialogVisible: Boolean = false,
-    val addBrandError: String? = null
+    val addBrandError: String? = null,
+    val isManageBrandsDialogVisible: Boolean = false,
+    val brandToEdit: String? = null,
+    val editBrandError: String? = null,
+    val allBrandsList: List<String> = emptyList()
 )
 
 class MainViewModel(
@@ -171,6 +176,9 @@ class MainViewModel(
     private val authError = MutableStateFlow<String?>(null)
     private val isAddBrandDialogVisible = MutableStateFlow(false)
     private val addBrandError = MutableStateFlow<String?>(null)
+    private val isManageBrandsDialogVisible = MutableStateFlow(false)
+    private val brandToEdit = MutableStateFlow<String?>(null)
+    private val editBrandError = MutableStateFlow<String?>(null)
     private val isLinkDialogVisible = MutableStateFlow(false)
     private val generatedCode = MutableStateFlow<String?>(null)
     private val isGeneratingCode = MutableStateFlow(false)
@@ -240,7 +248,11 @@ class MainViewModel(
         syncsRemaining,
         isPairingBusy,
         isAddBrandDialogVisible,
-        addBrandError
+        addBrandError,
+        isManageBrandsDialogVisible,
+        brandToEdit,
+        editBrandError,
+        allKnownBrands
     ) { data ->
         val modelItems = data[0] as List<ModelListItemUi>
         val brandItems = data[1] as List<String>
@@ -273,6 +285,11 @@ class MainViewModel(
         val pairingBusy = data[28] as Boolean
         val addBrandDialogVisible = data[29] as Boolean
         val addBrandErr = data[30] as String?
+        val manageBrandsVisible = data[31] as Boolean
+        val editingBrand = data[32] as String?
+        val editBrandErr = data[33] as String?
+        @Suppress("UNCHECKED_CAST")
+        val knownBrandsList = data[34] as List<String>
 
         val passwordTarget = when (action) {
             is ProtectedActionRequest.Add -> null
@@ -454,7 +471,11 @@ class MainViewModel(
             isRegisterMode = registerMode,
             authError = authErr,
             isAddBrandDialogVisible = addBrandDialogVisible,
-            addBrandError = addBrandErr
+            addBrandError = addBrandErr,
+            isManageBrandsDialogVisible = manageBrandsVisible,
+            brandToEdit = editingBrand,
+            editBrandError = editBrandErr,
+            allBrandsList = knownBrandsList
         )
     }.stateIn(
         viewModelScope,
@@ -710,6 +731,56 @@ class MainViewModel(
                 }
                 is AddBrandResult.Invalid -> {
                     addBrandError.value = result.reason
+                }
+            }
+        }
+    }
+
+    fun openManageBrandsDialog() {
+        isManageBrandsDialogVisible.value = true
+        brandToEdit.value = null
+        editBrandError.value = null
+    }
+
+    fun dismissManageBrandsDialog() {
+        isManageBrandsDialogVisible.value = false
+        brandToEdit.value = null
+        editBrandError.value = null
+    }
+
+    fun openEditBrandDialog(brandName: String) {
+        brandToEdit.value = brandName
+        editBrandError.value = null
+    }
+
+    fun dismissEditBrandDialog() {
+        brandToEdit.value = null
+        editBrandError.value = null
+    }
+
+    fun updateBrand(oldName: String, newName: String) {
+        viewModelScope.launch {
+            when (val result = brandRepository.updateBrand(oldName, newName)) {
+                is UpdateBrandResult.Success -> {
+                    editBrandError.value = null
+                    brandToEdit.value = null
+                    val msg = if (result.updatedModelsCount > 0) {
+                        "Brand renamed to '${result.newBrandName}' (${result.updatedModelsCount} models updated)"
+                    } else {
+                        "Brand renamed to '${result.newBrandName}'"
+                    }
+                    syncStatusMessage.value = msg
+                    markSyncRequired()
+                }
+                is UpdateBrandResult.NoChange -> {
+                    brandToEdit.value = null
+                    editBrandError.value = null
+                }
+                is UpdateBrandResult.AlreadyExists -> {
+                    editBrandError.value = "Brand '${result.brandName}' already exists"
+                }
+                is UpdateBrandResult.Invalid -> {
+                    editBrandError.value = result.reason
                 }
             }
         }

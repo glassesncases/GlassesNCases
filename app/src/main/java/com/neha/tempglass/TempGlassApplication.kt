@@ -70,14 +70,19 @@ class TempGlassApplication : Application() {
             }
         )
         brandRepository = BrandRepository(
-            dao = database.brandDao()
+            dao = database.brandDao(),
+            modelDao = database.modelDao(),
+            caseModelDao = database.caseModelDao(),
+            deviceIdProvider = {
+                Settings.Secure.getString(contentResolver, Settings.Secure.ANDROID_ID) ?: "unknown_device"
+            }
         )
 
         applicationScope.launch {
             val initialModels = InitialDataParser.parse(this@TempGlassApplication)
             val initialCaseModels = InitialCaseDataParser.parse(this@TempGlassApplication)
 
-            brandRepository.getAllBrands()
+            brandRepository.ensureDefaultBrandsSeeded()
             repository.syncInitialModels(initialModels)
             repository.normalizeLegacyBrandNames()
             repository.ensureUserAddedModels(CURATED_USER_ADDED_MODELS)

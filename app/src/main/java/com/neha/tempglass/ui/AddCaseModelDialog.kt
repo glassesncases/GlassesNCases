@@ -41,7 +41,8 @@ fun AddCaseModelDialog(
     onQuantityInputChange: (String) -> Unit,
     onSelectSerialNumber: (Int) -> Unit,
     onSave: () -> Unit,
-    onCreateBrand: (String) -> Unit = {}
+    onCreateBrand: (String) -> Unit = {},
+    onManageBrands: () -> Unit = {}
 ) {
     var brandMenuExpanded by remember { mutableStateOf(false) }
     var serialMenuExpanded by remember { mutableStateOf(false) }
@@ -129,6 +130,20 @@ fun AddCaseModelDialog(
                                 }
                             )
                         }
+
+                        DropdownMenuItem(
+                            text = {
+                                Text(
+                                    text = "⚙️ Manage / Edit Brands...",
+                                    color = MaterialTheme.colorScheme.secondary,
+                                    style = MaterialTheme.typography.bodySmall
+                                )
+                            },
+                            onClick = {
+                                brandMenuExpanded = false
+                                onManageBrands()
+                            }
+                        )
                     }
                 }
 

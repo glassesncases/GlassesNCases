@@ -82,7 +82,8 @@ fun CasesScreen(
     onDismissSellStatusMessage: () -> Unit,
     onExportCsv: () -> Unit,
     onExportPdf: () -> Unit,
-    onCreateBrand: (String) -> Unit = {}
+    onCreateBrand: (String) -> Unit = {},
+    onManageBrands: () -> Unit = {}
 ) {
     var expandedModelIds by rememberSaveable { mutableStateOf(emptyList<Long>()) }
     var optionsMenuExpanded by rememberSaveable { mutableStateOf(false) }
@@ -350,7 +351,8 @@ fun CasesScreen(
             onQuantityInputChange = onAddQuantityInputChange,
             onSelectSerialNumber = onSelectSerialNumber,
             onSave = onSaveAddModel,
-            onCreateBrand = onCreateBrand
+            onCreateBrand = onCreateBrand,
+            onManageBrands = onManageBrands
         )
     }
 

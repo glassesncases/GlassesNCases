@@ -347,6 +347,14 @@ fun PhirojTakriApp(
                 )
 
                 DropdownMenuItem(
+                    text = { Text("Manage Brands") },
+                    onClick = {
+                        globalMenuExpanded = false
+                        mainViewModel.openManageBrandsDialog()
+                    }
+                )
+
+                DropdownMenuItem(
                     text = { Text("Add New Brand") },
                     onClick = {
                         globalMenuExpanded = false
@@ -518,7 +526,8 @@ fun PhirojTakriApp(
                         onDismissSellStatusMessage = casesViewModel::clearSellStatusMessage,
                         onExportCsv = casesViewModel::onExportCsvRequested,
                         onExportPdf = casesViewModel::onExportPdfRequested,
-                        onCreateBrand = casesViewModel::createBrand
+                        onCreateBrand = casesViewModel::createBrand,
+                        onManageBrands = mainViewModel::openManageBrandsDialog
                     )
                 }
             }
@@ -537,6 +546,7 @@ fun PhirojTakriApp(
             onSelectBoxNumber = addModelViewModel::onSelectedBoxNumberChange,
             onSave = addModelViewModel::saveModel,
             onCreateBrand = addModelViewModel::createBrand,
+            onManageBrands = mainViewModel::openManageBrandsDialog,
             isEditMode = addModelUiState.editingModelId != null
         )
     }
@@ -630,6 +640,29 @@ fun PhirojTakriApp(
             error = mainUiState.addBrandError,
             onDismiss = mainViewModel::dismissAddBrandDialog,
             onConfirm = mainViewModel::createBrand
+        )
+    }
+
+    if (mainUiState.isManageBrandsDialogVisible) {
+        ManageBrandsDialog(
+            brands = mainUiState.allBrandsList,
+            onDismiss = mainViewModel::dismissManageBrandsDialog,
+            onOpenAddBrand = {
+                mainViewModel.dismissManageBrandsDialog()
+                mainViewModel.openAddBrandDialog()
+            },
+            onEditBrand = mainViewModel::openEditBrandDialog
+        )
+    }
+
+    mainUiState.brandToEdit?.let { brandToEdit ->
+        EditBrandDialog(
+            currentBrandName = brandToEdit,
+            error = mainUiState.editBrandError,
+            onDismiss = mainViewModel::dismissEditBrandDialog,
+            onConfirm = { newName ->
+                mainViewModel.updateBrand(brandToEdit, newName)
+            }
         )
     }
 }

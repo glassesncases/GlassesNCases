@@ -41,6 +41,15 @@ object BrandDetector {
         }
     }
 
+    fun renameBrand(oldName: String, newName: String) {
+        val trimmedOld = oldName.trim()
+        val trimmedNew = newName.trim()
+        customBrands.removeIf { it.equals(trimmedOld, ignoreCase = true) }
+        if (trimmedNew.isNotBlank()) {
+            customBrands.add(trimmedNew)
+        }
+    }
+
     fun getAllKnownBrands(): List<String> {
         val combined = (BUILTIN_BRANDS + customBrands)
             .filter { it.isNotBlank() }
