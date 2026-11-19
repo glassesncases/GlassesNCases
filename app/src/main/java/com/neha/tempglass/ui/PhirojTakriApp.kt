@@ -328,23 +328,49 @@ fun PhirojTakriApp(
                             mainViewModel.openSignInDialog(true)
                         }
                     )
-                } else {
+
                     DropdownMenuItem(
-                        text = { Text("Sign Out") },
+                        text = { Text("Link Device (via Code)") },
                         onClick = {
                             globalMenuExpanded = false
-                            mainViewModel.signOutAccount()
+                            mainViewModel.openLinkDialog()
                         }
                     )
-                }
+                } else {
+                    if (!mainUiState.isPrimaryDevice) {
+                        DropdownMenuItem(
+                            text = { Text("Unlink Device") },
+                            onClick = {
+                                globalMenuExpanded = false
+                                mainViewModel.unlinkDevice()
+                            }
+                        )
 
-                DropdownMenuItem(
-                    text = { Text("Link Another Device") },
-                    onClick = {
-                        globalMenuExpanded = false
-                        mainViewModel.openLinkDialog()
+                        DropdownMenuItem(
+                            text = { Text("Linked Device Info") },
+                            onClick = {
+                                globalMenuExpanded = false
+                                mainViewModel.openLinkDialog()
+                            }
+                        )
+                    } else {
+                        DropdownMenuItem(
+                            text = { Text("Sign Out") },
+                            onClick = {
+                                globalMenuExpanded = false
+                                mainViewModel.signOutAccount()
+                            }
+                        )
+
+                        DropdownMenuItem(
+                            text = { Text("Link Another Device") },
+                            onClick = {
+                                globalMenuExpanded = false
+                                mainViewModel.openLinkDialog()
+                            }
+                        )
                     }
-                )
+                }
 
                 DropdownMenuItem(
                     text = { Text("Manage Brands") },
@@ -624,13 +650,19 @@ fun PhirojTakriApp(
 
     if (mainUiState.isLinkDialogVisible) {
         LinkDeviceDialog(
+            isPrimaryDevice = mainUiState.isPrimaryDevice,
+            isSignedIn = mainUiState.accountEmail != null,
+            isLinked = mainUiState.isLinked,
             generatedCode = mainUiState.generatedCode,
             isGenerating = mainUiState.isGeneratingCode,
+            isPairingBusy = mainUiState.isPairingBusy,
             error = mainUiState.linkError,
-            isLinked = mainUiState.isLinked,
             syncsRemaining = mainUiState.syncsRemaining,
+            needsPasswordForCode = mainUiState.isRequirePasswordForLinkCode,
             onGenerateCode = mainViewModel::generateLinkCode,
+            onGenerateCodeWithPassword = mainViewModel::generateLinkCodeWithPassword,
             onEnterCode = mainViewModel::enterLinkCode,
+            onUnlinkDevice = mainViewModel::unlinkDevice,
             onDismiss = mainViewModel::dismissLinkDialog
         )
     }

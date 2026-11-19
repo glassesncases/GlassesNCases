@@ -10,6 +10,8 @@ import com.neha.tempglass.sync.SyncSettingsStore
 import com.neha.tempglass.util.BrandDetector
 import com.neha.tempglass.util.ModelNameCanonicalizer
 import android.util.Log
+import kotlinx.coroutines.Dispatchers
+import kotlinx.coroutines.withContext
 import kotlinx.coroutines.withTimeout
 import kotlinx.coroutines.TimeoutCancellationException
 import kotlinx.coroutines.flow.Flow
@@ -59,7 +61,26 @@ class CaseRepository(
         return syncService.getPairing(pairId)
     }
 
-    /** Copies the owner's case models (only those not present locally) into the local DB. */
+    suspend fun ensureAllCaseModelsUploadedToCloud(uid: String) = withContext(Dispatchers.IO) {
+        val now = System.currentTimeMillis()
+        val allLocal = dao.getAllSnapshot()
+        if (allLocal.isEmpty()) return@withContext
+
+        val dtoList = allLocal.map { local ->
+            CaseModelRemoteDto(
+                modelName = local.modelName,
+                quantity = local.quantity,
+                isUserAdded = local.isUserAdded,
+                isDeleted = local.isDeleted,
+                brandSerialNumber = local.brandSerialNumber,
+                updatedAtRemote = now
+            )
+        }
+        syncService.pushAllCaseModelsBatch(uid, dtoList)
+        dao.markAllSynced(updatedAtRemote = now, lastSyncedAt = now)
+    }
+
+    /** Copies the owner's case models into the local DB, applying updates to existing models as well. */
     suspend fun copyOwnerCaseModelsIntoLocal(ownerUid: String) {
         val now = System.currentTimeMillis()
         val remoteItems = syncService.pullCaseModels(ownerUid)
@@ -82,6 +103,16 @@ class CaseRepository(
                 if (insertedId != -1L) {
                     dao.markSyncedById(insertedId, remote.updatedAtRemote, now)
                 }
+            } else {
+                dao.applyRemoteByModelName(
+                    modelName = remote.modelName,
+                    quantity = remote.quantity,
+                    isUserAdded = remote.isUserAdded,
+                    isDeleted = remote.isDeleted,
+                    brandSerialNumber = remote.brandSerialNumber,
+                    updatedAtRemote = remote.updatedAtRemote,
+                    lastSyncedAt = now
+                )
             }
         }
     }
@@ -340,9 +371,15 @@ class CaseRepository(
         val targetUids = buildList {
             add(uid)
             val pairing = getCurrentPairing()
-            if (pairing != null && pairing.active && pairing.syncsRemaining > 0) {
+            if (pairing != null && pairing.active && (pairing.syncsRemaining > 0 || pairing.isUnlimited)) {
                 pairing.otherUid(uid)?.let { add(it) }
             }
+        }.distinct()
+
+        val cloudCount = syncService.getCloudCaseModelCount(uid)
+        val localCount = dao.countAll()
+        if (cloudCount < localCount) {
+            ensureAllCaseModelsUploadedToCloud(uid)
         }
 
         val pending = dao.getPendingUploadCaseModels()

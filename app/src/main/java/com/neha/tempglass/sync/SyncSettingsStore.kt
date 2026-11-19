@@ -17,6 +17,8 @@ class SyncSettingsStore(context: Context) {
     val pairId: Flow<String?> = _pairId.asStateFlow()
     private val _otherUid = MutableStateFlow(prefs.getString(KEY_OTHER_UID, null))
     val otherUid: Flow<String?> = _otherUid.asStateFlow()
+    private val _isPrimaryDevice = MutableStateFlow(prefs.getBoolean(KEY_IS_PRIMARY_DEVICE, true))
+    val isPrimaryDevice: Flow<Boolean> = _isPrimaryDevice.asStateFlow()
 
     fun isInternetEnabled(): Boolean = _internetEnabled.value
 
@@ -30,6 +32,31 @@ class SyncSettingsStore(context: Context) {
     fun setUseScreenLockEnabled(enabled: Boolean) {
         prefs.edit().putBoolean(KEY_USE_SCREEN_LOCK, enabled).apply()
         _useScreenLock.value = enabled
+    }
+
+    fun isPrimaryDevice(): Boolean = _isPrimaryDevice.value
+
+    fun setPrimaryDevice(isPrimary: Boolean) {
+        prefs.edit().putBoolean(KEY_IS_PRIMARY_DEVICE, isPrimary).apply()
+        _isPrimaryDevice.value = isPrimary
+    }
+
+    fun saveAuthCredentials(email: String, authSecret: String) {
+        prefs.edit()
+            .putString(KEY_SAVED_EMAIL, email)
+            .putString(KEY_SAVED_PASSWORD, authSecret)
+            .apply()
+    }
+
+    fun getSavedAuthEmail(): String? = prefs.getString(KEY_SAVED_EMAIL, null)
+
+    fun getSavedAuthPassword(): String? = prefs.getString(KEY_SAVED_PASSWORD, null)
+
+    fun clearAuthCredentials() {
+        prefs.edit()
+            .remove(KEY_SAVED_EMAIL)
+            .remove(KEY_SAVED_PASSWORD)
+            .apply()
     }
 
     fun currentPairId(): String? = _pairId.value
@@ -50,5 +77,8 @@ class SyncSettingsStore(context: Context) {
         private const val KEY_USE_SCREEN_LOCK = "use_screen_lock"
         private const val KEY_PAIR_ID = "pair_id"
         private const val KEY_OTHER_UID = "other_uid"
+        private const val KEY_IS_PRIMARY_DEVICE = "is_primary_device"
+        private const val KEY_SAVED_EMAIL = "saved_auth_email"
+        private const val KEY_SAVED_PASSWORD = "saved_auth_password"
     }
 }

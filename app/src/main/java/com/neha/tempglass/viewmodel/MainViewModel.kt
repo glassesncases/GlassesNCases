@@ -17,6 +17,7 @@ import com.neha.tempglass.repository.BrandRepository
 import com.neha.tempglass.repository.CaseRepository
 import com.neha.tempglass.repository.ModelRepository
 import com.neha.tempglass.repository.UpdateBrandResult
+import com.neha.tempglass.sync.DevicePairing
 import com.neha.tempglass.util.BrandDetector
 import kotlinx.coroutines.FlowPreview
 import kotlinx.coroutines.Dispatchers
@@ -144,7 +145,9 @@ data class MainUiState(
     val isManageBrandsDialogVisible: Boolean = false,
     val brandToEdit: String? = null,
     val editBrandError: String? = null,
-    val allBrandsList: List<String> = emptyList()
+    val allBrandsList: List<String> = emptyList(),
+    val isPrimaryDevice: Boolean = true,
+    val isRequirePasswordForLinkCode: Boolean = false
 )
 
 class MainViewModel(
@@ -186,6 +189,8 @@ class MainViewModel(
     private val isLinked = MutableStateFlow(repository.currentOtherUid() != null)
     private val syncsRemaining = MutableStateFlow<Int?>(null)
     private val isPairingBusy = MutableStateFlow(false)
+    private val isPrimaryDevice = MutableStateFlow(repository.isPrimaryDevice())
+    private val isRequirePasswordForLinkCode = MutableStateFlow(false)
 
     private var exportRequestCounter: Long = 0
 
@@ -252,7 +257,9 @@ class MainViewModel(
         isManageBrandsDialogVisible,
         brandToEdit,
         editBrandError,
-        allKnownBrands
+        allKnownBrands,
+        isPrimaryDevice,
+        isRequirePasswordForLinkCode
     ) { data ->
         val modelItems = data[0] as List<ModelListItemUi>
         val brandItems = data[1] as List<String>
@@ -290,6 +297,8 @@ class MainViewModel(
         val editBrandErr = data[33] as String?
         @Suppress("UNCHECKED_CAST")
         val knownBrandsList = data[34] as List<String>
+        val isPrimary = data[35] as Boolean
+        val requirePassForCode = data[36] as Boolean
 
         val passwordTarget = when (action) {
             is ProtectedActionRequest.Add -> null
@@ -475,7 +484,9 @@ class MainViewModel(
             isManageBrandsDialogVisible = manageBrandsVisible,
             brandToEdit = editingBrand,
             editBrandError = editBrandErr,
-            allBrandsList = knownBrandsList
+            allBrandsList = knownBrandsList,
+            isPrimaryDevice = isPrimary,
+            isRequirePasswordForLinkCode = requirePassForCode
         )
     }.stateIn(
         viewModelScope,
@@ -799,10 +810,24 @@ class MainViewModel(
             }
 
             if (result.isSuccess) {
-                accountEmail.value = repository.currentUserEmail()
+                repository.saveAuthCredentials(email, password)
+                repository.setPrimaryDevice(true)
+                isPrimaryDevice.value = true
+                accountEmail.value = repository.currentUserEmail() ?: email
                 isAuthDialogVisible.value = false
                 authError.value = null
                 syncStatusMessage.value = "Signed in: ${accountEmail.value ?: email}"
+                repository.setInternetEnabled(true)
+                isInternetEnabled.value = true
+
+                // In background, ensure full local catalog is uploaded to Firestore
+                viewModelScope.launch {
+                    repository.currentUid()?.let { uid ->
+                        repository.ensureAllModelsUploadedToCloud(uid)
+                        caseRepository.ensureAllCaseModelsUploadedToCloud(uid)
+                        brandRepository.syncBrands(uid)
+                    }
+                }
             } else {
                 authError.value = result.exceptionOrNull()?.message ?: "Authentication failed"
             }
@@ -812,7 +837,23 @@ class MainViewModel(
     fun signOutAccount() {
         repository.signOut()
         accountEmail.value = null
+        isLinked.value = false
+        syncsRemaining.value = null
+        isPrimaryDevice.value = true
         syncStatusMessage.value = "Signed out"
+    }
+
+    fun unlinkDevice() {
+        viewModelScope.launch {
+            repository.signOut()
+            accountEmail.value = null
+            isLinked.value = false
+            syncsRemaining.value = null
+            repository.setPrimaryDevice(true)
+            isPrimaryDevice.value = true
+            isLinkDialogVisible.value = false
+            syncStatusMessage.value = "Device unlinked"
+        }
     }
 
     fun openLinkDialog() {
@@ -820,11 +861,13 @@ class MainViewModel(
         generatedCode.value = null
         linkError.value = null
         isPairingBusy.value = false
+        isRequirePasswordForLinkCode.value = false
         refreshPairingState()
     }
 
     fun dismissLinkDialog() {
         isLinkDialogVisible.value = false
+        isRequirePasswordForLinkCode.value = false
     }
 
     fun generateLinkCode() {
@@ -833,10 +876,20 @@ class MainViewModel(
             linkError.value = "Sign in to generate a link code"
             return
         }
+        val savedPass = repository.getSavedAuthPassword()
+        if (savedPass.isNullOrBlank()) {
+            isRequirePasswordForLinkCode.value = true
+            return
+        }
         viewModelScope.launch {
             isGeneratingCode.value = true
             linkError.value = null
             generatedCode.value = runCatching {
+                repository.currentUid()?.let { uid ->
+                    repository.ensureAllModelsUploadedToCloud(uid)
+                    caseRepository.ensureAllCaseModelsUploadedToCloud(uid)
+                    brandRepository.syncBrands(uid)
+                }
                 repository.generateLinkCode()
             }.onFailure {
                 linkError.value = it.message ?: "Failed to generate code"
@@ -845,13 +898,36 @@ class MainViewModel(
         }
     }
 
-    fun enterLinkCode(code: String) {
-        if (isPairingBusy.value) return
-        if (!repository.isSignedInWithSharedAccount()) {
-            linkError.value = "Sign in to link another device"
+    fun generateLinkCodeWithPassword(password: String) {
+        val email = repository.currentUserEmail() ?: run {
+            linkError.value = "Sign in to generate a link code"
             return
         }
-        if (code.isBlank()) {
+        viewModelScope.launch {
+            isGeneratingCode.value = true
+            linkError.value = null
+            runCatching {
+                repository.signInWithEmailPassword(email, password)
+                repository.saveAuthCredentials(email, password)
+                repository.setPrimaryDevice(true)
+                isPrimaryDevice.value = true
+                isRequirePasswordForLinkCode.value = false
+                val uid = repository.currentUid() ?: error("Account UID not found")
+                repository.ensureAllModelsUploadedToCloud(uid)
+                caseRepository.ensureAllCaseModelsUploadedToCloud(uid)
+                brandRepository.syncBrands(uid)
+                generatedCode.value = repository.generateLinkCode()
+            }.onFailure {
+                linkError.value = it.message ?: "Failed to verify password"
+            }
+            isGeneratingCode.value = false
+        }
+    }
+
+    fun enterLinkCode(code: String) {
+        if (isPairingBusy.value) return
+        val trimmed = code.trim().uppercase()
+        if (trimmed.length != 6) {
             linkError.value = "Enter the 6-character code"
             return
         }
@@ -860,12 +936,26 @@ class MainViewModel(
             isPairingBusy.value = true
             linkError.value = null
             runCatching {
-                val pairing = repository.consumeLinkCode(code)
-                repository.copyOwnerModelsIntoLocal(pairing.ownerUid)
-                caseRepository.copyOwnerCaseModelsIntoLocal(pairing.ownerUid)
+                val consumed = repository.consumeLinkCodeWithAuth(trimmed)
+                repository.setPrimaryDevice(false)
+                isPrimaryDevice.value = false
+                accountEmail.value = consumed.email
+                repository.setInternetEnabled(true)
+                isInternetEnabled.value = true
+
+                // 1. Pull & apply primary user's glass models into local DB
+                repository.copyOwnerModelsIntoLocal(consumed.uid)
+                // 2. Pull & apply primary user's case models and quantities into local DB
+                caseRepository.copyOwnerCaseModelsIntoLocal(consumed.uid)
+                // 3. Sync custom brands
+                brandRepository.syncBrands(consumed.uid)
+                // 4. Run full bidirectional sync to ensure everything is mirrored
+                repository.syncNowWithReport().getOrThrow()
+                caseRepository.syncNowWithReport().getOrThrow()
+
                 isLinked.value = true
-                syncsRemaining.value = pairing.syncsRemaining
-                syncStatusMessage.value = "Devices linked! Shared syncs remaining: ${pairing.syncsRemaining}"
+                syncsRemaining.value = DevicePairing.UNLIMITED_SYNCS
+                syncStatusMessage.value = "Devices linked! Full synchronization complete (Unlimited sync active)."
             }.onFailure {
                 linkError.value = it.message ?: "Failed to link device"
             }
@@ -875,6 +965,8 @@ class MainViewModel(
 
     fun refreshPairingState() {
         viewModelScope.launch {
+            val isPrimary = repository.isPrimaryDevice()
+            isPrimaryDevice.value = isPrimary
             val pairing = repository.getCurrentPairing()
             if (pairing != null) {
                 isLinked.value = pairing.active
@@ -914,7 +1006,10 @@ class MainViewModel(
             isSyncing.value = true
             syncStatusMessage.value = "Syncing..."
             val result = runCatching {
-                withTimeout(30_000) {
+                withTimeout(35_000) {
+                    repository.currentUid()?.let { uid ->
+                        brandRepository.syncBrands(uid)
+                    }
                     val modelReport = repository.syncNowWithReport().getOrThrow()
                     val caseReport = caseRepository.syncNowWithReport().getOrThrow()
                     "Sync report: user=${modelReport.email ?: "unknown"}, uid=${modelReport.uid.take(8)}..., " +

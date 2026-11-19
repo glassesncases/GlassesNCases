@@ -4,6 +4,7 @@ import com.neha.tempglass.data.BrandDao
 import com.neha.tempglass.data.BrandEntity
 import com.neha.tempglass.data.CaseModelDao
 import com.neha.tempglass.data.ModelDao
+import com.neha.tempglass.sync.ModelSyncService
 import com.neha.tempglass.util.BrandDetector
 import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.flow.Flow
@@ -27,6 +28,7 @@ class BrandRepository(
     private val dao: BrandDao,
     private val modelDao: ModelDao? = null,
     private val caseModelDao: CaseModelDao? = null,
+    private val syncService: ModelSyncService? = null,
     private val deviceIdProvider: () -> String = { "" }
 ) {
 
@@ -54,6 +56,27 @@ class BrandRepository(
         }
         val all = dao.getAllBrands().map { it.name }
         BrandDetector.setCustomBrands(all)
+    }
+
+    suspend fun syncBrands(uid: String) = withContext(Dispatchers.IO) {
+        if (syncService == null) return@withContext
+        val localBrands = dao.getAllBrands()
+        localBrands.filter { it.isUserAdded }.forEach { brand ->
+            runCatching {
+                syncService.pushBrand(uid, brand)
+            }
+        }
+
+        runCatching {
+            val remoteBrands = syncService.pullBrands(uid)
+            val existingSet = dao.getAllBrands().map { it.name.lowercase() }.toSet()
+            val toInsert = remoteBrands.filter { it.name.lowercase() !in existingSet }
+            if (toInsert.isNotEmpty()) {
+                dao.insertBrands(toInsert)
+            }
+            val all = dao.getAllBrands().map { it.name }
+            BrandDetector.setCustomBrands(all)
+        }
     }
 
     suspend fun addBrand(rawName: String): AddBrandResult = withContext(Dispatchers.IO) {

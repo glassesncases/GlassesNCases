@@ -73,6 +73,7 @@ class TempGlassApplication : Application() {
             dao = database.brandDao(),
             modelDao = database.modelDao(),
             caseModelDao = database.caseModelDao(),
+            syncService = syncService,
             deviceIdProvider = {
                 Settings.Secure.getString(contentResolver, Settings.Secure.ANDROID_ID) ?: "unknown_device"
             }

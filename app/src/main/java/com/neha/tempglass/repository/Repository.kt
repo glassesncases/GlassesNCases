@@ -5,12 +5,15 @@ import com.neha.tempglass.data.CompatibleModelsCodec
 import com.neha.tempglass.data.ModelDao
 import com.neha.tempglass.data.ModelEntity
 import com.neha.tempglass.data.ModelType
+import com.neha.tempglass.sync.ConsumedLinkCodeResult
 import com.neha.tempglass.sync.DevicePairing
 import com.neha.tempglass.sync.ModelRemoteDto
 import com.neha.tempglass.sync.ModelSyncService
 import com.neha.tempglass.sync.SyncSettingsStore
 import com.neha.tempglass.util.ModelNameCanonicalizer
 import android.util.Log
+import kotlinx.coroutines.Dispatchers
+import kotlinx.coroutines.withContext
 import kotlinx.coroutines.withTimeout
 import kotlinx.coroutines.TimeoutCancellationException
 import kotlinx.coroutines.flow.Flow
@@ -49,6 +52,8 @@ class ModelRepository(
 
     fun currentUserEmail(): String? = syncService.currentUserEmail()
 
+    suspend fun currentUid(): String? = runCatching { syncService.ensureSignedIn() }.getOrNull()
+
     fun currentPairId(): String? = syncSettingsStore.currentPairId()
 
     fun currentOtherUid(): String? = syncSettingsStore.currentOtherUid()
@@ -57,9 +62,20 @@ class ModelRepository(
         syncSettingsStore.setPairing(pairId, otherUid)
     }
 
+    fun isPrimaryDevice(): Boolean = syncSettingsStore.isPrimaryDevice()
+    fun setPrimaryDevice(isPrimary: Boolean) = syncSettingsStore.setPrimaryDevice(isPrimary)
+    fun saveAuthCredentials(email: String, pass: String) = syncSettingsStore.saveAuthCredentials(email, pass)
+    fun getSavedAuthEmail(): String? = syncSettingsStore.getSavedAuthEmail()
+    fun getSavedAuthPassword(): String? = syncSettingsStore.getSavedAuthPassword()
+    fun clearAuthCredentials() = syncSettingsStore.clearAuthCredentials()
+
     suspend fun generateLinkCode(): String {
         val uid = syncService.ensureSignedIn()
-        return syncService.generateLinkCode(uid)
+        val email = syncService.currentUserEmail() ?: error("Account email not found")
+        val password = syncSettingsStore.getSavedAuthPassword()
+            ?: error("Account password required to generate link code")
+        ensureAllModelsUploadedToCloud(uid)
+        return syncService.generateLinkCode(uid, email, password)
     }
 
     suspend fun consumeLinkCode(code: String): DevicePairing {
@@ -69,6 +85,13 @@ class ModelRepository(
         return pairing
     }
 
+    suspend fun consumeLinkCodeWithAuth(code: String): ConsumedLinkCodeResult {
+        val result = syncService.consumeLinkCodeWithAuth(code)
+        syncSettingsStore.setPairing(result.pairing.pairId, result.pairing.otherUid(result.uid))
+        syncSettingsStore.setPrimaryDevice(false)
+        return result
+    }
+
     suspend fun getCurrentPairing(): DevicePairing? {
         val pairId = syncSettingsStore.currentPairId() ?: return null
         return syncService.getPairing(pairId)
@@ -76,11 +99,36 @@ class ModelRepository(
 
     /** Atomically consumes one shared sync slot if an active pairing exists. */
     suspend fun consumePairingSyncSlot(): DevicePairing? {
+        val pairing = getCurrentPairing() ?: return null
+        if (pairing.isUnlimited) {
+            return pairing
+        }
         val pairId = syncSettingsStore.currentPairId() ?: return null
         return syncService.consumeSyncSlot(pairId)
     }
 
-    /** Copies the owner's models (only those not present locally) into the local DB. */
+    suspend fun ensureAllModelsUploadedToCloud(uid: String) = withContext(Dispatchers.IO) {
+        val now = System.currentTimeMillis()
+        val allLocal = dao.getAllModelsSnapshot()
+        if (allLocal.isEmpty()) return@withContext
+
+        val dtoList = allLocal.map { local ->
+            ModelRemoteDto(
+                modelName = local.modelName,
+                boxNumber = local.boxNumber,
+                additionalCompatible = local.additionalCompatible,
+                type = local.type,
+                isUserAdded = local.isUserAdded,
+                isDeleted = local.isDeleted,
+                isFavorite = local.isFavorite,
+                updatedAtRemote = now
+            )
+        }
+        syncService.pushAllModelsBatch(uid, dtoList)
+        dao.markAllSynced(updatedAtRemote = now, lastSyncedAt = now)
+    }
+
+    /** Copies the owner's models into the local DB, applying updates to existing models as well. */
     suspend fun copyOwnerModelsIntoLocal(ownerUid: String) {
         val now = System.currentTimeMillis()
         val remoteModels = syncService.pullModels(ownerUid)
@@ -105,6 +153,18 @@ class ModelRepository(
                 if (insertedId != -1L) {
                     dao.markSyncedById(insertedId, remote.updatedAtRemote, now)
                 }
+            } else {
+                dao.applyRemoteByModelName(
+                    modelName = remote.modelName,
+                    boxNumber = remote.boxNumber,
+                    additionalCompatible = remote.additionalCompatible,
+                    type = remote.type,
+                    isUserAdded = remote.isUserAdded,
+                    isDeleted = remote.isDeleted,
+                    isFavorite = remote.isFavorite,
+                    updatedAtRemote = remote.updatedAtRemote,
+                    lastSyncedAt = now
+                )
             }
         }
     }
@@ -120,6 +180,8 @@ class ModelRepository(
     fun signOut() {
         syncService.signOut()
         syncSettingsStore.setPairing(null, null)
+        syncSettingsStore.clearAuthCredentials()
+        syncSettingsStore.setPrimaryDevice(true)
     }
 
     fun isInternetEnabled(): Boolean = syncSettingsStore.isInternetEnabled()
@@ -364,11 +426,16 @@ class ModelRepository(
         // Determine all UIDs to sync with (own + paired UID if an active pairing exists).
         val targetUids = buildList {
             add(uid)
-            // Only sync with the other UID if a pairing with remaining sync slots exists.
             val pairing = getCurrentPairing()
-            if (pairing != null && pairing.active && pairing.syncsRemaining > 0) {
+            if (pairing != null && pairing.active && (pairing.syncsRemaining > 0 || pairing.isUnlimited)) {
                 pairing.otherUid(uid)?.let { add(it) }
             }
+        }.distinct()
+
+        val cloudCount = syncService.getCloudModelCount(uid)
+        val localCount = dao.countAll()
+        if (cloudCount < localCount) {
+            ensureAllModelsUploadedToCloud(uid)
         }
 
         val pending = dao.getPendingUploadModels()

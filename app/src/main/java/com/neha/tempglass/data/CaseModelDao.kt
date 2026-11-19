@@ -171,4 +171,15 @@ interface CaseModelDao {
         updatedAtRemote: Long,
         lastSyncedAt: Long
     ): Int
+
+    @Query(
+        """
+        UPDATE case_models
+        SET syncState = 'SYNCED',
+            updatedAtRemote = :updatedAtRemote,
+            lastSyncedAt = :lastSyncedAt,
+            needsHardDeleteRemote = 0
+        """
+    )
+    suspend fun markAllSynced(updatedAtRemote: Long, lastSyncedAt: Long)
 }
