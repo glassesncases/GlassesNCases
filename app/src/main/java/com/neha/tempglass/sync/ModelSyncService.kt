@@ -315,8 +315,22 @@ class ModelSyncService(
 
     suspend fun consumeLinkCodeWithAuth(code: String): ConsumedLinkCodeResult {
         val normalized = code.trim().uppercase()
+
+        // If not authenticated, try anonymous sign-in so request.auth is populated for Firestore rules
+        if (auth.currentUser == null) {
+            runCatching { auth.signInAnonymously().await() }
+        }
+
         val docRef = firestore.collection("link_codes").document(normalized)
-        val doc = docRef.get().await()
+        val doc = try {
+            docRef.get().await()
+        } catch (e: Exception) {
+            if (e.message?.contains("PERMISSION_DENIED", ignoreCase = true) == true) {
+                error("Firebase permission denied. Please sign in with your email & password first on this device, or allow read access on 'link_codes' in Firebase Console rules.")
+            } else {
+                throw e
+            }
+        }
 
         if (!doc.exists()) {
             error("Invalid link code. Please check the code and try again.")
@@ -336,8 +350,13 @@ class ModelSyncService(
         }
 
         // Authenticate secondary device with the primary user's account credentials
-        val authResult = auth.signInWithEmailAndPassword(email, authSecret).await()
-        val signedInUid = authResult.user?.uid ?: ownerUid
+        val current = auth.currentUser
+        val signedInUid = if (current != null && !current.isAnonymous && current.email.equals(email, ignoreCase = true)) {
+            current.uid
+        } else {
+            val authResult = auth.signInWithEmailAndPassword(email, authSecret).await()
+            authResult.user?.uid ?: ownerUid
+        }
 
         val pairId = UUID.randomUUID().toString()
         val pairingRef = firestore.collection("pairings").document(pairId)
