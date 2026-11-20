@@ -61,9 +61,10 @@ class BrandRepository(
     suspend fun syncBrands(uid: String) = withContext(Dispatchers.IO) {
         if (syncService == null) return@withContext
         val localBrands = dao.getAllBrands()
-        localBrands.filter { it.isUserAdded }.forEach { brand ->
+        val userBrands = localBrands.filter { it.isUserAdded }
+        if (userBrands.isNotEmpty()) {
             runCatching {
-                syncService.pushBrand(uid, brand)
+                syncService.pushAllBrandsBatch(uid, userBrands)
             }
         }
 

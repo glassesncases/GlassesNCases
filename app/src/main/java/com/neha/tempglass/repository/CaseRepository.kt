@@ -78,6 +78,7 @@ class CaseRepository(
         }
         syncService.pushAllCaseModelsBatch(uid, dtoList)
         dao.markAllSynced(updatedAtRemote = now, lastSyncedAt = now)
+        syncSettingsStore.setLastCaseSyncTime(uid, now)
     }
 
     /** Copies the owner's case models into the local DB, applying updates to existing models as well. */
@@ -376,18 +377,26 @@ class CaseRepository(
             }
         }.distinct()
 
-        val cloudCount = syncService.getCloudCaseModelCount(uid)
-        val localCount = dao.countAll()
-        if (cloudCount < localCount) {
-            ensureAllCaseModelsUploadedToCloud(uid)
+        // 1. One-time seeding check
+        if (!syncSettingsStore.isCloudCatalogSeeded(uid + "_cases")) {
+            val cloudCount = syncService.getCloudCaseModelCount(uid)
+            val localCount = dao.countAll()
+            if (cloudCount < localCount) {
+                ensureAllCaseModelsUploadedToCloud(uid)
+            }
+            syncSettingsStore.setCloudCatalogSeeded(uid + "_cases", true)
         }
 
+        // 2. Batch push pending case models
         val pending = dao.getPendingUploadCaseModels()
         var failedPush = 0
-        pending.forEach { local ->
-            try {
-                withTimeout(20_000) {
-                    val remote = CaseModelRemoteDto(
+        if (pending.isNotEmpty()) {
+            val normalPending = pending.filter { !it.needsHardDeleteRemote }
+            val deletePending = pending.filter { it.needsHardDeleteRemote }
+
+            if (normalPending.isNotEmpty()) {
+                val dtoList = normalPending.map { local ->
+                    CaseModelRemoteDto(
                         modelName = local.modelName,
                         quantity = local.quantity,
                         isUserAdded = local.isUserAdded,
@@ -395,72 +404,57 @@ class CaseRepository(
                         brandSerialNumber = local.brandSerialNumber,
                         updatedAtRemote = now
                     )
-                    // Push to own UID, and to the paired UID if active.
-                    targetUids.forEach { targetUid ->
-                        syncService.pushCaseModel(targetUid, remote)
-                        if (local.needsHardDeleteRemote) {
-                            syncService.markAllCaseModelDocsDeletedByName(targetUid, local.modelName, now)
-                        }
-                    }
-                    if (local.needsHardDeleteRemote) {
-                        dao.hardDelete(local.id)
-                    } else {
-                        dao.markSyncedById(local.id, updatedAtRemote = now, lastSyncedAt = now)
-                    }
                 }
-            } catch (e: TimeoutCancellationException) {
-                failedPush++
+                targetUids.forEach { targetUid ->
+                    runCatching {
+                        syncService.pushAllCaseModelsBatch(targetUid, dtoList)
+                    }.onFailure { failedPush++ }
+                }
+                dao.markSyncedByIds(normalPending.map { it.id }, now)
+            }
+
+            deletePending.forEach { local ->
+                runCatching {
+                    targetUids.forEach { targetUid ->
+                        syncService.markAllCaseModelDocsDeletedByName(targetUid, local.modelName, now)
+                    }
+                    dao.hardDelete(local.id)
+                }.onFailure { failedPush++ }
             }
         }
 
-        val remoteItems = try {
-            withTimeout(20_000) {
-                targetUids.flatMap { targetUid -> syncService.pullCaseModels(targetUid) }
-                    .distinctBy { it.modelName }
-            }
-        } catch (e: TimeoutCancellationException) {
-            error("Case pull timeout. Check internet or Firestore rules")
+        // 3. Fast Delta Pull
+        val lastSync = syncSettingsStore.getLastCaseSyncTime(uid)
+        val sinceTimestamp = if (lastSync > 0L) (lastSync - 5 * 60 * 1000L).coerceAtLeast(0L) else 0L
+
+        val remoteItems = runCatching {
+            targetUids.flatMap { targetUid -> syncService.pullCaseModels(targetUid, sinceTimestamp) }
+                .distinctBy { it.modelName }
+        }.getOrElse {
+            targetUids.flatMap { targetUid -> syncService.pullCaseModels(targetUid, 0L) }
+                .distinctBy { it.modelName }
         }
-        var applied = 0
-        remoteItems.forEach { remote ->
-            val local = dao.getByModelName(remote.modelName)
-            if (local == null) {
-                if (remote.isDeleted) {
-                    return@forEach
-                }
-                val insertedId = dao.insert(
-                    CaseModelEntity(
-                        modelName = remote.modelName,
-                        quantity = remote.quantity,
-                        isUserAdded = remote.isUserAdded,
-                        isDeleted = remote.isDeleted,
-                        brandSerialNumber = remote.brandSerialNumber,
-                        syncState = "SYNCED",
-                        updatedAtRemote = remote.updatedAtRemote,
-                        lastSyncedAt = now
-                    )
+
+        // 4. Batch apply into Room in a single SQLite transaction
+        val applied = if (remoteItems.isNotEmpty()) {
+            val entities = remoteItems.map { remote ->
+                CaseModelEntity(
+                    modelName = remote.modelName,
+                    quantity = remote.quantity,
+                    isUserAdded = remote.isUserAdded,
+                    isDeleted = remote.isDeleted,
+                    brandSerialNumber = remote.brandSerialNumber,
+                    syncState = "SYNCED",
+                    updatedAtRemote = remote.updatedAtRemote,
+                    lastSyncedAt = now
                 )
-                if (insertedId != -1L) {
-                    dao.markSyncedById(insertedId, remote.updatedAtRemote, now)
-                    applied++
-                }
-            } else {
-                val shouldApplyRemote = (maxOf(local.updatedAtLocal, local.updatedAtRemote ?: 0L) <= remote.updatedAtRemote) ||
-                    local.syncState != "PENDING_UPLOAD"
-                if (shouldApplyRemote) {
-                    dao.applyRemoteByModelName(
-                        modelName = remote.modelName,
-                        quantity = remote.quantity,
-                        isUserAdded = remote.isUserAdded,
-                        isDeleted = remote.isDeleted,
-                        brandSerialNumber = remote.brandSerialNumber,
-                        updatedAtRemote = remote.updatedAtRemote,
-                        lastSyncedAt = now
-                    )
-                    applied++
-                }
             }
+            dao.applyRemoteCaseModels(entities, now)
+        } else {
+            0
         }
+
+        syncSettingsStore.setLastCaseSyncTime(uid, now)
 
         CaseSyncReport(
             pendingCount = pending.size,

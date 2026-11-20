@@ -63,6 +63,27 @@ class SyncSettingsStore(context: Context) {
 
     fun currentOtherUid(): String? = _otherUid.value
 
+    fun isCloudCatalogSeeded(uid: String): Boolean =
+        prefs.getBoolean("cloud_catalog_seeded_$uid", false)
+
+    fun setCloudCatalogSeeded(uid: String, seeded: Boolean) {
+        prefs.edit().putBoolean("cloud_catalog_seeded_$uid", seeded).apply()
+    }
+
+    fun getLastModelSyncTime(uid: String): Long =
+        prefs.getLong("last_model_sync_$uid", 0L)
+
+    fun setLastModelSyncTime(uid: String, timestamp: Long) {
+        prefs.edit().putLong("last_model_sync_$uid", timestamp).apply()
+    }
+
+    fun getLastCaseSyncTime(uid: String): Long =
+        prefs.getLong("last_case_sync_$uid", 0L)
+
+    fun setLastCaseSyncTime(uid: String, timestamp: Long) {
+        prefs.edit().putLong("last_case_sync_$uid", timestamp).apply()
+    }
+
     fun setPairing(pairId: String?, otherUid: String?) {
         prefs.edit()
             .putString(KEY_PAIR_ID, pairId)

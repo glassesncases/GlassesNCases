@@ -72,12 +72,20 @@ class ModelSyncService(
             .await()
     }
 
-    suspend fun pullModels(uid: String): List<ModelRemoteDto> {
-        val snapshot = firestore.collection("users")
+    suspend fun pullModels(uid: String, sinceTimestamp: Long = 0L): List<ModelRemoteDto> {
+        val collection = firestore.collection("users")
             .document(uid)
             .collection("models")
-            .get()
-            .await()
+
+        val snapshot = if (sinceTimestamp > 0L) {
+            runCatching {
+                collection.whereGreaterThan("updatedAtRemote", sinceTimestamp).get().await()
+            }.getOrElse {
+                collection.get().await()
+            }
+        } else {
+            collection.get().await()
+        }
 
         return snapshot.documents.mapNotNull { doc ->
             val modelName = doc.getString("modelName") ?: doc.id
@@ -143,12 +151,20 @@ class ModelSyncService(
             .await()
     }
 
-    suspend fun pullCaseModels(uid: String): List<CaseModelRemoteDto> {
-        val snapshot = firestore.collection("users")
+    suspend fun pullCaseModels(uid: String, sinceTimestamp: Long = 0L): List<CaseModelRemoteDto> {
+        val collection = firestore.collection("users")
             .document(uid)
             .collection("case_models")
-            .get()
-            .await()
+
+        val snapshot = if (sinceTimestamp > 0L) {
+            runCatching {
+                collection.whereGreaterThan("updatedAtRemote", sinceTimestamp).get().await()
+            }.getOrElse {
+                collection.get().await()
+            }
+        } else {
+            collection.get().await()
+        }
 
         return snapshot.documents.mapNotNull { doc ->
             val modelName = doc.getString("modelName") ?: doc.id
@@ -507,6 +523,27 @@ class ModelSyncService(
                 SetOptions.merge()
             )
             .await()
+    }
+
+    suspend fun pushAllBrandsBatch(uid: String, brands: List<BrandEntity>) {
+        if (brands.isEmpty()) return
+        val collection = firestore.collection("users").document(uid).collection("brands")
+        brands.chunked(400).forEach { chunk ->
+            val batch = firestore.batch()
+            chunk.forEach { brand ->
+                val docRef = collection.document(docIdForModelName(brand.name))
+                batch.set(
+                    docRef,
+                    mapOf(
+                        "name" to brand.name,
+                        "isUserAdded" to brand.isUserAdded,
+                        "createdAt" to brand.createdAt
+                    ),
+                    SetOptions.merge()
+                )
+            }
+            batch.commit().await()
+        }
     }
 
     suspend fun pullBrands(uid: String): List<BrandEntity> {

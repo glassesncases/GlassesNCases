@@ -126,6 +126,8 @@ class ModelRepository(
         }
         syncService.pushAllModelsBatch(uid, dtoList)
         dao.markAllSynced(updatedAtRemote = now, lastSyncedAt = now)
+        syncSettingsStore.setCloudCatalogSeeded(uid, true)
+        syncSettingsStore.setLastModelSyncTime(uid, now)
     }
 
     /** Copies the owner's models into the local DB, applying updates to existing models as well. */
@@ -432,18 +434,26 @@ class ModelRepository(
             }
         }.distinct()
 
-        val cloudCount = syncService.getCloudModelCount(uid)
-        val localCount = dao.countAll()
-        if (cloudCount < localCount) {
-            ensureAllModelsUploadedToCloud(uid)
+        // 1. One-time seeding check: only run full catalog upload if not yet seeded for this account
+        if (!syncSettingsStore.isCloudCatalogSeeded(uid)) {
+            val cloudCount = syncService.getCloudModelCount(uid)
+            val localCount = dao.countAll()
+            if (cloudCount < localCount) {
+                ensureAllModelsUploadedToCloud(uid)
+            }
+            syncSettingsStore.setCloudCatalogSeeded(uid, true)
         }
 
+        // 2. Batch push pending models
         val pending = dao.getPendingUploadModels()
         var failedPush = 0
-        pending.forEach { local ->
-            try {
-                withTimeout(20_000) {
-                    val remote = ModelRemoteDto(
+        if (pending.isNotEmpty()) {
+            val normalPending = pending.filter { !it.needsHardDeleteRemote }
+            val deletePending = pending.filter { it.needsHardDeleteRemote }
+
+            if (normalPending.isNotEmpty()) {
+                val dtoList = normalPending.map { local ->
+                    ModelRemoteDto(
                         modelName = local.modelName,
                         boxNumber = local.boxNumber,
                         additionalCompatible = local.additionalCompatible,
@@ -453,77 +463,60 @@ class ModelRepository(
                         isFavorite = local.isFavorite,
                         updatedAtRemote = now
                     )
-                    // Push to own UID, and to the paired UID if active.
-                    targetUids.forEach { targetUid ->
-                        syncService.pushModel(targetUid, remote)
-                        if (local.needsHardDeleteRemote) {
-                            syncService.markAllModelDocsDeletedByName(targetUid, local.modelName, now)
-                        }
-                    }
-                    if (local.needsHardDeleteRemote) {
-                        dao.hardDelete(local.id)
-                    } else {
-                        dao.markSyncedById(local.id, updatedAtRemote = now, lastSyncedAt = now)
-                    }
                 }
-            } catch (e: TimeoutCancellationException) {
-                failedPush++
+                targetUids.forEach { targetUid ->
+                    runCatching {
+                        syncService.pushAllModelsBatch(targetUid, dtoList)
+                    }.onFailure { failedPush++ }
+                }
+                dao.markSyncedByIds(normalPending.map { it.id }, now)
+            }
+
+            deletePending.forEach { local ->
+                runCatching {
+                    targetUids.forEach { targetUid ->
+                        syncService.markAllModelDocsDeletedByName(targetUid, local.modelName, now)
+                    }
+                    dao.hardDelete(local.id)
+                }.onFailure { failedPush++ }
             }
         }
 
-        // Pull from all target UIDs and merge into local.
-        val remoteModels = try {
-            withTimeout(20_000) {
-                targetUids.flatMap { targetUid -> syncService.pullModels(targetUid) }
-                    .distinctBy { it.modelName }
-            }
-        } catch (e: TimeoutCancellationException) {
-            error("Model pull timeout. Check internet or Firestore rules")
+        // 3. Fast Delta Pull: only fetch models updated since last sync (with 5-minute safety buffer)
+        val lastSync = syncSettingsStore.getLastModelSyncTime(uid)
+        val sinceTimestamp = if (lastSync > 0L) (lastSync - 5 * 60 * 1000L).coerceAtLeast(0L) else 0L
+
+        val remoteModels = runCatching {
+            targetUids.flatMap { targetUid -> syncService.pullModels(targetUid, sinceTimestamp) }
+                .distinctBy { it.modelName }
+        }.getOrElse {
+            // Fallback to full pull if delta fails
+            targetUids.flatMap { targetUid -> syncService.pullModels(targetUid, 0L) }
+                .distinctBy { it.modelName }
         }
-        var applied = 0
-        remoteModels.forEach { remote ->
-            val local = dao.getByModelName(remote.modelName)
-            if (local == null) {
-                if (remote.isDeleted) {
-                    return@forEach
-                }
-                val insertedId = dao.insert(
-                    ModelEntity(
-                        modelName = remote.modelName,
-                        boxNumber = remote.boxNumber,
-                        additionalCompatible = remote.additionalCompatible,
-                        type = remote.type,
-                        isUserAdded = remote.isUserAdded,
-                        isDeleted = remote.isDeleted,
-                        isFavorite = remote.isFavorite,
-                        syncState = "SYNCED",
-                        updatedAtRemote = remote.updatedAtRemote,
-                        lastSyncedAt = now
-                    )
+
+        // 4. Batch apply into Room in a single SQLite transaction
+        val applied = if (remoteModels.isNotEmpty()) {
+            val entities = remoteModels.map { remote ->
+                ModelEntity(
+                    modelName = remote.modelName,
+                    boxNumber = remote.boxNumber,
+                    additionalCompatible = remote.additionalCompatible,
+                    type = remote.type,
+                    isUserAdded = remote.isUserAdded,
+                    isDeleted = remote.isDeleted,
+                    isFavorite = remote.isFavorite,
+                    syncState = "SYNCED",
+                    updatedAtRemote = remote.updatedAtRemote,
+                    lastSyncedAt = now
                 )
-                if (insertedId != -1L) {
-                    dao.markSyncedById(insertedId, remote.updatedAtRemote, now)
-                    applied++
-                }
-            } else {
-                val shouldApplyRemote = (maxOf(local.updatedAtLocal, local.updatedAtRemote ?: 0L) <= remote.updatedAtRemote) ||
-                    local.syncState != "PENDING_UPLOAD"
-                if (shouldApplyRemote) {
-                    dao.applyRemoteByModelName(
-                        modelName = remote.modelName,
-                        boxNumber = remote.boxNumber,
-                        additionalCompatible = remote.additionalCompatible,
-                        type = remote.type,
-                        isUserAdded = remote.isUserAdded,
-                        isDeleted = remote.isDeleted,
-                        isFavorite = remote.isFavorite,
-                        updatedAtRemote = remote.updatedAtRemote,
-                        lastSyncedAt = now
-                    )
-                    applied++
-                }
             }
+            dao.applyRemoteModels(entities, now)
+        } else {
+            0
         }
+
+        syncSettingsStore.setLastModelSyncTime(uid, now)
 
         ModelSyncReport(
             uid = uid,

@@ -4,6 +4,7 @@ import androidx.room.Dao
 import androidx.room.Insert
 import androidx.room.OnConflictStrategy
 import androidx.room.Query
+import androidx.room.Transaction
 import kotlinx.coroutines.flow.Flow
 
 @Dao
@@ -186,4 +187,52 @@ interface ModelDao {
         """
     )
     suspend fun markAllSynced(updatedAtRemote: Long, lastSyncedAt: Long)
+
+    @Query(
+        """
+        UPDATE models
+        SET syncState = 'SYNCED',
+            updatedAtRemote = :now,
+            lastSyncedAt = :now,
+            needsHardDeleteRemote = 0
+        WHERE id IN (:ids)
+        """
+    )
+    suspend fun markSyncedByIds(ids: List<Long>, now: Long)
+
+    @Transaction
+    suspend fun applyRemoteModels(remoteModels: List<ModelEntity>, now: Long): Int {
+        var applied = 0
+        for (remote in remoteModels) {
+            val local = getByModelName(remote.modelName)
+            if (local == null) {
+                if (!remote.isDeleted) {
+                    val insertedId = insert(remote)
+                    if (insertedId != -1L) {
+                        markSyncedById(insertedId, remote.updatedAtRemote ?: now, now)
+                        applied++
+                    }
+                }
+            } else {
+                val shouldApplyRemote = (maxOf(local.updatedAtLocal, local.updatedAtRemote ?: 0L) <= (remote.updatedAtRemote ?: 0L)) ||
+                    local.syncState != "PENDING_UPLOAD"
+
+                if (shouldApplyRemote) {
+                    applyRemoteByModelName(
+                        modelName = remote.modelName,
+                        boxNumber = remote.boxNumber,
+                        additionalCompatible = remote.additionalCompatible,
+                        type = remote.type,
+                        isUserAdded = remote.isUserAdded,
+                        isDeleted = remote.isDeleted,
+                        isFavorite = remote.isFavorite,
+                        updatedAtRemote = remote.updatedAtRemote ?: now,
+                        lastSyncedAt = now
+                    )
+                    applied++
+                }
+            }
+        }
+        return applied
+    }
 }

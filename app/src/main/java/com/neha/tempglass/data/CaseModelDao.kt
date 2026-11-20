@@ -182,4 +182,50 @@ interface CaseModelDao {
         """
     )
     suspend fun markAllSynced(updatedAtRemote: Long, lastSyncedAt: Long)
+
+    @Query(
+        """
+        UPDATE case_models
+        SET syncState = 'SYNCED',
+            updatedAtRemote = :now,
+            lastSyncedAt = :now,
+            needsHardDeleteRemote = 0
+        WHERE id IN (:ids)
+        """
+    )
+    suspend fun markSyncedByIds(ids: List<Long>, now: Long)
+
+    @Transaction
+    suspend fun applyRemoteCaseModels(remoteModels: List<CaseModelEntity>, now: Long): Int {
+        var applied = 0
+        for (remote in remoteModels) {
+            val local = getByModelName(remote.modelName)
+            if (local == null) {
+                if (!remote.isDeleted) {
+                    val insertedId = insert(remote)
+                    if (insertedId != -1L) {
+                        markSyncedById(insertedId, remote.updatedAtRemote ?: now, now)
+                        applied++
+                    }
+                }
+            } else {
+                val shouldApplyRemote = (maxOf(local.updatedAtLocal, local.updatedAtRemote ?: 0L) <= (remote.updatedAtRemote ?: 0L)) ||
+                    local.syncState != "PENDING_UPLOAD"
+
+                if (shouldApplyRemote) {
+                    applyRemoteByModelName(
+                        modelName = remote.modelName,
+                        quantity = remote.quantity,
+                        isUserAdded = remote.isUserAdded,
+                        isDeleted = remote.isDeleted,
+                        brandSerialNumber = remote.brandSerialNumber,
+                        updatedAtRemote = remote.updatedAtRemote ?: now,
+                        lastSyncedAt = now
+                    )
+                    applied++
+                }
+            }
+        }
+        return applied
+    }
 }

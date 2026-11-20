@@ -21,6 +21,8 @@ import com.neha.tempglass.sync.DevicePairing
 import com.neha.tempglass.util.BrandDetector
 import kotlinx.coroutines.FlowPreview
 import kotlinx.coroutines.Dispatchers
+import kotlinx.coroutines.async
+import kotlinx.coroutines.coroutineScope
 import kotlinx.coroutines.flow.MutableStateFlow
 import kotlinx.coroutines.flow.SharingStarted
 import kotlinx.coroutines.flow.StateFlow
@@ -1006,15 +1008,27 @@ class MainViewModel(
             isSyncing.value = true
             syncStatusMessage.value = "Syncing..."
             val result = runCatching {
-                withTimeout(35_000) {
-                    repository.currentUid()?.let { uid ->
-                        brandRepository.syncBrands(uid)
+                withTimeout(60_000) {
+                    coroutineScope {
+                        val uid = repository.currentUid()
+                        val brandJob = async {
+                            uid?.let { brandRepository.syncBrands(it) }
+                        }
+                        val modelDeferred = async {
+                            repository.syncNowWithReport().getOrThrow()
+                        }
+                        val caseDeferred = async {
+                            caseRepository.syncNowWithReport().getOrThrow()
+                        }
+
+                        brandJob.await()
+                        val modelReport = modelDeferred.await()
+                        val caseReport = caseDeferred.await()
+
+                        "Sync report: user=${modelReport.email ?: "unknown"}, uid=${modelReport.uid.take(8)}..., " +
+                            "models[pending=${modelReport.pendingCount}, failedPush=${modelReport.failedPushCount}, pulled=${modelReport.pulledCount}, applied=${modelReport.appliedCount}], " +
+                            "cases[pending=${caseReport.pendingCount}, pulled=${caseReport.pulledCount}, applied=${caseReport.appliedCount}]"
                     }
-                    val modelReport = repository.syncNowWithReport().getOrThrow()
-                    val caseReport = caseRepository.syncNowWithReport().getOrThrow()
-                    "Sync report: user=${modelReport.email ?: "unknown"}, uid=${modelReport.uid.take(8)}..., " +
-                        "models[pending=${modelReport.pendingCount}, failedPush=${modelReport.failedPushCount}, pulled=${modelReport.pulledCount}, applied=${modelReport.appliedCount}], " +
-                        "cases[pending=${caseReport.pendingCount}, pulled=${caseReport.pulledCount}, applied=${caseReport.appliedCount}]"
                 }
             }
             syncStatusMessage.value = if (result.isSuccess) {
@@ -1051,12 +1065,27 @@ class MainViewModel(
             isSyncing.value = true
             syncStatusMessage.value = "Syncing in background..."
             val result = runCatching {
-                withTimeout(30_000) {
-                    val modelReport = repository.syncNowWithReport().getOrThrow()
-                    val caseReport = caseRepository.syncNowWithReport().getOrThrow()
-                    "Sync report: user=${modelReport.email ?: "unknown"}, uid=${modelReport.uid.take(8)}..., " +
-                        "models[pending=${modelReport.pendingCount}, failedPush=${modelReport.failedPushCount}, pulled=${modelReport.pulledCount}, applied=${modelReport.appliedCount}], " +
-                        "cases[pending=${caseReport.pendingCount}, pulled=${caseReport.pulledCount}, applied=${caseReport.appliedCount}]"
+                withTimeout(60_000) {
+                    coroutineScope {
+                        val uid = repository.currentUid()
+                        val brandJob = async {
+                            uid?.let { brandRepository.syncBrands(it) }
+                        }
+                        val modelDeferred = async {
+                            repository.syncNowWithReport().getOrThrow()
+                        }
+                        val caseDeferred = async {
+                            caseRepository.syncNowWithReport().getOrThrow()
+                        }
+
+                        brandJob.await()
+                        val modelReport = modelDeferred.await()
+                        val caseReport = caseDeferred.await()
+
+                        "Sync report: user=${modelReport.email ?: "unknown"}, uid=${modelReport.uid.take(8)}..., " +
+                            "models[pending=${modelReport.pendingCount}, failedPush=${modelReport.failedPushCount}, pulled=${modelReport.pulledCount}, applied=${modelReport.appliedCount}], " +
+                            "cases[pending=${caseReport.pendingCount}, pulled=${caseReport.pulledCount}, applied=${caseReport.appliedCount}]"
+                    }
                 }
             }
 
